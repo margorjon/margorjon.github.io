@@ -2687,7 +2687,7 @@ $(function() {
             }
         });
         console.log("Starts to load owned consumables");
-        $.get("/" + server + '/consumables', function(result) {
+        $.get("/static/" + server + '/consumables', function(result) {
             ownedConsumables = result;
             console.log("owned consumables loaded");
             onUnitsOrInventoryLoaded();
