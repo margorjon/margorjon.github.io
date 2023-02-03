@@ -1843,7 +1843,7 @@ function getLocalizedFileUrl(name) {
         name = name + "_" + language;
     }
     name += ".json";
-    return server + "/" + name;
+    return "/static/" + server + "/" + name;
 }
 
 function onUnitsOrInventoryLoaded() {
@@ -2042,7 +2042,7 @@ function getStaticData(name, localized, callback) {
     if (localized) {
         name = getLocalizedFileUrl(name);
     } else {
-        name = server + "/" + name + ".json";
+        name = "/static/" + server + "/" + name + ".json";
     }
 
     var data = staticFileCache.retrieve(name);
