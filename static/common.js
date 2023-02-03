@@ -1852,7 +1852,7 @@ function onUnitsOrInventoryLoaded() {
             // before version 3, units were : {"unitId": number}
             // After, they are {"unitId": {"number":number,"farmable":number}
             $.get(getLocalizedFileUrl("data"), function(data) {
-                $.get("/" + server + "/units.json", function(unitResult) {
+                $.get("/static/" + server + "/units.json", function(unitResult) {
                     var allUnitsTmp = unitResult;
                     var tmrNumberByUnitId = {};
                     for (var index = data.length; index--; ) {
@@ -2610,7 +2610,7 @@ $(function() {
     } else {
         console.log("Getting Item Inventory...")
 
-        $.get("/" + server + '/itemInventory', function(result) {
+        $.get("/static/" + server + '/itemInventory', function(result) {
             console.log("Got inventory")
             itemInventory = result;
             if (!itemInventory.enchantments) {
@@ -2668,7 +2668,7 @@ $(function() {
             }
         });
         console.log("Starts to load owned espers");
-        $.get("/" + server + '/espers', function(result) {
+        $.get("/static/" + server + '/espers', function(result) {
             ownedEspers = result;
 
             Object.keys(ownedEspers).forEach(esper => {
