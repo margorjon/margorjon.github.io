@@ -4632,7 +4632,7 @@ function startPage() {
     });
 
     // try to read unit skill from cache
-    var unitsWithSkillsData = staticFileCache.retrieve(`${server}/unitsWithSkill.json`);
+    var unitsWithSkillsData = staticFileCache.retrieve(`/static/${server}/unitsWithSkill.json`);
     if (unitsWithSkillsData && !$.isEmptyObject(unitsWithSkillsData)) {
         unitsWithSkills = unitsWithSkillsData;
     }
