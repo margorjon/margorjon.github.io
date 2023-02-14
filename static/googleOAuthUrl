@@ -6,15 +6,16 @@
         "enabled": false,
         "oAuthConfiguration": {
             "web":{
-                "client_id":"<client id from client_secret.json>",
-                "project_id":"<project id from client_secret.json>",
-                "auth_uri":"<auth uri from client_secret.json>",
-                "token_uri":"https://accounts.google.com/o/oauth2/token",
+                "client_id":"689294528646-gch7iec1trtemm401piublequsmpnhd4.apps.googleusercontent.com",
+                "project_id":"hv-match",
+                "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+                "token_uri":"https://oauth2.googleapis.com/token",
                 "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
-                "client_secret":"<client secret from client_secret.json>",
-                "redirect_uris":["http://localhost:3000/googleOAuthSuccess"]
+                "client_secret":"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",
+                "redirect_uris":["https://margorjon.github.io/googleOAuthSuccess","https://margorjon.github.io/static/googleOAuthSuccess"],
+                "javascript_origins":["https://margorjon.github.io"]
+                }
             }
-        }
     },
     "firebase": {
         "enabled": false,
