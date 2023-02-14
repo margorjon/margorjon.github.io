@@ -907,6 +907,8 @@ function loadInventory() {
                     // Reset localStorage on connection
                     if (localStorageAvailable) staticFileCache.clear();
                     // Redirect to GoogleAuth
+                    console.log(window.location.href);
+                    console.log(result.url);
                     window.location.href = result.url + "&state=" + encodeURIComponent(window.location.href.replace(".lyrgard.fr",".com"));
                 }
             }]
