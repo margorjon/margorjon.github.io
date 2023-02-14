@@ -3,7 +3,7 @@
     "port": 3000,
     "secret": "<30 random characters>",
     "google": {
-        "enabled": false,
+        "enabled": true,
         "oAuthConfiguration": {
             "web":{
                 "client_id":"account deleted",
