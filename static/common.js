@@ -907,6 +907,8 @@ function loadInventory() {
                     // Reset localStorage on connection
                     if (localStorageAvailable) staticFileCache.clear();
                     // Redirect to GoogleAuth
+                    console.log(window.location.href);
+                    console.log(result.url);
                     window.location.href = result.url + "&state=" + encodeURIComponent(window.location.href.replace(".lyrgard.fr",".com"));
                 }
             }]
@@ -1844,7 +1846,7 @@ function getLocalizedFileUrl(name) {
         name = name + "_" + language;
     }
     name += ".json";
-    return server + "/" + name;
+    return "/static/" + server + "/" + name;
 }
 
 function onUnitsOrInventoryLoaded() {
@@ -1853,7 +1855,7 @@ function onUnitsOrInventoryLoaded() {
             // before version 3, units were : {"unitId": number}
             // After, they are {"unitId": {"number":number,"farmable":number}
             $.get(getLocalizedFileUrl("data"), function(data) {
-                $.get("/" + server + "/units.json", function(unitResult) {
+                $.get("/static/" + server + "/units.json", function(unitResult) {
                     var allUnitsTmp = unitResult;
                     var tmrNumberByUnitId = {};
                     for (var index = data.length; index--; ) {
@@ -2043,7 +2045,7 @@ function getStaticData(name, localized, callback) {
     if (localized) {
         name = getLocalizedFileUrl(name);
     } else {
-        name = server + "/" + name + ".json";
+        name = "/static/" + server + "/" + name + ".json";
     }
 
     var data = staticFileCache.retrieve(name);
@@ -2615,7 +2617,7 @@ $(function() {
 
     readUrlParams();
 
-    $.get("/" + server + '/dataVersion.json', function(result) {
+    $.get("/static/" + server + '/dataVersion.json', function(result) {
         var dataVersion = result.version;
         var selectedLanguage = language ? language : "en";
 
@@ -2642,7 +2644,7 @@ $(function() {
     } else {
         console.log("Getting Item Inventory...")
 
-        $.get("/" + server + '/itemInventory', function(result) {
+        $.get("/static/" + server + '/itemInventory', function(result) {
             console.log("Got inventory")
             itemInventory = result;
             if (!itemInventory.enchantments) {
@@ -2700,7 +2702,7 @@ $(function() {
             }
         });
         console.log("Starts to load owned espers");
-        $.get("/" + server + '/espers', function(result) {
+        $.get("/static/" + server + '/espers', function(result) {
             ownedEspers = result;
 
             Object.keys(ownedEspers).forEach(esper => {
@@ -2719,7 +2721,7 @@ $(function() {
             }
         });
         console.log("Starts to load owned consumables");
-        $.get("/" + server + '/consumables', function(result) {
+        $.get("/static/" + server + '/consumables', function(result) {
             ownedConsumables = result;
             console.log("owned consumables loaded");
             onUnitsOrInventoryLoaded();
