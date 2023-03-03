@@ -1,8 +1,7 @@
 import fs from 'fs'
 import request from 'request'
 import * as commonParse from '../commonParseUnit.js'
-
-
+import unorm from 'unorm';
 
 const filterGame = [20001, 20002, 20007, 20008, 20011, 20030, 20026, 20027, 20013, 20014, 20015, 20021, 20026, 20027];
 const filterUnits = ["100014604","100014504","100014703","100014405", "332000105", "204002104", "204002003", "204001904", "204001805", "100017005", "307000303", "307000404", "307000204", "100027005", 
@@ -22,6 +21,7 @@ var jpNameById = {};
 var languageId;
 
 var dev = process.argv.length > 2 && process.argv[2] == "dev";
+
 if (dev) {
     console.log("dev mode : ON");
 } else {
@@ -51,6 +51,8 @@ function getData(filename, callback) {
 
 console.log("Starting");
 getData('units.json', function (units) {
+     //Exdeath Fix
+     exDeathFix(units);
     getData('skills_ability.json', function (skills) {
         getData('skills_passive.json', function (passives) {
             getData('skills_magic.json', function (magics) {
@@ -177,11 +179,40 @@ getData('units.json', function (units) {
     });
 });
 
-function checkForJapanese(checkString){
-    let allowedChars = new RegExp(/^[\u00C0-\u017Fa-zA-Z0-9' !@#$%^&*+()-’]+$/)
+function exDeathFix(units) {
+    var exDeathBase = units[205000905];
+    var exDeathBS = {};
 
-    return allowedChars.test(checkString)
+    // copy all values from exDeathBase to exDeathBS except for exDeathBase.entries should only include the last entry not all of them
+    Object.keys(exDeathBase).forEach(key => {
+        if (key != "entries") {
+            exDeathBS[key] = exDeathBase[key];
+        } else{
+            let entriesArray = Object.values(exDeathBase[key]);
+            exDeathBS[key] = { "205000927": entriesArray[entriesArray.length-1] };
+        }
+    }); 
+    // Delete the last entry from exDeathBase entries
+    delete exDeathBase.entries[Object.keys(exDeathBase.entries)[Object.keys(exDeathBase.entries).length-1]];
+    // add key 205000927 to units with the values that are in exDeathBS
+    units[205000927] = exDeathBS;
+    units[205000927].rarity_min = 7;
 }
+
+function checkForJapanese(inputString) {
+    const allowedRegex = /^[a-zA-Z0-9' !@#$%^&*()+\[\]:@{-~À-ÿ´’.,:;!?'"&$%#(){}\[\]+<>=\/*\s\-]+$/u;
+  const normalizedString = unorm.nfc(inputString);
+  if (!allowedRegex.test(normalizedString)) {
+    return false;
+  }
+  for (const char of normalizedString) {
+    if (/[\u3040-\u30ff\u31f0-\u31ff\u4e00-\u9faf\uff00-\uffef]/.test(char)) {
+      return false;
+    }
+  }
+  return true;
+}
+  
 
 function slbSkillMerge(units, unitsOut){
     Object.keys(unitsOut).forEach((unitOutId) => {

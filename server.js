@@ -24,10 +24,28 @@ const __dirname = path.dirname(__filename)
 let config = ServerConfig.ServerConfig;
 
 const app = express();
-
+app.use(compression({level: 9}));
 console.log(`Environment is: ${config.env}`);
 
-app.use(compression())
+app.use(express.static(path.join(__dirname, '/dist/'), {
+  etag: false,
+  lastModified: config.isProd,
+  cacheControl: config.isProd,
+  maxAge: "365d",
+  immutable: config.isProd,
+  index: 'homepage.html',
+  setHeaders: function (res, path) {
+    if (mime.lookup(path) === 'text/html') {
+      // For HTML, avoid long and immutable cache since it can't be busted
+      res.setHeader('Cache-Control', 'public, max-age=0');
+    }
+    if (mime.getType(path) === 'application/json') {
+      // For JSON, avoid caching
+      res.setHeader('Cache-Control', 'public, max-age=0');
+    }
+  }
+}));
+
 app.use('/', corrections, unitSkills);
 
 // Helmet Middleware
@@ -73,8 +91,14 @@ var cspDirectives = {
   "frame-src": ["'self'"],
   "formAction": ["'self'"],
   "blockAllMixedContent": [],
-  "reportUri": 'https://ffbeequipnext.report-uri.com/r/d/csp/reportOnly',
+  "reportUri": 'https://ffbeequipnext.report-uri.com/r/d/csp/reportOnly'
 };
+
+app.use(helmet.contentSecurityPolicy({ 
+  directives: cspDirectives,
+  reportOnly: false // make sure reportOnly is set to false
+}));
+
 
 // In development, do not report
 if (config.isDev) {
@@ -82,9 +106,9 @@ if (config.isDev) {
 }
 
 app.use(helmet.contentSecurityPolicy({ 
-  directives: cspDirectives, 
-  reportOnly: !config.isDev 
+  directives: cspDirectives
 }));
+
 
 // Static middleware
 if (config.isProd || process.env.DEV_USE_DIST === "yes") {
