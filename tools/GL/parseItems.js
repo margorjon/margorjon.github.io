@@ -443,21 +443,26 @@ getData('equipment.json', function (items) {
 });
 
 function checkForJapanese(inputString) {
-    const allowedRegex = /^[a-zA-Z0-9' !@#$%^&*()+\[\]:@{-~À-ÿ´’.,:;!?'"&$%#(){}\[\]+<>=\/*\s\-]+$/u;
-  const normalizedString = unorm.nfc(inputString);
-  if (!allowedRegex.test(normalizedString)) {
-    return false;
-  }
-  for (const char of normalizedString) {
-    if (/[\u3040-\u30ff\u31f0-\u31ff\u4e00-\u9faf\uff00-\uffef]/.test(char)) {
-      return false;
+    const allowedRegex = /^[a-zA-Z0-9' !@#$%^&*()+\[\]:@{-~À-ÿ´’.,:;!?'"&$%#(){}\[\]+<>=\/*\s\u2191\-]+$/u;
+    const normalizedString = unorm.nfc(inputString);
+    if (!allowedRegex.test(normalizedString)) {
+        return false;
     }
-  }
-  return true;
+    for (const char of normalizedString) {
+        if (/[\u3040-\u30ff\u31f0-\u31ff\u4e00-\u9faf\uff00-\uffef]/.test(char)) {
+        return false;
+        }
+    }
+    return true;
 }
 
 function treatItem(items, itemId, result, skills) {
     var itemIn = items[itemId];
+
+    // if itemIn.name includes Souls Joined then log it
+    if (itemIn.name && itemIn?.name.includes("Souls Joined")) {
+        console.log(itemIn.name);
+    }
 
     const excludedIds = ["405003400", "409013400", "504220290", "308003700", "409018100", "408003100", "301002800"];
     if (excludedIds.includes(itemId)) {
@@ -475,7 +480,6 @@ function treatItem(items, itemId, result, skills) {
 
 
     if (!checkForJapanese(itemOut.name) && languageId === 0) {
-        console.log(`Invalid name: ${itemOut.name}. Name should only contain English, numbers or special characters.`);
         return null;
     }
 
@@ -601,7 +605,6 @@ function treatVisionCard(visionCard, visionCardId, skills) {
     card.name = visionCard.name;
 
     if (!checkForJapanese(visionCard.name)) {
-        console.log(`Invalid name: ${visionCard.name}. Name should only contain English, numbers or special characters.`);
         return null;
     }
 
@@ -796,30 +799,28 @@ function manageRequirement(skill, debugItems, copy) {
 }
 
 function readSkills(itemIn, itemOut, skills) {
-    let debugItems = ['504205260'];
+    let debugItems = ['1100000691'];
     var result = [];
 
     if (itemIn.skills) {
         var masterySkills = [];
         var restrictedSkills = [];
         var itemSetSkills = [];
+        // Loop through all skills
+        // if skill exists and is not active
+        // check if the itemOut has a notStackableSkills property
+        // if not, create it
+        // create a new object for notStackableSkill
+        // loop through all effects_raw
+        // add the effect to the notStackableSkill
+        // add the notStackableSkill to the notStackableSkills property of itemOut
         for (var skillIndex in itemIn.skills) {
             var skillId = itemIn.skills[skillIndex].toString();
             var skill = skills[skillId];
 
             if (skill) {
                 skill.id = skillId;
-                if (skill.unique && !skill.active) {
-                    if (!itemOut.notStackableSkills) {
-                        itemOut.notStackableSkills = {};
-                    }
-                    var notStackableSkill = {};
-                    for (var rawEffectIndex in skill.effects_raw) {
-                        rawEffect = skill.effects_raw[rawEffectIndex];
-                        addEffectToItem(notStackableSkill, skill, rawEffectIndex, skills)
-                    }
-                    itemOut.notStackableSkills[skillId] = notStackableSkill;
-                }
+                itemOut = addNotStackableSkills(skill, itemOut, skills);
                 if (skill.type == "MAGIC") {
                     skill = parseActiveSkill(skillId, skills[skillId], skills, itemOut);
                     if (!itemOut.skills) {
@@ -827,6 +828,7 @@ function readSkills(itemIn, itemOut, skills) {
                     }
                     itemOut.skills.push(skill);
                 } else if (skill.requirements) {
+                    // if the skill has requirements, put it in the restrictedSkills array
                     if (debugItems.includes(itemOut.id)) {
                         console.log("Restricted skill for item", itemOut.name, skill.id);
                     }
@@ -841,7 +843,7 @@ function readSkills(itemIn, itemOut, skills) {
                         for (var rawEffectIndex in skill.effects_raw) {
                             rawEffect = skill.effects_raw[rawEffectIndex];
                             //Light Armor Mastery & Helm Mastery
-                            if (!skill.active && (rawEffect[0] == 0 || rawEffect[0] == 1) && rawEffect[1] == 3 && rawEffect[2] == 5 && skill.effects_raw[1] && (skill.effects_raw[1][0] == 0 || skill.effects_raw[1][0] == 1 ) && skill.effects_raw[1][1] == 3 && skill.effects_raw[1][2] == 6) {
+                            if (!skill.active && (rawEffect[0] == 0 || rawEffect[0] == 1) && rawEffect[1] == 3 && rawEffect[2] == 5 && skill.effects_raw[1] && (skill.effects_raw[1][0] == 0 || skill.effects_raw[1][0] == 1 ) && skill.effects_raw[1][1] == 3 && skill.effects_raw[1][2] == 6) {
                                 addEffectToItem(itemOut, skill, rawEffectIndex, skills)
                                 result.push(itemOut)
                             }
@@ -879,14 +881,38 @@ function readSkills(itemIn, itemOut, skills) {
         }
         var emptyItem = isItemEmpty(itemOut);
         if (debugItems.includes(itemOut.id)) console.log("is Empty ? for item", itemOut.name, emptyItem);
-        if ((masterySkills.length == 0 && restrictedSkills.length ==0) || !emptyItem) {
+        
+        if (restrictedSkills.length > 0 && itemOut.notStackableSkills){
+            // Check if the item has a notStackableSkills property
+            if(itemOut.notStackableSkills) {
+                // check itemOut.notStackableSkills are also in restrictedSkills
+                // loop through restrictedSkills
+                for (var restrictedIndex in restrictedSkills) {
+                    var skill = restrictedSkills[restrictedIndex];
+                    // if the skill is in the notStackableSkills
+                    if(itemOut.notStackableSkills[skill.id]) {
+                        // remove the skill from the notStackableSkills
+                        delete itemOut.notStackableSkills[skill.id];
+                    }
+                }
+
+                // if itemOut.notStackableSkills is empty
+                // delete the property
+                if(Object.keys(itemOut.notStackableSkills).length === 0) {
+                    delete itemOut.notStackableSkills;
+                }
+            }
+            result.push(itemOut);
+        } else if ((masterySkills.length == 0 && restrictedSkills.length == 0) || !emptyItem) {
             result.push(itemOut);
         }
+        // Everything else from this point on is a variant of this base item.
 
         if (masterySkills.length > 0) {
             addMasterySkills(itemOut, masterySkills, result);
         }
         masterySkills = [];
+        // Restricted Skills
         for (var restrictedIndex in restrictedSkills) {
             var skill = restrictedSkills[restrictedIndex];
             var effectsNotTreated = [];
@@ -905,6 +931,7 @@ function readSkills(itemIn, itemOut, skills) {
                     }
                 }
                 addNotTreatedEffects(copy, effectsNotTreated, skill, skill.id);
+                copy = addNotStackableSkills(skill, copy, skills);
                 result.push(copy);
                 if (masterySkills.length > 0) {
                     addMasterySkills(copy, masterySkills, result);
@@ -912,7 +939,7 @@ function readSkills(itemIn, itemOut, skills) {
             }
             if (emptyItem) {
                 var copy = JSON.parse(JSON.stringify(itemOut));
-                manageRequirement(skill, debugItems, copy);
+                manageRequirement(skill, debugItems, copy, skills);
 
                 for (var rawEffectIndex in skill.effects_raw) {
                     rawEffect = skill.effects_raw[rawEffectIndex];
@@ -923,6 +950,7 @@ function readSkills(itemIn, itemOut, skills) {
                     }
                 }
                 addNotTreatedEffects(copy, effectsNotTreated, skill, skill.id);
+                copy = addNotStackableSkills(skill, copy);
                 result.push(copy);
                 if (masterySkills.length > 0) {
                     addMasterySkills(copy, masterySkills, result);
@@ -954,6 +982,20 @@ function readSkills(itemIn, itemOut, skills) {
         result.push(itemOut);
     }
     return result;
+}
+function addNotStackableSkills(skill, itemOut, skills) {
+    if (skill.unique && !skill.active) {
+        if (!itemOut.notStackableSkills) {
+            itemOut.notStackableSkills = {};
+        }
+        var notStackableSkill = {};
+        for (var rawEffectIndex in skill.effects_raw) {
+            addEffectToItem(notStackableSkill, skill, rawEffectIndex, skills)
+        }
+        itemOut.notStackableSkills[skill.id] = notStackableSkill;
+    }
+
+    return itemOut;
 }
 
 function intersect(array1, array2) {
@@ -1162,7 +1204,7 @@ function addEffectToItem(item, skill, rawEffectIndex, skills) {
         addAilmentResist(item, rawEffect[3]);
 
     // Equip X
-    } else if ((rawEffect[0] == 0 || rawEffect[0] == 1) && rawEffect[1] == 3 && rawEffect[2] == 5) {
+    } else if ((rawEffect[0] == 0 || rawEffect[0] == 1) && rawEffect[1] == 3 && rawEffect[2] == 5) {
         if (item.allowUseOf) {
             item.allowUseOf.push(typeMap[rawEffect[3]]);
         } else {
@@ -1299,32 +1341,6 @@ function addEffectToItem(item, skill, rawEffectIndex, skills) {
     } else if ((rawEffect[0] == 0 || rawEffect[0] == 1) && rawEffect[1] == 3 && rawEffect[2] == 24) {
         var drawAttacks = rawEffect[3][0];
         addStat(item, "drawAttacks", drawAttacks);
-
-    // Skill enhancement
-    } else if (rawEffect[2] == 73) {
-        if (!item.skillEnhancement) {
-            item.skillEnhancement = {};
-        }
-        if (Array.isArray(rawEffect[3][0])) {
-            // Skill List 
-            for (var i = rawEffect[3][0].length; i--;) {
-                addStat(item.skillEnhancement, rawEffect[3][0][i].toString(), rawEffect[3][3] / 100);
-            }
-        } else if (Array.isArray(rawEffect[3]) && parseInt(rawEffect[3][1])){
-            // All Abilities of Type
-            let type;
-            if (rawEffect[3][1] === 1) {
-                type = "allPhysicalAttacks"
-            } else if (rawEffect[3][1] === 2) {
-                type = "allMagicalAttacks"
-            } else {
-                console.log("NEW TYPE : " + rawEffect[3][1])
-            }
-            addStat(item.skillEnhancement, type, rawEffect[3][3] / 100);
-        } else {
-            addStat(item.skillEnhancement, rawEffect[3][0].toString(), rawEffect[3][3] / 100);
-        }    
-        
     // Break, stop and charm resistance with turn number
     } else if (rawEffect[2] == 55) {
         if (!item.resist) {
@@ -1397,7 +1413,70 @@ function addEffectToItem(item, skill, rawEffectIndex, skills) {
             item.startOfTurnSkills = [];
         }
         item.startOfTurnSkills.push({chance: rawEffect[3][1], skill:skill});
+    // Skill enhancement
+    } else if (rawEffect[2] == 73) {
+        if (!item.skillEnhancement) {
+            item.skillEnhancement = {};
+        }
+        if (Array.isArray(rawEffect[3][0])) {
+            // Skill List 
+            for (var i = rawEffect[3][0].length; i--;) {
+                addStat(item.skillEnhancement, rawEffect[3][0][i].toString(), rawEffect[3][3] / 100);
+            }
+        } else if (Array.isArray(rawEffect[3]) && parseInt(rawEffect[3][1]) > -1){
+            // All Abilities of Type
+            let type;
+            if (rawEffect[3][1] === 0) {
+                if (Array.isArray(rawEffect[3][2])) {
+                    //[ 0, 3, 73, [ 0, 0, [ 52, 134 ], 5000 ] ] JUMP DAMAGE
+                    if (rawEffect[3][2][0] == 52 || rawEffect[3][2][0] == 134) {
+                        type = "jumpDamage"
+                    }
+                }
+            } else if (rawEffect[3][1] === 1) {
+                type = "allPhysicalAttacks"
+            } else if (rawEffect[3][1] === 2) {
+                type = "allMagicalAttacks"
+            } else {
+                console.log("NEW TYPE : " + rawEffect[3][1])
+            }
+            addStat(item.skillEnhancement, type, rawEffect[3][3] / 100);
+        } else {
+            addStat(item.skillEnhancement, rawEffect[3][0].toString(), rawEffect[3][3] / 100);
+        }    
+    } else if (rawEffect[0] == 0 && rawEffect[1] == 3 && rawEffect[2] == 75) {
+        // killers dependent on weapon type
+        if (!item.killers) {
+            item.killers = [];
+        }
 
+        if (!item.equipedConditions) {
+            item.equipedConditions = [];
+        }
+
+        // if the fourth element of the rawEffect is an array, the array contains the valid weapon types
+        if (Array.isArray(rawEffect[3][0])) {
+            // for each value in the array, get it's value in the typeMap
+            for (var i = rawEffect[3][0].length; i--;) {
+                var weaponType = typeMap[rawEffect[3][0][i]];
+                if (weaponType) {
+                    // if the weapoType is not already in the equipedConditions, add it
+                    if (item.equipedConditions.indexOf(weaponType) == -1) {
+                        item.equipedConditions.push(weaponType);
+                    }
+                } else {
+                    console.log("Weapon type not found", rawEffect[3][0][i]);
+                }
+            }
+        }
+
+        // value 1 of rawEffect[3] is the killer type
+        // values 2 and 3 of rawEffect[3] are the physial and magical percentages
+        // addKiller for each killer type
+        // raceID needs to be pulled from the raceMap
+        // addKiller(item, raceId, physicalPercent, magicalPercent))
+        addKiller(item, rawEffect[3][1], rawEffect[3][2], rawEffect[3][3]);
+        
         // Increase max chain coef
     } else if (rawEffect[2] == 98) {
         addStat(item, 'chainMastery', rawEffect[3][1]);
@@ -2441,7 +2520,7 @@ function isItemEmpty(item) {
             }
         }
     }
-    return !(item.resist || item.dualWielding || item.singleWielding || item.singleWieldingOneHanded || item.lbPerTurn || item.lbFillRate || item.evade || item.evoMag || item.damageVariance || item.jumpDamage || item.element || item.partialDualWield || item.ailments || item.killers || item.mpRefresh || item.esperStatsBonus);
+    return !(item.resist || item.dualWielding || item.singleWielding || item.singleWieldingOneHanded || item.lbPerTurn || item.lbFillRate || item.evade || item.evoMag || item.damageVariance || item.jumpDamage || item.element || item.partialDualWield || item.ailments || item.killers || item.mpRefresh || item.esperStatsBonus || item.notStackableSkills);
 }
 
 function addAccess(item, access) {
@@ -2492,7 +2571,32 @@ function formatItem(item) {
                 result += ", ";
             }
             try {
-                result+= "\"" + property + "\":" + JSON.stringify(item[property]);
+                if (property == "conditional") {
+                    if (item.conditional.length > 1) {
+                        let item1Keys = Object.keys(item.conditional[0]);
+                        let item2Keys = Object.keys(item.conditional[1]);
+                        // check if both are singleWielding for example
+                        if (item1Keys.length === item2Keys.length && item1Keys.every((value, index) => value === item2Keys[index])) {
+                            // if they do match, then get the Object values.
+                            let item1Objects = Object.values(item.conditional[0]);
+                            let item2Objects = Object.values(item.conditional[1]);
+
+                            // get the first key and value of each object
+                            let newPropertyKey = item1Keys[0]; // singleWielding
+                            let newPropertyKey2 = item2Keys[0]; // singleWielding
+                            let item1Value = item1Objects[0]; // {"atk": 200}
+                            let item2Value = item2Objects[0]; // {"mag": 200}
+                            // if the keys match, then update item1Value to include item2Value while not changing the rest of the item.conditional[0][newPropertyKey] object
+                            if (newPropertyKey === "singleWielding" && newPropertyKey2 === "singleWielding") {
+                                item.conditional[0][newPropertyKey] = Object.assign(item1Value, item2Value);
+                                delete item.conditional[1];
+                            }
+                        }
+                    }
+                    result+= "\"" + property + "\":" + JSON.stringify(item[property]);
+                } else {
+                    result+= "\"" + property + "\":" + JSON.stringify(item[property]);
+                }
             } catch (err) {
                 console.log(item)
                 console.log(err)
@@ -2500,6 +2604,10 @@ function formatItem(item) {
         }
     }
     result += "}";
+
+    if (result.endsWith(",null]}")) {
+        result = result.replace(",null]}", "]}");
+    }
     return result;
 }
 

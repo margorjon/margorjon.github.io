@@ -5,7 +5,7 @@ import unorm from 'unorm';
 
 const filterGame = [20001, 20002, 20007, 20008, 20011, 20030, 20026, 20027, 20013, 20014, 20015, 20021, 20026, 20027];
 const filterUnits = ["100014604","100014504","100014703","100014405", "332000105", "204002104", "204002003", "204001904", "204001805", "100017005", "307000303", "307000404", "307000204", "100027005", 
-                     "318000205", "312000505", "312000605","256000101", "204002705", "204002805", "19900010", "100030805", "336000105", "199000101"]
+                     "318000205", "312000505", "312000605","256000101", "204002705", "204002805", "19900010", "100030805", "336000105", "199000101", "312000305"]
 
 const languages = ["en", "zh", "ko", "fr", "de", "es"];
 
@@ -200,17 +200,17 @@ function exDeathFix(units) {
 }
 
 function checkForJapanese(inputString) {
-    const allowedRegex = /^[a-zA-Z0-9' !@#$%^&*()+\[\]:@{-~À-ÿ´’.,:;!?'"&$%#(){}\[\]+<>=\/*\s\-]+$/u;
-  const normalizedString = unorm.nfc(inputString);
-  if (!allowedRegex.test(normalizedString)) {
-    return false;
-  }
-  for (const char of normalizedString) {
-    if (/[\u3040-\u30ff\u31f0-\u31ff\u4e00-\u9faf\uff00-\uffef]/.test(char)) {
-      return false;
+    const allowedRegex = /^[a-zA-Z0-9' !@#$%^&*()+\[\]:@{-~À-ÿ´’.,:;!?'"&$%#(){}\[\]+<>=\/*\s\u2191\-]+$/u;
+    const normalizedString = unorm.nfc(inputString);
+    if (!allowedRegex.test(normalizedString)) {
+        return false;
     }
-  }
-  return true;
+    for (const char of normalizedString) {
+        if (/[\u3040-\u30ff\u31f0-\u31ff\u4e00-\u9faf\uff00-\uffef]/.test(char)) {
+        return false;
+        }
+    }
+    return true;
 }
   
 
@@ -364,6 +364,8 @@ function treatUnit(unitId, unitIn, skills, lbs, enhancementsByUnitId, jpUnits, l
 
     if (jpUnits && unitIn["rarity_max"] == 6 && unitIn.skills && unitIn.skills.length && unitIn.skills[unitIn.skills.length - 1].rarity == 7) {
         var maxRarityInGLData = 0;
+        console.log(unitId)
+        console.log(unitIn.entries)
         for (entryId in unitIn.entries) {
             if (unitIn.entries[entryId].rarity > maxRarityInGLData) {
                 maxRarityInGLData = unitIn.entries[entryId].rarity;
@@ -422,7 +424,11 @@ function treatUnit(unitId, unitIn, skills, lbs, enhancementsByUnitId, jpUnits, l
     if (!data.name) {
         data.name = unitIn.name;
     }
-    data["roles"] = unitIn.roles.map(role => commonParse.unitRoles[role]);
+    //data["roles"] = unitIn.roles.map(role => commonParse.unitRoles[role]);
+    // Get the id of the unit in entries that matches the current maxRarity
+    var unitIdInEntries = Object.keys(unitIn.entries).find(key => unitIn.entries[key].rarity == maxRarity);
+
+    data["roles"] = unitIn.entries[unitIdInEntries].roles.map(role => commonParse.unitRoles[role]);
     if (languageId != 0) {
         data.wikiEntry = unitIn.name.replace(' ', '_');
     }

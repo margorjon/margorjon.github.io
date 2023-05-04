@@ -44,27 +44,25 @@ const weaponBaseDamageVariance =
 
 const valuesToNotRoundDown = ["lbPerTurn", "chainMastery", "evoMag", "lbDamage"];
 
-let notStackableSkillsAlreadyUsed = [];
+function getValue(item, valuePath, defaultValue = 0) {
+    var value = item[valuePath];
 
-function getValue(item, valuePath, notStackableSkillsAlreadyUsed) {
-
-    var value = item[valuePath]; // Item[atk] for instance.
-    
-    if (value == undefined) { // If there isn't a stat of that kind on this item
+    if (value === undefined) {
         if (valuePath.indexOf('.') > -1) {
-            value = getValueFromPath(item, valuePath); // evade.magical, evade.physical, resist|sleep.percent, resist|fire.percent for example.
+            value = getValueFromPath(item, valuePath);
         } else {
-            value = 0; // If we  have no idea what it is, value just equal zero for this stat.
+            value = defaultValue;
         }
-        item[valuePath] = value; // item.atk = value
+        item[valuePath] = value;
     }
-    
-    if (value.min && value.max) { // if it has a min and max, get the average.
+
+    if (value && value.min && value.max) {
         value = (value.min + value.max) / 2;
     }
 
     return value;
 }
+
 
 function getValueFromPath(item, valuePath) {
     var pathTokens = valuePath.split(".");
@@ -251,7 +249,7 @@ function innerCalculateBuildValueWithFormula(itemAndPassives, unitBuild, enemySt
         }
         if (unitBuild.involvedStats.includes("jumpDamage") && (isTwoHanded(itemAndPassives[0]) || isTwoHanded(itemAndPassives[1]))) {
             // variance override for two handed weapons and jumps
-            variance = {"min":2.3,"avg":2.45,"max":2.6};
+            variance = {"min":2.5,"avg":2.65,"max":2.8};
         }
 
         var switchWeapons = false;
@@ -485,8 +483,13 @@ function innerCalculateBuildValueWithFormula(itemAndPassives, unitBuild, enemySt
             coef += context.skillEnhancement["allMagicalAttacks"];
         }
         if (context.currentSkill && context.skillEnhancement["allPhysicalAttacks"] && formula.value.mechanism == "physical") {
+            
             coef += context.skillEnhancement["allPhysicalAttacks"];
         }
+        if (context.currentSkill && context.skillEnhancement["jumpDamage"] && formula.value.mechanism == "physical") {
+            coef += context.skillEnhancement["jumpDamage"];
+        }
+
         if (formula.value.stack) {
             if (context.stack.lastStackingSkillId != "any" && context.stack.lastStackingSkillId != context.currentSkill) {
                 context.stack.lastStackingSkillId == "any";
@@ -563,16 +566,14 @@ function innerCalculateBuildValueWithFormula(itemAndPassives, unitBuild, enemySt
         } else if(formula.value.mechanism == "summonerSkillMAG/SPRMechanism" || formula.value.mechanism == "summonerSkillMAGMechanism" || formula.value.mechanism == "summonerSkillSPRMechanism"){
             if (formula.value.sprSplit > 0) {
                 var sprStat = getStatCalculatedValue(context, itemAndPassives, "spr", unitBuild).total;
-                let coefIncrease = coef - formula.value.magCoef;
                 var sprDamage =
-                    (formula.value.sprCoef + coefIncrease)
+                    ((formula.value.sprCoef * formula.value.sprSplit) + (formula.value.magCoef * formula.value.magSplit))
                     * (sprStat * sprStat)
                     * evoMagMultiplier
                     * evokeDamageBoostMultiplier
                     * resistModifier
                     * weaponImperilCoef
                     * elementBoostModifier
-                    * jumpMultiplier
                     * lbMultiplier
                     / (enemyStats.spr * (1 + (enemyStats.buffs.spr - enemyStats.breaks.spr) / 100));
             } else {
@@ -584,6 +585,7 @@ function innerCalculateBuildValueWithFormula(itemAndPassives, unitBuild, enemySt
                 "max" : (formula.value.magSplit * baseDamage + formula.value.sprSplit * sprDamage) * context.damageMultiplier.max * variance.max,
                 "switchWeapons" : switchWeapons
             }
+            return result;
         } else if(formula.value.mechanism == "mpMagPhysicalDamage") {
             let magStat = getStatCalculatedValue(context, itemAndPassives, "mag", unitBuild).total;
             let mpStat = getStatCalculatedValue(context, itemAndPassives, "mp", unitBuild).total
@@ -1392,6 +1394,7 @@ function calculateStatValue(itemAndPassives, stat, unitBuild, berserk = 0, ignor
     var buffValue = 0;
     if (baseStats.includes(stat)) {
         baseValue = unitBuild.baseValues[stat].total;
+        // itemAndPassives[10] is the VC
         if (itemAndPassives[10] && itemAndPassives[10][stat]) {
             baseValue += itemAndPassives[10][stat];
         }
@@ -1426,30 +1429,24 @@ function calculateStatValue(itemAndPassives, stat, unitBuild, berserk = 0, ignor
                 equipmentStatBonusToApply = esperStatBonus;
             }
             if ("evade.magical" == stat) {
-                calculatedValue = Math.max(calculatedValue, calculateStateValueForIndex(itemAndPassives, equipedIndex, baseValue, currentPercentIncrease, equipmentStatBonusToApply, stat, notStackableSkillsAlreadyUsed));
+                calculatedValue = Math.max(calculatedValue, calculateStateValueForIndex(itemAndPassives, equipedIndex, baseValue, currentPercentIncrease, equipmentStatBonusToApply, stat));
             } else if (equipedIndex < 2 && "atk" == stat) {
-                calculatedValue += calculatePercentStateValueForIndex(itemAndPassives[equipedIndex], baseValue, currentPercentIncrease, stat, notStackableSkillsAlreadyUsed);
+                calculatedValue += calculatePercentStateValueForIndex(itemAndPassives[equipedIndex], baseValue, currentPercentIncrease, stat);
                 calculatedValue += calculateFlatStateValueForIndex(itemAndPassives, equipedIndex, equipmentStatBonus - 1, stat);
             } else {
-                calculatedValue += calculateStateValueForIndex(itemAndPassives, equipedIndex, baseValue, currentPercentIncrease, equipmentStatBonusToApply, stat, notStackableSkillsAlreadyUsed);
-            }
-            if (itemAndPassives[equipedIndex].notStackableSkills) {
-                for (var skillId in itemAndPassives[equipedIndex].notStackableSkills) {
-                    if (!notStackableSkillsAlreadyUsed.includes(skillId)) {
-                        notStackableSkillsAlreadyUsed.push(skillId);
-                    }
-                }
+                calculatedValue += calculateStateValueForIndex(itemAndPassives, equipedIndex, baseValue, currentPercentIncrease, equipmentStatBonusToApply, stat);
             }
         }
     }
 
-    if (stat === "chainMastery") {
-        calculatedValue = 4  + (calculatedValue / 100)
+    if (stat == "chainMastery") {
+        calculatedValue = (calculatedValue  / 100) + 4;
     }
 
+    // check if the itemAndPassives have a not stackable skill
+    calculatedValue = checkForNotStackableSkills(itemAndPassives, stat, unitBuild, calculatedValue)
 
-
-    if ("atk" == stat) {
+    if (stat === "atk") {
         let realCap =  calculatedValue;
         var result = {"right":0,"left":0,"total":0,"bonusPercent":currentPercentIncrease.value, "overcap": realCap};
         var right = calculateFlatStateValueForIndex(itemAndPassives, 0, 1, stat);
@@ -1463,7 +1460,6 @@ function calculateStatValue(itemAndPassives, stat, unitBuild, berserk = 0, ignor
             result.left = 0;
             result.total = result.right;
         }
-        return result;
     } else {
         let realCap = calculatedValue;
         if (stat === "lbDamage" || stat === "jumpDamage" || stat === "evoMag" || stat === "evokeDamageBoost.all" || stat.includes("%")) {
@@ -1483,17 +1479,91 @@ function calculateStatValue(itemAndPassives, stat, unitBuild, berserk = 0, ignor
         if (itemAndPassives[1] && weaponList.includes(itemAndPassives[1].type)) {
             result.left = result.total;
         }
-        return result;
     }
+
+    return result;
 }
 
-function calculateStateValueForIndex(items, index, baseValue, currentPercentIncrease, equipmentStatBonus, stat, notStackableSkillsAlreadyUsed) {
+function checkForNotStackableSkills(itemsAndPassives, stat, unitBuild, calculatedValue) {
+   // check if the itemAndPassives have a not stackable skill
+    for (var equipedIndex = itemsAndPassives.length; equipedIndex--;) {
+        if (itemsAndPassives[equipedIndex]) {
+            var item = itemsAndPassives[equipedIndex];
+            if (item.notStackableSkills) {
+                var skill = item.notStackableSkills;
+                if (skill) {
+                    // forEach not stackable skill in the skill object
+                    Object.keys(skill).forEach(function(key) {
+                        var skillId = key;
+                        var skillValue = skill[key];
+                        if (skillValue.staticStats) {
+                            var skillStaticStats = skillValue.staticStats;
+                            if (skillStaticStats[stat]) {
+                                var skillStatValue = skillStaticStats[stat];
+                                if (skillStatValue) {
+                                    // count how many of this item is equipped
+                                    var count = 0;
+                                    for (var i = 0; i < itemsAndPassives.length; i++) {
+                                        if (itemsAndPassives[i] && itemsAndPassives[i].id == item.id) {
+                                            count++;
+                                        }
+                                    }
+                                    // and then add the value to the calculatedValue
+                                    if (count == 1 && stat != "atk") {
+                                        calculatedValue += skillStatValue;
+                                        // But if more than one of the item is equipped, then only add half of the value
+                                    } else if (count > 1 && stat != "atk") {
+                                        calculatedValue += skillStatValue / 2
+                                    } else if (count > 1 && stat == "atk") {
+                                        calculatedValue -= skillStatValue / 2;
+                                    }
+
+                                    if (stat == "atk") {
+                                        if (equipedIndex >= 2) {
+                                            calculatedValue += skillStatValue;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+
+                        if (stat === "chainMastery" && skillValue.chainMastery) {
+                            var chainMastery = skillValue.chainMastery;
+                            if (chainMastery) {
+                                // count how many of this item is equipped
+                                var count = 0;
+                                for (var i = 0; i < itemsAndPassives.length; i++) {
+                                    if (itemsAndPassives[i] && itemsAndPassives[i].id == item.id) {
+                                        count++;
+                                    }
+                                }
+
+                                // and then add the value to the calculatedValue
+                                if (count == 1) {
+                                    calculatedValue += (chainMastery / 100);
+                                    // But if more than one of the item is equipped, then only add half of the value
+                                } else if (count > 1) {
+                                    calculatedValue += ((chainMastery / 100) / 2);
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+        }
+    }
+
+    return calculatedValue;
+}
+
+function calculateStateValueForIndex(items, index, baseValue, currentPercentIncrease, equipmentStatBonus, stat) {
     let item = items[index];
     if (item) {
         if (stat == "lbPerTurn") {
             var value = 0;
             if (item.lbPerTurn) {
-                var lbPerTurn = getValue(item, "lbPerTurn", notStackableSkillsAlreadyUsed);
+                var lbPerTurn = getValue(item, "lbPerTurn");
                 value += lbPerTurn;
             }
             if (item.lbFillRate) {
@@ -1502,26 +1572,33 @@ function calculateStateValueForIndex(items, index, baseValue, currentPercentIncr
             return value;
         } else {
             let value;
-            let staticValue = item.staticStats ? item.staticStats[stat] || 0 : 0;
-            // Check to see if item.notStackableSkills is defined
+            let staticValue = item.staticStats?.[stat] || 0;
+
+            // if item has notStackableSkills, and notStackableSkills contains a skill with that stat check if it has staticStats for the stat && item.staticStats contains the stat
             if (item.notStackableSkills) {
-                // see if any of the skills in item.notStackableSkills are in notStackableSkillsAlreadyUsed
-                for (var skillId in item.notStackableSkills) {
-                    if (notStackableSkillsAlreadyUsed.includes(skillId)) {
-                        // if this is not the only copy of the item equipped, staticValue = 0
-                        if (items.filter(i => i && i.id === item.id).length > 1) {
-                            staticValue =  staticValue / 2;
-                        }
-                    }  
-                }
+                Object.values(item.notStackableSkills).forEach(skill => {
+                    if (skill.staticStats && skill.staticStats[stat]) {
+                        staticValue = 0;
+                    }
+                });
             }
+
+                // 
             if (index === 10 && baseStats.includes(stat)) {
                 value = 0; // Vision Card flat stats are added to the base value directly earlier in the calculation
             } else {
-                value = getValue(item, stat, notStackableSkillsAlreadyUsed);
+                value = getValue(item, stat);
+
+                if (stat === "chainMastery" && item.notStackableSkills) {
+                    Object.values(item.notStackableSkills).forEach(skill => {
+                        if (skill.chainMastery) {
+                            value = 0;
+                        }
+                    });
+                }
             }
             if (item[percentValues[stat]]) {
-                var itemPercentValue = getValue(item, percentValues[stat], notStackableSkillsAlreadyUsed);
+                var itemPercentValue = getValue(item, percentValues[stat]);
                 var percentTakenIntoAccount = Math.min(itemPercentValue, Math.max(getStatBonusCap(stat) - currentPercentIncrease.value, 0));
                 currentPercentIncrease.value += itemPercentValue;
                 return value * equipmentStatBonus + percentTakenIntoAccount * baseValue / 100 + staticValue;
@@ -1539,12 +1616,12 @@ function getStatBonusCap(stat) {
             return 300;
         case 'lbPerTurn':
             return 12;
-        case 'lbFillRate': // removed bugged support.
+        case 'lbFillRate':
             return 1000;
         case 'tdh':
             return 400;
         case 'tdw':
-            return 200;
+            return 400;
         case 'jumpDamage':
             return 800;
         case 'evoMag':
@@ -1633,6 +1710,9 @@ function isApplicable(item, unit) {
     return true;
 }
 
+const elementSet = new Set(elementList);
+const typeSet = new Set(typeList);
+
 function areConditionOK(item, equiped, level = 0, exLevel) {
     if (level && item.levelCondition && item.levelCondition > level) {
         return false;
@@ -1644,7 +1724,7 @@ function areConditionOK(item, equiped, level = 0, exLevel) {
         }
     }
     if (item.equipedConditions) {
-        for (var conditionIndex = item.equipedConditions.length; conditionIndex--;) {
+        for (var conditionIndex = 0, len = item.equipedConditions.length; conditionIndex < len; conditionIndex++) {
             if (!isEquipedConditionOK(equiped, item.equipedConditions[conditionIndex])) {
                 return false;
             }
@@ -1657,39 +1737,32 @@ function isEquipedConditionOK(equiped, condition) {
     if (Array.isArray(condition)) {
         return condition.some(c => isEquipedConditionOK(equiped, c));
     } else {
-        if (elementList.includes(condition)) {
-            if ((equiped[0] && equiped[0].element && equiped[0].element.includes(condition)) || (equiped[1] && equiped[1].element && equiped[1].element.includes(condition))) {
-                return true;
-            }
-        } else if (typeList.includes(condition)) {
-            for (var equipedIndex = 0; equipedIndex < 11; equipedIndex++) {
-                if (equiped[equipedIndex] && equiped[equipedIndex].type == condition) {
-                    return true;
-                }
-            }
-        } else if (condition == "unarmed") {
-            if (!equiped[0] && ! equiped[1]) {
-                return true;
-            }
-        } else {
-            for (var equipedIndex = 0; equipedIndex < 11; equipedIndex++) {
-                if (equiped[equipedIndex] && equiped[equipedIndex].id) {
-                    if (equiped[equipedIndex].id.toString().includes("-")) {
-                        let cardLevelId = equiped[equipedIndex].id.split('-');
-                        if (equiped[equipedIndex] && cardLevelId[0] == condition) {
-                            return true;
-                        }
-                    } else {
-                        if (equiped[equipedIndex] && equiped[equipedIndex].id == condition) {
-                            return true;
+        switch (true) {
+            case elementSet.has(condition):
+                return (equiped[0] && equiped[0].element && equiped[0].element.includes(condition)) || (equiped[1] && equiped[1].element && equiped[1].element.includes(condition));
+            case typeSet.has(condition):
+                return equiped.some((equipment, index) => {
+                    if (equipment && equipment.type === condition) {
+                        return true;
+                    }
+                });
+            case condition === "unarmed":
+                return !equiped[0] && !equiped[1];
+            default:
+                return equiped.some((equipment, index) => {
+                    if (equipment && equipment.id) {
+                        if (equipment.id.toString().includes("-")) {
+                            let cardLevelId = equipment.id.split('-');
+                            return cardLevelId[0] === condition;
+                        } else {
+                            return equipment.id === condition;
                         }
                     }
-                }
-            }
+                });
         }
     }
-    return false;
 }
+
 
 function findBestItemVersion(build, item, itemWithVariation, unit) {
     var itemVersions = itemWithVariation[item.id];

@@ -148,7 +148,7 @@ class DataStorage {
         });
     }
     
-    prepareData(itemsToExclude, enemyStats, elementBuffs) {
+    prepareData(itemsToExclude, enemyStats, elementBuffs, formula) {
         this.dataByType = {};
         this.dataWithCondition = [];
         this.dualWieldSources = [];
@@ -270,7 +270,7 @@ class DataStorage {
                 var numberNeeded = 1;
                 if (weaponList.includes(type) || type == "accessory") {numberNeeded = 2}
                 if (type == "materia") {numberNeeded = 4}
-                var itemPool = new ItemPool(numberNeeded, this.unitBuild.involvedStats, enemyStats, this.desirableElements, this.unitBuild.desirableItemIds, this.skillIds);
+                var itemPool = new ItemPool(numberNeeded, this.unitBuild.involvedStats, enemyStats, this.desirableElements, this.unitBuild.desirableItemIds, this.skillIds, true, true, false);
                 /*if (this.defaultWeaponEnhancement && this.defaultWeaponEnhancement.length > 0 && weaponList.includes(type)) {
                     this.dataByType[type].forEach(entry => {
                         if (!entry.item.enhancements) {
@@ -307,7 +307,7 @@ class DataStorage {
         var types = Object.keys(dualWieldByType);
         this.dualWieldSources = [];
         for (var i = types.length; i--;) {
-            var itemPool = new ItemPool(1, this.unitBuild.involvedStats, enemyStats, this.desirableElements, this.unitBuild.desirableItemIds, this.skillIds);
+            var itemPool = new ItemPool(1, this.unitBuild.involvedStats, enemyStats, this.desirableElements, this.unitBuild.desirableItemIds, this.skillIds, true, true, false);
             itemPool.addItems(dualWieldByType[types[i]]);
             itemPool.prepare();
             this.dualWieldSources = this.dualWieldSources.concat(itemPool.getEntries().map(x => x.item));
@@ -491,15 +491,14 @@ class DataStorage {
                 if (item.lbPerTurn || item.lbFillRate) return true;
             } else if (stats[index] == "meanDamageVariance") {
                 if (item.meanDamageVariance && item.meanDamageVariance > 1) return true;
+            } else if (stats[index] == "skillEnhancement") {
+                if (item.skillEnhancement && item.skillEnhancement[0] > 0) return true;
             } else if (stats[index] == "chainMastery") {
                 if (item.chainMastery && item.chainMastery > 0) {
                     return true;
                 }
                 
                 if (item.type == "visionCard") {
-                    if (item.name.includes("Not until the end")) {
-                        console.log(item)
-                    }
                     let vcLevels = item.levels;
                     vcLevels.forEach((levelNumber) => {
                         if (levelNumber.chainMastery &&  levelNumber.chainMastery > 0) {

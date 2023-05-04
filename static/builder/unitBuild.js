@@ -2,7 +2,7 @@ const involvedStatsByValue = {
     "physicalDamage":                    ["atk","weaponElement","physicalKiller","meanDamageVariance", "chainMastery"],
     "magicalDamage":                     ["mag","magicalKiller", "chainMastery", "meanDamageVariance"],
     "hybridDamage":                      ["atk","mag","weaponElement","physicalKiller","meanDamageVariance", "chainMastery"],
-    "jumpDamage":                        ["atk","weaponElement","physicalKiller","meanDamageVariance","jumpDamage", "chainMastery"],
+    "jumpDamage":                        ["atk","weaponElement","physicalKiller","meanDamageVariance","jumpDamage", "chainMastery", "skillEnhancement"],
     "magDamageWithPhysicalMechanism":    ["mag","weaponElement","physicalKiller","meanDamageVariance", "chainMastery"],
     "sprDamageWithPhysicalMechanism":    ["spr","weaponElement","physicalKiller","meanDamageVariance", "chainMastery"],
     "defDamageWithPhysicalMechanism":    ["def","weaponElement","physicalKiller","meanDamageVariance", "chainMastery"],
@@ -161,6 +161,7 @@ class UnitBuild {
                 
                 
                 if (formula.value.damageType === "body") {
+                    this.addToInvolvedStats(["skillEnhancement.allPhysicalAttacks"]);
                     if (formula.value.use) {
                         this.addToInvolvedStats([formula.value.use.stat]);
                         this.addToInvolvedStats(["newDamageFormula"]);
@@ -175,10 +176,10 @@ class UnitBuild {
                     }
                 }
                 if (formula.value.jump) {
-                    this.addToInvolvedStats(["jumpDamage"]);
+                    this.addToInvolvedStats(["jumpDamage", "skillEnhancement.jumpDamage"]);
                 }
             } else if (formula.value.mechanism === "magical") {
-                this.addToInvolvedStats(["magicalKiller", "meanDamageVariance"]);
+                this.addToInvolvedStats(["magicalKiller", "meanDamageVariance", "skillEnhancement.allMagicalAttacks"]);
                 if (formula.value.damageType === "mind") {
                     if (formula.value.use) {
                         this.addToInvolvedStats([formula.value.use.stat]);
@@ -386,6 +387,10 @@ class UnitBuild {
         this._braveShift = unitShift;
     }
 
+    getBraveshift() {
+        return this._braveShift;
+    }
+
     hasBraveShift() {
         return this._braveShift !== null;
     }
@@ -429,7 +434,7 @@ class UnitBuild {
         if(this.unitShift._tdwCap) {
             return this.unitShift._tdwCap.value;
         } else {
-            this.unitShift._tdwCap = { "value": 2};
+            this.unitShift._tdwCap = { "value": 4};
             return this.unitShift._tdwCap.value;
         }
     }

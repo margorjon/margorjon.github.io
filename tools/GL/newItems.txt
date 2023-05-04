@@ -10,3 +10,124 @@ Starting
 Starting
 "401014307":Curse of Immunity Melissa
 "401014317":Curse of Immunity Melissa BS
+Starting
+"409074600":Tactician Magician's Pigaches (FFXI)
+"409074800":Tactician Magician's Pigaches (FFXI)
+"409074900":Tactician Magician's Pigaches (FFXI)
+"409074900":Tactician Magician's Pigaches (FFXI)
+Starting
+"211001607":Lady Shantotto
+"211001617":Lady Shantotto BS
+"211001707":Lion
+"211001717":Lion BS
+
+Starting
+"1100000710":Red Demon Mask
+"1100000711":Gachirin Blade
+"1100000719":Wandering Swordsman's Headwear
+"1100000720":Fiendish Armor
+"1100000721":Fiendish Armor+
+"1100000722":Fiendish Armor++
+"1100000725":Conqueror's Celestite Crown of Will+
+"1100000726":Champion's Celestite Crown of Will+
+"1100000727":Gravekeeper's Celestite Crown of Will+
+"1100000728":Magister's Celestite Crown of Will+
+"1100000729":Ruler's Celestite Crown of Will+
+"1500000225":Wish for Demonic Power
+Starting
+"401014407":Blade of Vengeance Ibara
+"401014417":Blade of Vengeance Ibara BS
+Starting
+"303013500":Denial of Dominance
+"303013500":Denial of Dominance
+"407007400":Darklord's Armor (Regalia)
+Starting
+"100040607":Dioxus
+"100040617":Dioxus BS
+Starting
+"313011000":Gunner Manipulator
+"313011000":Gunner Manipulator
+"313011100":Zero Pulsar
+"313011200":Zero Pulsar
+"313011300":Zero Pulsar
+"313011400":Zero Pulsar
+"405025100":Roca's Pilot Suit
+Starting
+"100040717":Raegen -Dark Lineage- BS
+"100040817":Lasswell -Dark Lineage- BS
+"100040907":Roca -Dark Lineage-
+"100040917":Roca -Dark Lineage- BS
+Starting
+Starting
+Starting
+"304012200":Frostblade
+"304012200":Frostblade
+"308011500":Trance Reaper
+"312006600":Swiftbolt
+"312006600":Swiftbolt
+"1100000730":Dah Hamma+
+"1100000731":Mint Magic Stick+
+"1100000732":Forgotten Ceremonial Blade+
+"504244120":Tenacious Warrior
+Starting
+"100041007":Veritas of the Frost
+"100041017":Veritas of the Frost BS
+"100041107":Sakura -Dark Lineage-
+"100041117":Veritas of the Bolt BS
+Starting
+"302021100":Crimson Claw
+"302021200":Crimson Darkness
+"302021200":Crimson Darkness
+"302021300":Crimson Claw
+"302021400":Crimson Claw
+"302021400":Crimson Claw
+"312006700":Astrum
+"312006700":Astrum
+"406007700":Dark Crimson Armor
+"504244140":Magitek Defense Battle Tactics
+Starting
+Starting
+"302021200":Crimson Darkness
+"302021200":Crimson Darkness
+"312006700":Astrum
+"312006700":Astrum
+"406007700":Dark Crimson Armor
+"504244140":Magitek Defense Battle Tactics
+Starting
+"100041207":Flaring Aether Rain
+"100041217":Flaring Aether Rain BS
+"100041307":Fina -Dark Lineage-
+"100041317":Fina -Dark Lineage- BS
+Starting
+"1100000723":Helm of Remorse
+"1100000723":Helm of Remorse
+"1100000724":Renegade
+"1100000724":Renegade
+"1100000735":Magister's Celestite Signet of Will+
+"1100000736":Emperor's Celestite Signet of Will+
+"1100000737":Explorer's Celestite Signet of Will+
+"1100000738":Nomad's Celestite Signet of Will+
+"1100000739":Physician's Celestite Signet of Will+
+"1500000227":Wing Clipping
+"1500000228":Perfect Provocation
+Starting
+"401014507":Dark Knight Duane
+"401014517":Dark Knight Duane BS
+Starting
+"302022400":Genesis's Sword
+"302022400":Genesis's Sword
+"304012300":Masamune (FFVII REMAKE)
+"304012300":Masamune (FFVII REMAKE)
+"315026200":Cissnei's Shuriken
+"315026200":Cissnei's Shuriken
+"405026000":Genesis's Coat
+"405026100":Genesis's Coat
+"405026200":Genesis's Coat
+"405026200":Genesis's Coat
+"405026300":Turks Uniform (Cissnei)
+"504244287":Rivalry with a Hero
+Starting
+"207002807":Genesis
+"207002817":Genesis BS
+"207003307":Cissnei
+"207003317":Cissnei BS

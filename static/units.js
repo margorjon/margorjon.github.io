@@ -748,6 +748,10 @@ function awakenFollowUp(unitId) {
     markSaveNeeded();
 }
 
+function clamp(value, minValue, maxValue) {
+    return Math.max(minValue, Math.min(maxValue, value));
+}
+
 function editUnit(unitId) {
     
     if (!ownedUnits[unitId]) {
@@ -793,6 +797,10 @@ function editUnit(unitId) {
             '<label for="ownedFragmentNumber">Owned Fragment number</label>' +
             '<input type="number" class="form-control" id="ownedFragmentNumber" placeholder="Enter owned number" value="' + (ownedConsumables[unit.fragmentId] || 0) + '" step="5">' +
             '</div>';
+        form += '<div class="form-group">' +
+            '<label for="exRank">EX Level</label>' +
+            '<input type="number" class="form-control" id="exRank" placeholder="Enter highest ex rank" value="' + (ownedUnits[unitId].exRank ?? 0) + '">' +
+            '</div>';
     }
 
 
@@ -819,6 +827,8 @@ function editUnit(unitId) {
                             if (unit.fragmentId) {
                                 ownedConsumables[unit.fragmentId] = parseInt($("#ownedFragmentNumber").val() || 0);
                             }
+                            const exRankString = $("#exRank").val();
+                            ownedUnits[unitId].exRank = exRankString ? clamp(parseInt(exRankString), 0, 3) : undefined;
                         }
                         if (unit.max_rarity == '7' || (unit.max_rarity == 'NV' && unit.min_rarity != 'NV')) {
                             ownedUnits[unitId].sevenStar = parseInt($("#ownedSeventStarNumber").val() || 0);
@@ -1300,7 +1310,7 @@ function treatImportFile(evt) {
                             return;
                         } else {
                             if (!importedOwnedUnit[baseUnitId]) {
-                                importedOwnedUnit[baseUnitId] = {"number":0,"farmable":0,"sevenStar":0,"farmableStmr":0};
+                                importedOwnedUnit[baseUnitId] = {"number":0,"farmable":0,"sevenStar":0,"farmableStmr":0,"exRank":0};
                             }
                             if (unit.tmr < 1000) {
                                 importedOwnedUnit[baseUnitId].farmable++;
@@ -1313,6 +1323,8 @@ function treatImportFile(evt) {
                                 if (unit.stmr < 1000) {
                                     importedOwnedUnit[baseUnitId].farmableStmr++;
                                 }
+                                // Store the max awakened ex level of this unit.
+                                importedOwnedUnit[baseUnitId].exRank = Math.max(importedOwnedUnit[baseUnitId].exRank, unit.exRank);
                             } else if (unit.id.endsWith("7")) { // Seven star units
                                 importedOwnedUnit[baseUnitId].sevenStar++;
                                 if (unit.stmr < 1000) {

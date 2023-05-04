@@ -3,6 +3,7 @@ var wikiBaseUrl = "https://exvius.fandom.com/";
 var data;
 var units;
 var ownedUnits;
+var actuallyOwnedUnits;
 var itemInventory;
 var ownedEspers;
 var ownedConsumables;
@@ -55,7 +56,7 @@ window.cancelIdleCallback =
  * Check if localStorage is enable and available
  * Adapted from https://github.com/Modernizr/Modernizr/blob/master/feature-detects/storage/localstorage.js
  */
-var localStorageAvailable = function(){
+function localStorageAvailable() {
     var enabled = false;
     if (window.localStorage) {
         var test = "test";
@@ -68,7 +69,7 @@ var localStorageAvailable = function(){
         }
     }
     return enabled;
-}();
+};
 
 function onThemeChange() {
     setTheme($('#themeSelector select').val());
@@ -522,7 +523,7 @@ function getConditionalHtml(conditionals) {
 }
 
 // Create an HTML span containing the stats of the item
-var getStatDetail = function(item) {
+function getStatDetail(item) {
     var detail = "";
     var first = true;
     var statsToDisplay = baseStats;
@@ -709,7 +710,7 @@ function getAccessHtml(item) {
 }
 
 // Some field in the data can use a special syntax to display link to the wiki. This is done by using brace ( blabla [name] blabla). This replace the parts inside braces by html links.
-var toHtml = function(text) {
+function toHtml(text) {
     var textWithAddedAnchors = text.replace(/(\[[^\]]*\])/g, function(v) {
         var vWithoutBrace = v.substring(1, v.length - 1);
         var token = vWithoutBrace.split("|");
@@ -733,7 +734,7 @@ var toHtml = function(text) {
 };
 
 // Return the wiki url corresponding to the name
-var toUrl = function(name) {
+function toUrl(name) {
     if (!name) {
         return "";
     }
@@ -749,7 +750,7 @@ var toUrl = function(name) {
     return link;
 };
 
-var toLink = function(text, link = text, forceLinkDisplay = false) {
+function toLink(text, link = text, forceLinkDisplay = false) {
     if (server == "GL") {
         return '<span>' + text + '</span><a href="' + toUrl(link) + '" target="_blank" rel="noreferrer" onclick="event.stopPropagation();"><span class="glyphicon glyphicon-new-window wikiLink"></span></a>';
     } else {
@@ -798,7 +799,7 @@ function isEnter(evt) {
 };
 
 // Get the values for a filter type
-var getSelectedValuesFor = function(type) {
+function getSelectedValuesFor(type) {
     var values = [];
         $('.active>input[name='+ type +']').each(function() {
             values.push($(this).val());
@@ -1270,7 +1271,7 @@ function keepOnlyOneInstance(data) {
 }
 
 // Sort by calculated value (will be 0 if not sort is asked) then by name
-var sort = function(items, unitId) {
+function sort(items, unitId) {
     return items.sort(function (item1, item2){
         if (unitId) {
             if (item1.tmrUnit == unitId) {
@@ -1320,7 +1321,7 @@ var sort = function(items, unitId) {
 };
 
 // If sort is required, this calculate the effective value of the requested stat, based on the unit stat for percentage increase.
-var calculateValue = function(item, baseStat, stat, ailments, elements, killers) {
+function calculateValue(item, baseStat, stat, ailments, elements, killers) {
     var calculatedValue = 0;
     if (item[stat] && stat != "evade") {
         calculatedValue = item[stat];
@@ -1379,7 +1380,7 @@ var calculateValue = function(item, baseStat, stat, ailments, elements, killers)
 };
 
 // Return true if the two arrays share at least one value
-var matches = function(array1, array2) {
+function matches(array1, array2) {
     var match = false;
     $(array1).each(function(index, value) {
         if (array2.includes(value)) {
@@ -1389,7 +1390,7 @@ var matches = function(array1, array2) {
     return match;
 };
 
-var includeAll = function(array1, array2) {
+function includeAll(array1, array2) {
     for (var index in array2) {
         if (!array1.includes(array2[index])) {
             return false;
@@ -1399,7 +1400,7 @@ var includeAll = function(array1, array2) {
 };
 
 // Return true if the item is exclusive to something that does not matches the selected unit
-var exclusiveForbidAccess = function(item, selectedUnitId) {
+function exclusiveForbidAccess(item, selectedUnitId) {
     if (item.exclusiveSex && units[selectedUnitId].sex != item.exclusiveSex) {
         return true;
     }
@@ -1413,7 +1414,7 @@ var exclusiveForbidAccess = function(item, selectedUnitId) {
 }
 
 // Return true if the various fields of the items contains all the searched terms
-var containsText = function(text, item) {
+function containsText(text, item) {
 
     var result = true;
     getSearchTokens(text).forEach(function (token) {
@@ -1445,12 +1446,12 @@ function getSearchTokens(text) {
 
 
 // Return true if the item has the required stat
-var hasStat = function(stat, item) {
+function hasStat(stat, item) {
     return item[stat] || item[stat+'%'] || (item.staticStats && item.staticStats[stat]) || (stat == 'inflict' && (item.element || item.ailments || item.killers)) || (stat == 'resist' && item.resist);
 };
 
 // Return true if the item has all the required stats
-var hasStats = function(additionalStat, item) {
+function hasStats(additionalStat, item) {
     var match = true;
     $(additionalStat).each(function(index, addStat) {
         if (!item[addStat] && !item[addStat + '%'] && !(addStat=='twoHanded' && isTwoHanded(item))) {
@@ -1465,7 +1466,7 @@ function isTwoHanded(item) {
 }
 
 // Return true if the item has at least one access that is not forbidden by filters
-var haveAuthorizedAccess = function(forbiddenAccessList, item) {
+function haveAuthorizedAccess(forbiddenAccessList, item) {
     var hasAccess = false;
     if (forbiddenAccessList.includes("unitExclusive") && item.exclusiveUnits) {
         return false;
@@ -1477,7 +1478,7 @@ var haveAuthorizedAccess = function(forbiddenAccessList, item) {
 };
 
 // Return true if one access is not forbidden by filters
-var isAccessAllowed = function(forbiddenAccessList, access) {
+function isAccessAllowed(forbiddenAccessList, access) {
     var accessAllowed = true;
     $(forbiddenAccessList).each(function (index, accessToSplit) {
         $(accessToSplit.split('/')).each(function(index, forbiddenAccess) {
@@ -2024,7 +2025,7 @@ function saveConsumables(successCallback, errorCallback) {
     });
 }
 
- function saveEspers(successCallback, errorCallback, forceSave = false) {
+function saveEspers(successCallback, errorCallback, forceSave = false) {
     if (!forceSave && (!ownedEspers || Object.keys(ownedEspers).length == 0)) {
         if (confirm("You're trying to save empty espers. Are you sure you want to erase your espers ?")) {
             saveEspers(successCallback, errorCallback, true);
@@ -2461,6 +2462,7 @@ function adaptItemInventoryForMultipleRareEnchantments() {
 
 let waitingCallbacks = [];
 let keysReady = [];
+
 function registerWaitingCallback(waitingKeys, callback) {
     let keys = waitingKeys.filter(k => !keysReady.includes(k));
     if (keys.length === 0) {
@@ -2469,6 +2471,7 @@ function registerWaitingCallback(waitingKeys, callback) {
         waitingCallbacks.push({"keys":keys, "callback":callback});
     }
 }
+
 function waitingCallbackKeyReady(key) {
     keysReady.push(key);
     waitingCallbacks.filter(wc => wc.keys.includes(key)).forEach(wc => {
@@ -2562,7 +2565,7 @@ function computeConditionalCombinations(item, conditionals, onCombinationFound,i
         if (conditionals[index].equipedConditions) {
             if (!item.equipedConditions) item.equipedConditions = [];
             item.equipedConditions = item.equipedConditions.concat(conditionals[index].equipedConditions).filter((c, i, a) => a.indexOf(c) === i);
-            if (!isEquipedConditionViable(item.equipedConditions)) {
+            if (areConditionOK(item.equipedConditions)) {
                 return;
             }
         }
@@ -2578,13 +2581,15 @@ function computeConditionalCombinations(item, conditionals, onCombinationFound,i
         if (conditionals[index].exclusiveRoles) {
             item.exclusiveRoles = conditionals[index].exclusiveRoles;
         }
+        if (conditionals[index].chainMastery) {
+          item.chainMastery = conditionals[index].chainMastery;
+        }
+        if (conditionals[index].singleWielding) {
+          item.singleWielding = conditionals[index].singleWielding;
+        }
+        
         computeConditionalCombinations(item, conditionals, onCombinationFound, index + 1);
     }
-}
-
-function isEquipedConditionViable(equipedConditions) {
-    // TODO
-    return true;
 }
 
 function checkUnitImageLevel(unitId, unitData){
@@ -2602,6 +2607,8 @@ function checkUnitImageLevel(unitId, unitData){
 
     return(iconId)
 }
+
+//document ready
 
 $(function() {
     $.notify.defaults({"globalPosition":"bottom right"});
@@ -2669,6 +2676,7 @@ $(function() {
         });
         $.get(server + '/units', function(result) {
             ownedUnits = result;
+            actuallyOwnedUnits = result;
             if (result.version && result.version == 3) {
                 getStaticData("units", false, function(allUnitResult) {
                     for (var unitSerieId in allUnitResult) {
@@ -2870,4 +2878,21 @@ const throttle = (func, limit) => {
       }, limit - (Date.now() - lastRan))
     }
   }
+}
+
+/** Saves a setting to local storage. */
+function saveSetting(key, value) {
+    if (localStorageAvailable) {
+        localStorage.setItem(key, value);
+    }
+}
+
+/** Returns a setting from local storage if available, otherwise returns defaultValue. */
+function getSetting(key, defaultValue) {
+    let result = defaultValue;
+    if (localStorageAvailable) {
+        result = localStorage.getItem(key) ?? defaultValue;
+    }
+
+    return result;
 }

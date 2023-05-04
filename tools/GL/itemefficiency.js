@@ -81,7 +81,7 @@ const typeMap = {
     60: 'accessory'
 }
 //'HP', 'HP%', 'MP', 'MP%', 'ATK', 'ATK%', 'MAG', 'MAG%', 'DEF', 'DEF%', 'SPR', 'SPR%', 'tdh', 'tdw', 'lbDamage', 'dualwield'
-let goalCritieria = ['DEF']
+let goalCritieria = ['ATK', 'ATK%', 'tdh', 'lbDamage']
 
 let unitCriteria = {
     "baseATK": 430,
@@ -277,18 +277,26 @@ function getStatBonusCap(stat) {
             return 300;
         case 'lbPerTurn':
             return 12;
-        case 'lbFillRate': // removed bugged support.
+        case 'lbFillRate':
             return 1000;
         case 'tdh':
             return 400;
         case 'tdw':
-            return 200;
+            return 400;
         case 'jumpDamage':
             return 800;
         case 'evoMag':
             return 300;
         case 'evokeDamageBoost.all':
             return 300;
+        case 'chainMastery':
+            return 6;
+        case 'drawAttacks':
+            return 100;
+        case 'accuracy':
+            return 100;
+        case 'evade.physical':
+            return 100;
         default:
             return 400;
     }
@@ -668,6 +676,6 @@ calculateEfficiency(efficiencyArray, goalCritieria)
 
 efficiencyArray.sort((a, b) => (a["itemEfficiency"] < b["itemEfficiency"]) ? 1 : -1)
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 20; i++) {
     console.log(efficiencyArray[i])
 }
