@@ -1,4 +1,5 @@
 import console from 'console'
+import { exit } from 'process';
 
 export var stats = ["HP","MP","ATK","DEF","MAG","SPR"];
 export var baseStats = ["hp","mp","atk","def","mag","spr"];
@@ -156,7 +157,7 @@ export const unitRoles = {
     "Support": "support",
     "Breaker": "debuffer",
     "Versatile": "versatile",
-    "EXP Boost": null,
+    "EXP Boost": "expBoost",
     "Sellable": null,
     "Fusion": null,
     "Stat Boost": null,
@@ -478,6 +479,9 @@ export function addEffectsToEffectList(effectList, effects) {
             if (effect.improvedDW) {
                 effectList[0].improvedDW = true;
             }
+            if (effect.improvedTDW) {
+                effectList[0].improvedTDW = true;
+            }
             if (effect.evokeDamageBoost) {
                 if (!effectList[0].evokeDamageBoost) {
                     effectList[0].evokeDamageBoost = {}
@@ -766,7 +770,12 @@ export function parsePassiveRawEffet(rawEffect, skillId, skills, unit, lbs) {
 
     // MAG DH
     } else if ((rawEffect[0] == 0 || rawEffect[0] == 1) && rawEffect[1] == 3 && rawEffect[2] == 70) {
-        if (rawEffect[3][2] == 0) {
+        
+        if (rawEffect[3].length == 3 && rawEffect[3][2] == 2 && rawEffect[3][0] && rawEffect[3][1] && rawEffect[3][1] > 0) {
+            result.singleWielding = {};
+            addToStat(result.singleWielding, "mag", rawEffect[3][0]);
+            addToStat(result.singleWielding, "accuracy", rawEffect[3][1]);
+        }else if (rawEffect[3][2] == 0) {
             result.singleWieldingOneHanded = {};
             addToStat(result.singleWieldingOneHanded,"mag",rawEffect[3][0]);    
         } else if (rawEffect[3][2] == 2) {
@@ -949,6 +958,11 @@ export function parsePassiveRawEffet(rawEffect, skillId, skills, unit, lbs) {
             result.push(gilgameshSkill);
         }
         return result;
+    } else if (rawEffect[2] == 81) {
+        result = {
+            "improvedTDW": true
+        }
+        return [result];
 
     } else if (rawEffect[2] == 89) {
 
@@ -1266,13 +1280,13 @@ export function parsePassiveRawEffet(rawEffect, skillId, skills, unit, lbs) {
         }
         return [result];
         
-    // Increase maximum true double-wield bonus to 200%, Allow unit to reach 6x chain modifier, when using two one-handed weapons
-    } else if (rawEffect[3] && rawEffect[2] == 81) {
-        
+    } else if (rawEffect[0] == 0 && rawEffect[1] == 3 && rawEffect[2] == 106){
         result = {
             "improvedDW": true
         }
         return [result];
+    } else if (rawEffect[2] == 86) {
+        
     }
     return null;
 }
@@ -1838,7 +1852,6 @@ export function parseActiveRawEffect(rawEffect, skillIn, skills, unit, skillId, 
             console.log(rawEffect);
         }
         result = {"damage":{"mechanism":"physical", "damageType":"body", "coef":rawEffect[3][6]/100}, hpSacrifice:rawEffect[3][7]};
-
         // use random ability. - same as 29 - [[skillId, chance]]
     } else if (rawEffect[2] == 82) {
         result = null;
@@ -2819,7 +2832,7 @@ export function getEquip(equipIn) {
     return equip;
 }
 
-var properties = ["id","name","jpname","type","roles","hp","hp%","mp","mp%","atk","atk%","def","def%","mag","mag%","spr","spr%","evoMag","evokeDamageBoost","evade","singleWielding","singleWieldingOneHanded","dualWielding", "oneWeaponMastery","improvedDW", "chainMastery","damageVariance","jumpDamage","lbFillRate", "lbPerTurn","element","partialDualWield","resist","ailments","killers","mpRefresh","lbDamage","esperStatsBonus","drawAttacks","skillEnhancement","replaceLb","special", "allowUseOf","exclusiveSex","exclusiveUnits", "exclusiveRoles","equipedConditions", "equipedConditionIsOr","levelCondition","exLevelCondition" ,"tmrUnit","access","icon"];
+var properties = ["id","name","jpname","type","roles","hp","hp%","mp","mp%","atk","atk%","def","def%","mag","mag%","spr","spr%","evoMag","evokeDamageBoost","evade","singleWielding","singleWieldingOneHanded","dualWielding", "oneWeaponMastery","improvedDW", "improvedTDW", "chainMastery","damageVariance","jumpDamage","lbFillRate", "lbPerTurn","element","partialDualWield","resist","ailments","killers","mpRefresh","lbDamage","esperStatsBonus","drawAttacks","skillEnhancement","replaceLb","special", "allowUseOf","exclusiveSex","exclusiveUnits", "exclusiveRoles","equipedConditions", "equipedConditionIsOr","levelCondition","exLevelCondition" ,"tmrUnit","access","icon"];
 
 export function formatOutput(units) {
     var result = "{\n";
@@ -2920,7 +2933,9 @@ export function getUnitBasicInfo(unit, prefix = "", form = null) {
     if (unit.jpname) {
         result += "\n" + prefix + "\t\t\"jpname\":\"" + unit.jpname.replace(/"/g, '\\"').replace(/ - Brave Shifted/g, "") + (unit.braveShifted ? " BS" : '') + "\",";
     }
-    result += "\n" + prefix + "\t\t\"roles\":" + JSON.stringify(unit.roles) + ",";
+    if (unit.roles) {
+        result += "\n" + prefix + "\t\t\"roles\":" + JSON.stringify(unit.roles) + ",";
+    } 
     if (unit.wikiEntry) {
         result += "\n" + prefix + "\t\t\"wikiEntry\":\"" + unit.wikiEntry + "\",";
     }
@@ -2988,7 +3003,14 @@ export function formatForSearch(units) {
             unitOut.minRarity = unit.min_rarity.toString();
             unitOut.maxRarity = unit.max_rarity.toString();
             unitOut.roles = unit.roles;
-            
+
+            if (unit.braveShifted !== undefined && units[unit.braveShifted]) {
+                if (units[unit.braveShifted].min_rarity != "NV") {
+                    unitOut.NVA = {"baseUnit":{}, "baseRarity": {}};
+                    unitOut.NVA.baseUnit = unit.braveShifted;
+                    unitOut.NVA.baseRarity = units[unit.braveShifted].min_rarity.toString();
+                }
+            }
             
             if (unit.innates.resist) {
                 for (var resistIndex = unit.innates.resist.length; resistIndex--;) {

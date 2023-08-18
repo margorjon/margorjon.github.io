@@ -644,7 +644,7 @@ function displayItemLine(item, actionOnImage = "") {
     html += getNameColumnHtml(item);
 
     // value
-    html += '<div class="td value sort">' + item.calculatedValue;
+    html += '<div class="td value sort">' + Math.round(item.calculatedValue);
     if (stat == 'inflict' || stat == 'evade' || stat == 'resist') {
         html += '%';
     }
@@ -1053,8 +1053,8 @@ class ItemFilter {
 }
 
 // Filter the items according to the currently selected filters. Also if sorting is asked, calculate the corresponding value for each item
-function filter(data, onlyShowOwnedItems = true, stat = "", baseStat = 0, searchText = "", selectedUnitId = null,
-                      types = [],elements = [], ailments = [], physicalKillers = [], magicalKillers = [], accessToRemove = [],
+function filter(data, onlyShowOwnedItems = true, stat = "", baseStat = 0, percentageStat = false, staticStats = false, searchText = "", selectedUnitId = null,
+                      types = [],elements = [], ailments = [], physicalKillers = [], magicalKillers = [],accessToRemove = [],
                       additionalStat = "", showNotReleasedYet = false, showItemsWithoutStat = false) {
     var filters = [];
     if (!showItemsWithoutStat && stat.length > 0) filters.push({type: 'stat', value: stat});
@@ -1104,7 +1104,7 @@ function filter(data, onlyShowOwnedItems = true, stat = "", baseStat = 0, search
             }
         }
     }*/
-    result.forEach(item => calculateValue(item, baseStat, stat, ailments, elements, killers));
+    result.forEach(item => calculateValue(item, baseStat, stat, percentageStat, staticStats, ailments, elements, killers));
     return result;
 };
 
@@ -1188,6 +1188,10 @@ function itemMatches(item, filter) {
             return item.killers && item.killers.some(k => k.name === filter.value && k.physical);
         case 'magicalKiller':
             return item.killers && item.killers.some(k => k.name === filter.value && k.magical);
+        // case 'percentageStat':
+        //     return item[filter.value] && item[filter.value] > 0;
+        // case 'staticStats':
+        //     return item.staticStats && hasStaticStat(filter.value, item);
         case 'access':
             return item.access && item.access.includes(filter.value);
         case 'text':
@@ -1291,7 +1295,7 @@ function sort(items, unitId) {
                 if (item1.stmrUnit != unitId) {
                     return 1;
                 }
-            }
+            }   
         }
 		if (item2.calculatedValue == item1.calculatedValue) {
             var typeIndex1 = typeListWithEsper.indexOf(item1.type);
@@ -1315,21 +1319,21 @@ function sort(items, unitId) {
                 return typeIndex1 - typeIndex2;
             }
 		} else {
-			return item2.calculatedValue - item1.calculatedValue;
+			return Math.round(item2.calculatedValue - item1.calculatedValue);
 		}
     });
 };
 
 // If sort is required, this calculate the effective value of the requested stat, based on the unit stat for percentage increase.
-function calculateValue(item, baseStat, stat, ailments, elements, killers) {
+function calculateValue(item, baseStat, stat, percentageStat, staticStats, ailments, elements, killers) {
     var calculatedValue = 0;
     if (item[stat] && stat != "evade") {
         calculatedValue = item[stat];
     }
-    if (item[stat + '%']) {
-        calculatedValue += item[stat+'%'] * baseStat / 100;
+    if (percentageStat === true && item[stat + '%']) {
+        calculatedValue += baseStat * (item[stat+'%'] / 100);
     }
-    if (item.staticStats && item.staticStats[stat]) {
+    if (staticStats === true && item.staticStats && item.staticStats[stat]) {
         calculatedValue += item.staticStats[stat];
     }
     if (item[stat] && stat == "evade") {
@@ -1375,8 +1379,11 @@ function calculateValue(item, baseStat, stat, ailments, elements, killers) {
         if (calculatedValue == -999) {
             calculatedValue = 0;
         }
+        // Round to the nearest whole number
+        calculatedValue = Math.round(calculatedValue);
     }
-    item['calculatedValue'] = calculatedValue;
+    
+    item['calculatedValue'] = Math.round(calculatedValue);
 };
 
 // Return true if the two arrays share at least one value
@@ -1447,8 +1454,18 @@ function getSearchTokens(text) {
 
 // Return true if the item has the required stat
 function hasStat(stat, item) {
-    return item[stat] || item[stat+'%'] || (item.staticStats && item.staticStats[stat]) || (stat == 'inflict' && (item.element || item.ailments || item.killers)) || (stat == 'resist' && item.resist);
+    return item[stat] || item[stat + "%"] || (item.staticStats && item.staticStats[stat]) || (stat == 'inflict' && (item.element || item.ailments || item.killers)) || (stat == 'resist' && item.resist) || isTwoHanded(item);
 };
+
+// Return true if the item has the required stat percentage
+function hasStatPercent(stat, item) {
+    return item[stat+'%'];
+};
+
+// Return true if the item has the required static stat
+function hasStaticStat(stat, item) {
+    return item.staticStats && item.staticStats[stat];
+}
 
 // Return true if the item has all the required stats
 function hasStats(additionalStat, item) {

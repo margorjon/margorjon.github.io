@@ -37,6 +37,8 @@ var physicalKillers;
 var magicalKillers;
 var accessToRemove;
 var additionalStat;
+var percentageStat;
+var staticStats;
 var elementsAnd = false;
 var ailmentsAnd = false;
 var killersAnd = false;
@@ -46,7 +48,7 @@ var displayId = 0;
 var itemList;
 
 // Main function, called at every change. Will read all filters and update the state of the page (including the results)
-var update = function() {
+function update() {
 	
 	readFilterValues();
 	updateFilterHeadersDisplay();
@@ -56,15 +58,18 @@ var update = function() {
     if (!onlyShowOwnedItems && stat.length == 0 && searchText.length == 0 && types.length == 0 && elements.length == 0 && ailments.length == 0 && physicalKillers.length == 0 && magicalKillers.length == 0 && accessToRemove.length == 0 && additionalStat.length == 0) {
 		// Empty filters => no results
         $("#resultsContent").html("");
+        $("#resultsContent").hide();
         $("#resultsContent").addClass("notSorted");
         $("#resultNumber").html("Add filters to see results");
         return;
+    } else {
+        $("#resultsContent").show();
     }
 	
 	// If the result are to be sorted by a stat, display the stat column, else hide it.
     if (stat.length != 0) {
-        $("#statTitle").text(stat);    
         $("#results").removeClass("notSorted");
+        $("#statTitle").text(stat);    
     } else {
         $("#results").addClass("notSorted");
     }
@@ -87,9 +92,21 @@ var update = function() {
         filters.push({type: 'unitSex', value: unitData.sex})
     }
 
-    if (stat.length > 0) filters.push({type: 'stat', value: stat});
+    if (stat.length > 0) {
+        filters.push({type: 'stat', value: stat});
+    }
     if (searchText) filters.push({type: 'text', value: searchText});
-    if (additionalStat.length > 0) filters.push({type: 'stat', value: additionalStat});
+    if (additionalStat.length > 0) {
+        filters.push({type: 'stat', value: additionalStat});
+    }
+    staticStats = document.getElementById("staticStats").checked;
+    percentageStat = document.getElementById("percentageStat").checked;
+    // if (staticStats) {
+    //     filters.push({type: 'staticStats', value: stat});
+    // }
+    // if (percentageStat) {
+    //     filters.push({type: 'percentageStat', value: stat+'%'});
+    // }
     if (accessToRemove.length > 0) {
         accessToRemove = accessToRemove.flatMap(a => a.split('/'));
         let authorizedAccess = accessList.filter(a => !accessToRemove.some(forbiddenAccess => a.startsWith(forbiddenAccess) || a.endsWith(forbiddenAccess)));
@@ -101,13 +118,12 @@ var update = function() {
     if (elements.length > 0) filters.push(convertValuesToFilter(elements, 'element', elementsAnd ? 'and' : 'or'));
     if (types.length > 0) filters.push(convertValuesToFilter(types, 'type'));
     if (onlyShowOwnedItems) filters.push({type: 'onlyOwned'});
-    
-    
+
     let filter = andFilters(...filters);
     
     let filteredItems = filterItems(data, filter, showNotReleasedYet);
 
-    filteredItems.forEach(item => calculateValue(item, baseStat, stat, ailments, elements, killers));
+    filteredItems.forEach(item => calculateValue(item, baseStat, stat, percentageStat, staticStats, ailments, elements, killers));
     
 	// filter, sort and display the results
     displayItems(sort(filteredItems));
@@ -125,7 +141,7 @@ var update = function() {
 }
 
 // Read filter values into the corresponding variables
-var readFilterValues = function() {
+function readFilterValues() {
 	searchText = $("#searchText").val();
 	stat = getSelectedValuesFor("stats");
     stat = stat[0] || '';
@@ -215,7 +231,7 @@ var modifyUrl = function() {
     if (killersAnd) {
         state.killersAnd = true;
     }
-    window.location.hash = '#' + window.btoa(unescape(encodeURIComponent(JSON.stringify(state))));
+    window.location.hash = '#' + window.btoa(decodeURIComponent(encodeURIComponent(JSON.stringify(state))));
 };
 
 // Update the filter summary (small icons of the filter on the right, on mobile view only)
@@ -243,7 +259,7 @@ var modifyFilterSummary = function() {
 }
 
 // Construct HTML of the results. String concatenation was chosen for rendering speed.
-var displayItems = function(items) {
+function displayItems(items) {
     $("#resultNumber").html(items.length);
     itemList.display(items);
 
@@ -441,27 +457,28 @@ function populateUnitSelect() {
         options += '<option value="'+ value + '">' + units[value].name + '</option>';
     });
     $("#unitsSelect").html(options);
-    $("#unitsSelect").change(function() {
-        $(this).find(':selected').each(function() {
-            var selectedUnitData = units[$(this).val()];
-            if (selectedUnitData) {
-                selectedUnitId = $(this).val();
-                $(baseStats).each(function (index, stat) {
-                    $("#baseStat_" + stat).val(selectedUnitData.stats.maxStats[stat] + selectedUnitData.stats.pots[stat]);
-                });
-                $(".unit-image").html("<img src=\"img/units/unit_ills_" + selectedUnitData.id + ".png\"/>");
-                unselectAll("types", false);
-            } else {
-                selectedUnitId = 0;
-                $(baseStats).each(function (index, stat) {
-                    $("#baseStat_" + stat).val("");
-		      	});
-                $(".unit-image").html("");
-            }
-            displayUnitRarity(selectedUnitData);
-        });
-        update();
-    });
+   $("#unitsSelect").on("change", function() {
+       $(this).find(':selected').each(function() {
+           var selectedUnitData = units[$(this).val()];
+           if (selectedUnitData) {
+               selectedUnitId = $(this).val();
+               $(baseStats).each(function (index, stat) {
+                   $("#baseStat_" + stat).val(selectedUnitData.stats.maxStats[stat] + selectedUnitData.stats.pots[stat]);
+               });
+               $(".unit-image").html("<img src=\"img/units/unit_ills_" + selectedUnitData.id + ".png\"/>");
+               unselectAll("types", false);
+           } else {
+               selectedUnitId = 0;
+               $(baseStats).each(function (index, stat) {
+                   $("#baseStat_" + stat).val("");
+                 });
+               $(".unit-image").html("");
+           }
+           displayUnitRarity(selectedUnitData);
+       });
+       update();
+   });
+   
     $('#unitsSelect').select2({
         placeholder: 'Select a unit...',
         theme: 'bootstrap'

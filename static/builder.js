@@ -144,12 +144,15 @@ var currentBestParamChallengeBuild = {
 
 let buildCounter = 0;
 
-let displayOnly7StarsUnits = true;
+let displayOnlyNVUnits = true;
 
 let fixItemList;
 
 let defaultMonsterAttackFormula = {"type":"*","value1":{"type":"constant","value":1},"value2":{"type":"skill","id":"0","name":"1x physical ATK damage","formulaName":"physicalDamage","value":{"type":"damage","value":{"mechanism":"physical","damageType":"body","coef":1}}}};
 let monsterAttackFormula;
+
+let percentageStat = false;
+let staticStats = false;
 
 function onBuildClick() {
     if (builds[currentUnitIndex] && builds[currentUnitIndex].unit.id === '777700004') {
@@ -755,8 +758,8 @@ function logBuild(build, value) {
         var bonusTextElement = $("#resultStats ." + escapeDot(baseStats[statIndex]) + " .bonus");
 
         var bonusPercent;
-        if (result.bonusPercent > getStatBonusCap(baseStats[statIndex])) {
-            bonusPercent = "<span style='color:red;' title='Only " + getStatBonusCap(baseStats[statIndex]) + "% taken into account'>" + result.bonusPercent + "%</span>";
+        if (result.bonusPercent > getStatBonusCap(baseStats[statIndex], build)) {
+            bonusPercent = "<span style='color:red;' title='Only " + getStatBonusCap(baseStats[statIndex], build) + "% taken into account'>" + result.bonusPercent + "%</span>";
         } else {
             bonusPercent = result.bonusPercent + "%";
         }
@@ -767,7 +770,7 @@ function logBuild(build, value) {
             if (equipmentFlatStatBonus > 0) {
                 bonusTextElement.attr("title", `(${upperCaseStat} increase % - Equipped ${upperCaseStat} (DH) increase %) modifiers, capped individually.`);
                 bonusPercent += "&nbsp;-&nbsp;";
-                var cap = getStatBonusCap('tdh');
+                var cap = getStatBonusCap('tdh', build);
                 if (build[0] && build[1] && weaponList.includes(build[0].type) && weaponList.includes(build[1].type)) {
                     cap = builds[currentUnitIndex].tdwCap * 100;
                 }
@@ -931,7 +934,7 @@ function logBuild(build, value) {
 function checkOvercap(stat, build, builds, currentUnitIndex) {    
     let endChar = checkEndChar(stat);
     let statValue = calculateStatValue(build, stat, builds[currentUnitIndex]).overcap;
-    let statCap = getStatBonusCap(stat);
+    let statCap = getStatBonusCap(stat, builds[currentUnitIndex]);
 
     if (statValue > statCap) {
         displayStat("#resultStats ." + escapeDot(stat), statValue, endChar)
@@ -1157,12 +1160,12 @@ function populateUnitSelect() {
     selector.html(getUnitSelectOptions());
     selector.on("select2:select", async () => await onUnitChange());
     selector.on('select2:open', function (e) {
-        $('<label class="checkbox-label"><input id="displayOnly7StarsUnits" class="checkbox" type="checkbox" ' + (displayOnly7StarsUnits ? 'checked' : '') + '><span></span>Only 7★ units</label>')
+        $('<label class="checkbox-label"><input id="displayOnlyNVUnits" class="checkbox" type="checkbox" ' + (displayOnlyNVUnits ? 'checked' : '') + '><span></span>Only NV units</label>')
             .insertAfter(".select2-search")
             .on('mousedown mouseup click', function(e) { e.stopPropagation(); })
             .children('input')
             .on('change', function(e) {
-                displayOnly7StarsUnits = !displayOnly7StarsUnits;
+                displayOnlyNVUnits = !displayOnlyNVUnits;
                 refreshUnitSelect();
                 e.stopPropagation();
             });
@@ -1176,7 +1179,7 @@ function populateUnitSelect() {
 
 function refreshUnitSelect() {
     var selector = $("#unitsSelect");
-    $("#displayOnly7StarsUnits").prop("checked", displayOnly7StarsUnits);
+    $("#displayOnlyNVUnits").prop("checked", displayOnlyNVUnits);
     selector.html(getUnitSelectOptions());
     selector.trigger('change');
     selector.select2('close');
@@ -1188,19 +1191,19 @@ function getUnitSelectOptions() {
     Object.keys(units).sort(function(id1, id2) {
         return units[id1].name.localeCompare(units[id2].name);
     }).forEach(function(value, index) {
-        if (displayOnly7StarsUnits && units[value].max_rarity != 7 && units[value].max_rarity != 'NV') {
+        if (displayOnlyNVUnits && units[value].max_rarity != 'NV') {
             return;
         }
         options += '<option value="'+ value + '">'
             + units[value].name
-            + (!displayOnly7StarsUnits && units[value]["6_form"] && units[value].max_rarity == 7 ? ' ' + units[value].max_rarity + '★ ' : "")
+            + (!displayOnlyNVUnits && units[value]["6_form"] && units[value].max_rarity == 7 ? ' ' + units[value].max_rarity + '★ ' : "")
             + (units[value].max_rarity == 'NV' && units[value]["7_form"] ? ' NV ' : "")
             + ((server != 'JP' && (units[value].unreleased7Star || units[value].jpname)) ? ' - JP data' : "")
             + '</option>';
-        if (units[value]["7_form"]) {
+        if (!displayOnlyNVUnits && units[value]["7_form"]) {
             options += '<option value="'+ value + '-7">' + units[value]["7_form"].name + ' 7★</option>';
         }
-        if (!displayOnly7StarsUnits && units[value]["6_form"]) {
+        if (!displayOnlyNVUnits && units[value]["6_form"]) {
             options += '<option value="'+ value + '-6">' + units[value]["6_form"].name + ' 6★</option>';
         }
     });
@@ -2213,7 +2216,7 @@ function updateSearchResult() {
     });
 
     readItemsExcludeInclude();
-    displaySearchResults(sort(filter(dataWithOnlyOneOccurence, onlyOwnedItems, searchStat.split('-')[0], baseStat, searchText, builds[currentUnitIndex].unit.id, types, [], [], [], [], [], "", !excludeNotReleasedYetOption, true), builds[currentUnitIndex].unit.id));
+    displaySearchResults(sort(filter(dataWithOnlyOneOccurence, onlyOwnedItems, searchStat.split('-')[0], baseStat, percentageStat, staticStats, searchText, builds[currentUnitIndex].unit.id, types, [], [], [], [], [], "", !excludeNotReleasedYetOption, true), builds[currentUnitIndex].unit.id));
 
     if (searchStat == "") {
         $("#fixItemModal .results").addClass("notSorted");
@@ -2234,6 +2237,7 @@ function updateSearchResult() {
 }
 
 function displayEquipableItemList(clickBehavior) {
+    $("#fixItemModal").show();
     if (!builds[currentUnitIndex].unit) {
         Modal.showMessage("No unit selected", "Please select an unit");
         return;
@@ -2275,6 +2279,9 @@ function displayEquipableItemList(clickBehavior) {
 }
 
 function displayFixItemModal(slot) {
+    staticStats = false;
+    percentageStat = false;
+    $("#fixItemModal").show();
     if (!builds[currentUnitIndex].unit) {
         Modal.showMessage("No unit selected", "Please select an unit");
         return;
@@ -2283,7 +2290,7 @@ function displayFixItemModal(slot) {
 
     builds[currentUnitIndex].prepareEquipable(slot);
     if (builds[currentUnitIndex].equipable[slot].length == 0) {
-        Modal.showMessage("Equipment error", "Nothing can be added at this slot");
+        Modal.showMessage("Equipment error", "Nothing can be added at this slot", $("#fixItemModal").hide());
         return;
     }
     currentItemSlot = slot;
@@ -2515,9 +2522,17 @@ function selectSearchStat(stat) {
     if (!stat) {
         searchStat = "";
         $("#fixItemModal .modal-header .stat .dropdown-toggle").addClass("img-sort-a-z");
+        staticStats = false;
+        percentageStat = false;
     } else {
         searchStat = stat;
-        $("#fixItemModal .modal-header .stat .dropdown-toggle").addClass("img-sort-" + stat.split('-')[0]);
+        let statToAdd = "img-sort-" + stat.split('-')[0];
+        $("#fixItemModal .modal-header .stat .dropdown-toggle").addClass(statToAdd);
+        if (stat.includes("-flat")) {
+            staticStats = true;
+        } else {
+            staticStats = false;
+        }
     }
 }
 
@@ -3474,8 +3489,8 @@ async function loadStateHashAndBuild(data, importMode = false) {
         }
 
         var unit = data.units[i];
-        if (!unit.id.endsWith("7") && displayOnly7StarsUnits) {
-            displayOnly7StarsUnits = !displayOnly7StarsUnits;
+        if (!unit.id.endsWith("7") && displayOnlyNVUnits) {
+            displayOnlyNVUnits = !displayOnlyNVUnits;
             refreshUnitSelect();
         }
         var unitToSelect = unit.id;

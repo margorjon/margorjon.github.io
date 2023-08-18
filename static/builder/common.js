@@ -1169,7 +1169,7 @@ function innerCalculateBuildValueWithFormula(itemAndPassives, unitBuild, enemySt
 function getChainMult(unitBuild, itemAndPassives) {
     let chainMult = 4;
     if (unitBuild.hasDualWieldMastery() && itemAndPassives[0] && itemAndPassives[1] && weaponList.includes(itemAndPassives[1].type)) {
-        chainMult = 6;
+        chainMult = 8;
     }
     itemAndPassives.filter(i => i && i.chainMastery).forEach(i => {
         chainMult += i.chainMastery / 100;
@@ -1441,6 +1441,32 @@ function calculateStatValue(itemAndPassives, stat, unitBuild, berserk = 0, ignor
 
     if (stat == "chainMastery") {
         calculatedValue = (calculatedValue  / 100) + 4;
+        let lengthValue = 0;
+        let itemObject = Object.keys(unitBuild["unitShift"]["build"]);
+        // loop through the unitBuild and see if any of the items have the improvedDW property
+        for (let i = 0; i < itemObject.length; i++) {
+            if (unitBuild["unitShift"]["build"][itemObject[i]]?.improvedDW) {
+                lengthValue = itemObject[i];
+            }
+        }
+
+        if (unitBuild && unitBuild["unitShift"]["build"][lengthValue]?.improvedDW && unitBuild["unitShift"]["build"][lengthValue]?.improvedDW === true) {
+            if (unitBuild["unitShift"]["build"][0] !== null && unitBuild["unitShift"]["build"][1] !== null) {
+                calculatedValue = calculatedValue + 2;
+            }
+        }
+
+        for (let i = 0; i < itemObject.length; i++) {
+            if (unitBuild["unitShift"]["build"][itemObject[i]]?.improvedTDW) {
+                lengthValue = itemObject[i];
+            }
+        }     
+
+        if (unitBuild && unitBuild["unitShift"]["build"][lengthValue]?.improvedTDW && unitBuild["unitShift"]["build"][lengthValue]?.improvedTDW === true) {
+            if (unitBuild["unitShift"]["build"][0] !== null && unitBuild["unitShift"]["build"][1] !== null) {
+                calculatedValue = calculatedValue + 2;
+            }
+        }
     }
 
     // check if the itemAndPassives have a not stackable skill
@@ -1610,7 +1636,7 @@ function calculateStateValueForIndex(items, index, baseValue, currentPercentIncr
     return 0;
 }
 
-function getStatBonusCap(stat) {
+function getStatBonusCap(stat, unitBuild) {
     switch(stat) {
         case 'lbDamage':
             return 300;
@@ -1629,6 +1655,42 @@ function getStatBonusCap(stat) {
         case 'evokeDamageBoost.all':
             return 300;
         case 'chainMastery':
+            if (unitBuild) {
+                // check to see if they can increase their chain cap
+                
+                let lengthValue = 0;
+                let itemObject = Object.keys(unitBuild["unitShift"]["build"]);
+                // loop through the unitBuild and see if any of the items have the improvedDW property
+                for (let i = 0; i < itemObject.length; i++) {
+                    if (unitBuild["unitShift"]["build"][itemObject[i]]?.improvedDW) {
+                        lengthValue = itemObject[i];
+                    }
+                }                
+                
+                if(unitBuild["unitShift"]["build"][lengthValue]?.improvedDW){
+                    // to increase their chain cap, they must have two weapons equipped.
+                    if (unitBuild["unitShift"]["build"][0] && unitBuild["unitShift"]["build"][1]) {
+                        if (unitBuild["unitShift"]["build"][0] != null && unitBuild["unitShift"]["build"][1] != null) {
+                            return 8;
+                        }
+                    }
+                }
+
+                for (let i = 0; i < itemObject.length; i++) {
+                    if (unitBuild["unitShift"]["build"][itemObject[i]]?.improvedTDW) {
+                        lengthValue = itemObject[i];
+                    }
+                }      
+
+                if(unitBuild["unitShift"]["build"][lengthValue]?.improvedTDW){
+                    // to increase their chain cap, they must have two weapons equipped.
+                    if (unitBuild["unitShift"]["build"][0] && unitBuild["unitShift"]["build"][1]) {
+                        if (unitBuild["unitShift"]["build"][0] != null && unitBuild["unitShift"]["build"][1] != null) {
+                            return 6;
+                        }
+                    }
+                }
+            }
             return 6;
         case 'drawAttacks':
             return 100;

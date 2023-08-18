@@ -434,7 +434,7 @@ class UnitBuild {
         if(this.unitShift._tdwCap) {
             return this.unitShift._tdwCap.value;
         } else {
-            this.unitShift._tdwCap = { "value": 4};
+            this.unitShift._tdwCap = { "value": 6};
             return this.unitShift._tdwCap.value;
         }
     }
@@ -442,7 +442,7 @@ class UnitBuild {
     hasDualWieldMastery() {
         for (let index in this.unit.skills) {
             if (!this.unit.skills[index].levelCondition || this.unit.skills[index].levelCondition <= this.level) {
-                if (this.unit.skills[index].improvedDW) {
+                if (this.unit.skills[index].improvedTDW) {
                     return true;
                 }
             }

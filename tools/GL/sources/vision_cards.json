@@ -2629,7 +2629,7 @@
         }
     },
     "100007801": {
-        "name": "戦乱を終わらせるために",
+        "name": "To Bring an End to This War",
         "compendium_id": 168,
         "compendium_shown": true,
         "rarity": 1,
@@ -2658,15 +2658,15 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "常闇のヴェリアス・レーゲンと、バブイルの巨人を操るソル。バブイルの心臓をめぐる二人の因縁は、開戦前から続いていた。幻魔導兵器が跋扈する悲惨な戦乱を終わらせるべく、レーゲンは信念の剣を振るう。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "戦乱を終わらせるために",
-            "music": "♪Celestial Battle",
+            "desc": "As Veritas of the Dark, Raegen readies himself before the Giant of Babel, controlled by Sol. These two men, whose fates are bound by the Heart of Babel, have long been at odds—since even before the current conflict. Now stout resolve steels Raegen's blades as he fights to end this tragic war that has been dominated by visionary magic weapons.",
+            "info": "As Veritas of the Dark, Raegen readies himself before the Giant of Babel, controlled by Sol. These two men, whose fates are bound by the Heart of Babel, have long been at odds—since even before the current conflict. Now stout resolve steels Raegen's blades as he fights to end this tragic war that has been dominated by visionary magic weapons.",
+            "shop": "To Bring an End to This War",
+            "music": "Celestial Battle",
             "music_id": "400007"
         }
     },
     "100007901": {
-        "name": "雨の結婚式前夜",
+        "name": "Rain Before a Wedding",
         "compendium_id": 171,
         "compendium_shown": true,
         "rarity": 1,
@@ -2698,10 +2698,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "結婚式を控えた雨の夜。スネフリンガの元にリダルが現れた。彼はスネフリンガを連れて逃げ出すつもりだったが、王女としての責務を全うしようとする彼女の覚悟を知り、一言「おめでとう」とだけ伝える。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "雨の結婚式前夜",
-            "music": "♪Mystic Ruins",
+            "desc": "A steady rain falls the night before Snovlinka's wedding as Riddar clambers up the castle wall. Though he came planning to abscond with Snovlinka, he hears the princess's dedication to her duty, and merely congratulates her instead.",
+            "info": "A steady rain falls the night before Snovlinka's wedding as Riddar clambers up the castle wall. Though he came planning to abscond with Snovlinka, he hears the princess's dedication to her duty, and merely congratulates her instead.",
+            "shop": "Rain Before a Wedding",
+            "music": "Mystic Ruins",
             "music_id": "400205"
         }
     },
@@ -2744,6 +2744,80 @@
             "shop": "自己犠牲と別れ",
             "music": "♪The Oath",
             "music_id": "400106"
+        }
+    },
+    "100008101": {
+        "name": "ドレスでお散歩",
+        "compendium_id": 181,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [65, 130, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244556],
+            "7": [244557],
+            "10": [244558]
+        },
+        "restriction": {
+            "244558": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "完成したドレスを受け取るためグランシェルトを訪れたアヤカ。自分のために仕立てられた特別な一着に心弾んだ彼女は、ドレス姿で城下をお散歩。春の陽気も、着飾ったアヤカを祝福してくれているようだ。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "ドレスでお散歩",
+            "music": "♪Once more Dance?",
+            "music_id": "400203"
+        }
+    },
+    "100008201": {
+        "name": "春のおでかけ",
+        "compendium_id": 177,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [100, 100, 0, 0],
+            "DEF": [100, 100, 0, 0],
+            "MAG": [100, 100, 0, 0],
+            "SPR": [100, 100, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244504, 244505, 244506]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "桜が見ごろを迎えたシアンの町を歩くアヤカ。暖かな日差しの中、向かう先はサクラ師匠の待つ茶店。お土産の飴玉を詰めた巾着は、もちろん忘れずに。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "春のおでかけ",
+            "music": "♪MUSASABI",
+            "music_id": "400214"
         }
     },
     "201000101": {
@@ -3551,7 +3625,7 @@
             "10": [236252]
         },
         "restriction": {
-            "236252": [4008]
+            "236252": [7907]
         },
         "max_level": 10,
         "exp_pattern": 110,
@@ -3627,7 +3701,7 @@
             "10": [236424]
         },
         "restriction": {
-            "236424": [4008]
+            "236424": [7907]
         },
         "max_level": 10,
         "exp_pattern": 110,
@@ -3664,7 +3738,7 @@
             "1": [241203, 241204, 241205]
         },
         "restriction": {
-            "241205": [4008]
+            "241205": [7907]
         },
         "max_level": 1,
         "exp_pattern": 1,
@@ -3701,7 +3775,7 @@
             "1": [241200, 241201, 241202]
         },
         "restriction": {
-            "241202": [4008]
+            "241202": [7907]
         },
         "max_level": 1,
         "exp_pattern": 1,
@@ -3738,7 +3812,7 @@
             "1": [241350, 241351, 241352]
         },
         "restriction": {
-            "241352": [4008]
+            "241352": [7907]
         },
         "max_level": 1,
         "exp_pattern": 1,
@@ -3754,7 +3828,7 @@
         }
     },
     "207000701": {
-        "name": "出会いの記念",
+        "name": "Our Memento",
         "compendium_id": 161,
         "compendium_shown": true,
         "rarity": 1,
@@ -3785,15 +3859,15 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "教会で出会ったエアリスと共に、伍番街スラムのマーケットへやってきたザックス。出会いの記念として、彼女にピンク色のリボンをプレゼントする。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "出会いの記念",
-            "music": "♪スラムに咲く花",
+            "desc": "After meeting Aerith in the church, Zack accompanies her to the markets in the Sector 5 slums. There, he buys her a pink ribbon as a way to commemorate their chance encounter.",
+            "info": "After meeting Aerith in the church, Zack accompanies her to the markets in the Sector 5 slums. There, he buys her a pink ribbon as a way to commemorate their chance encounter.",
+            "shop": "Our Memento",
+            "music": "A Flower Blooming in the Slums",
             "music_id": "4001008"
         }
     },
     "207000801": {
-        "name": "剣よりも大切なもの",
+        "name": "A Little More Important",
         "compendium_id": 162,
         "compendium_shown": true,
         "rarity": 1,
@@ -3824,10 +3898,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "ウータイでの作戦中、ザックスの危機に駆けつけたアンジール。めったに使わない背中の剣を抜き、対ソルジャー用モンスターを一撃で倒す。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "剣よりも大切なもの",
-            "music": "♪操られし鉄の獣 (REUNION ver)",
+            "desc": "Mid-mission in Wutai, Zack finds himself backed into a tough spot until Angeal rushes to his aid. A single swing from Angeal's seldom-used sword delivers the anti-SOLDIER monster its end.",
+            "info": "Mid-mission in Wutai, Zack finds himself backed into a tough spot until Angeal rushes to his aid. A single swing from Angeal's seldom-used sword delivers the anti-SOLDIER monster its end.",
+            "shop": "A Little More Important",
+            "music": "The Iron Beast (REUNION ver)",
             "music_id": "4001005"
         }
     },
@@ -3892,7 +3966,7 @@
             "1": [244004, 244005, 244006]
         },
         "restriction": {
-            "244006": [4008]
+            "244006": [7907]
         },
         "max_level": 1,
         "exp_pattern": 1,
@@ -3929,7 +4003,7 @@
             "1": [244007, 244008, 244009]
         },
         "restriction": {
-            "244009": [4008]
+            "244009": [7907]
         },
         "max_level": 1,
         "exp_pattern": 1,
@@ -3966,7 +4040,7 @@
             "1": [243984, 243985, 243986]
         },
         "restriction": {
-            "243986": [4008]
+            "243986": [7907]
         },
         "max_level": 1,
         "exp_pattern": 1,
@@ -4100,7 +4174,7 @@
         }
     },
     "208000301": {
-        "name": "スコールVSサイファー",
+        "name": "Squall versus Seifer",
         "compendium_id": 165,
         "compendium_shown": true,
         "rarity": 1,
@@ -4131,15 +4205,15 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "激しく剣を交えるスコールとサイファー。訓練という名目で行われる二人の戦いは、互いの額に深い傷痕を残すことになるのだった。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "スコールVSサイファー",
-            "music": "♪Liberi Fatali",
+            "desc": "Sparks fly as Squall and Seifer clash blades. What began as simple sparring would end with mirrored scars carved upon each other's brow.",
+            "info": "Sparks fly as Squall and Seifer clash blades. What began as simple sparring would end with mirrored scars carved upon each other's brow.",
+            "shop": "Squall versus Seifer",
+            "music": "Liberi Fatali",
             "music_id": "400966"
         }
     },
     "208000401": {
-        "name": "危機一髪",
+        "name": "The Nick of Time",
         "compendium_id": 166,
         "compendium_shown": true,
         "rarity": 1,
@@ -4170,15 +4244,15 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "多脚型無人機動兵器X-ATM092から逃げるスコールたちを援護するキスティス。備えつけの機関銃を操ったキスティスは、危機一髪のところでスコールたちを救う。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "危機一髪",
-            "music": "♪Dead End",
+            "desc": "Quistis grants much-needed support to Squall and his squadmates as they flee from the autonomous, multi-legged X-ATM092. Operating a mounted machine gun, Quistis saves her students in the nick of time.",
+            "info": "Quistis grants much-needed support to Squall and his squadmates as they flee from the autonomous, multi-legged X-ATM092. Operating a mounted machine gun, Quistis saves her students in the nick of time.",
+            "shop": "The Nick of Time",
+            "music": "Dead End",
             "music_id": "4001101"
         }
     },
     "208000501": {
-        "name": "狙撃手の葛藤",
+        "name": "Sniper's Block",
         "compendium_id": 167,
         "compendium_shown": true,
         "rarity": 1,
@@ -4209,10 +4283,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "デリングシティで魔女イデアの暗殺作戦を実行するアーヴァインとスコール。狙撃直前に極度の緊張に襲われるアーヴァインだが、スコールの励ましを受けて、ついに引き金を引く。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "狙撃手の葛藤",
-            "music": "♪FITHOS LUSEC WECOS VINOSEC",
+            "desc": "Irvine and Squall lie in wait as they prepare to assassinate the sorceress Edea in Deling City. Intense anxiety petrifies Irvine at the most critical moment, but with Squall's encouragement, he finds the nerve to pull the trigger.",
+            "info": "Irvine and Squall lie in wait as they prepare to assassinate the sorceress Edea in Deling City. Intense anxiety petrifies Irvine at the most critical moment, but with Squall's encouragement, he finds the nerve to pull the trigger.",
+            "shop": "Sniper's Block",
+            "music": "FITHOS LUSEC WECOS VINOSEC",
             "music_id": "4001102"
         }
     },
@@ -4290,6 +4364,125 @@
             "shop": "Divine Judgment",
             "music": "Alexander",
             "music_id": "4000506"
+        }
+    },
+    "209000301": {
+        "name": "おまえが行くって言ったからさ",
+        "compendium_id": 174,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10009,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [85, 170, 0, 0],
+            "DEF": [85, 170, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244471],
+            "7": [244472],
+            "10": [244473]
+        },
+        "restriction": {
+            "244471": [7705],
+            "244472": [7705],
+            "244473": [7705]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "マダイン・サリの船着き場で語り合うジタンとダガー。「どうして一緒に来てくれたの？」と問うダガーに、ジタンは冒険家イプセンの友人コリンのセリフで返答した。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "おまえが行くって言ったからさ",
+            "music": "♪奪われた瞳",
+            "music_id": "4001304"
+        }
+    },
+    "209000401": {
+        "name": "Something to Protect",
+        "compendium_id": 175,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10009,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [60, 120, 0, 0],
+            "DEF": [60, 120, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244486],
+            "7": [244487],
+            "10": [244488]
+        },
+        "restriction": {
+            "244488": [7909]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Steiner and Beatrix fight valiantly as Kuja's monsters flood the streets of Alexandria. Mistodon after mistodon falls to their blades as the two press on, resolved to defend the capital to their deaths.",
+            "info": "Steiner and Beatrix fight valiantly as Kuja's monsters flood the streets of Alexandria. Mistodon after mistodon falls to their blades as the two press on, resolved to defend the capital to their deaths.",
+            "shop": "Something to Protect",
+            "music": "Something to Protect",
+            "music_id": "401031"
+        }
+    },
+    "209000501": {
+        "name": "Use Terra Homing, Kupo!",
+        "compendium_id": 173,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10009,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244475],
+            "7": [244476],
+            "10": [244477]
+        },
+        "restriction": {
+            "244477": [7909]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "In order to protect Eiko from Zorn and Thorn, Mog urges Eiko to use Terra Homing. Through Eiko's incantation, Mog assumes her true form, the eidolon Madeen, and soundly defeats the meddlesome twins.",
+            "info": "In order to protect Eiko from Zorn and Thorn, Mog urges Eiko to use Terra Homing. Through Eiko's incantation, Mog assumes her true form, the eidolon Madeen, and soundly defeats the meddlesome twins.",
+            "shop": "Use Terra Homing, Kupo!",
+            "music": "Battle 1",
+            "music_id": "400852"
         }
     },
     "210000101": {
@@ -4862,6 +5055,123 @@
             "music_id": "401016"
         }
     },
+    "213000301": {
+        "name": "Crashing the Party",
+        "compendium_id": 179,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10013,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244530, 244531, 244532]
+        },
+        "restriction": {
+            "244530": [8014],
+            "244531": [8014],
+            "244532": [8014]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Lightning and the others barge into a celebration marking the appointment of a new Primarch in Eden. Odin doesn't miss a beat, switching between forms and taking down Sanctum warmechs left and right.",
+            "info": "Lightning and the others barge into a celebration marking the appointment of a new Primarch in Eden. Odin doesn't miss a beat, switching between forms and taking down Sanctum warmechs left and right.",
+            "shop": "Crashing the Party",
+            "music": "Saber's Edge",
+            "music_id": "400805"
+        }
+    },
+    "213000401": {
+        "name": "Battling a Behemoth King",
+        "compendium_id": 180,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10013,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244533],
+            "7": [244534],
+            "10": [244535]
+        },
+        "restriction": {
+            "244535": [7913]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Lightning, Hope, and Fang face off against a behemoth king on the Archylte Steppe. It's said a great number of powerful monsters dwell in the lush wildlands of Gran Pulse.",
+            "info": "Lightning, Hope, and Fang face off against a behemoth king on the Archylte Steppe. It's said a great number of powerful monsters dwell in the lush wildlands of Gran Pulse.",
+            "shop": "Battling a Behemoth King",
+            "music": "Blinded By Light",
+            "music_id": "400804"
+        }
+    },
+    "213000501": {
+        "name": "自然保護区サンレス水郷",
+        "compendium_id": 182,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10013,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [55, 110, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [55, 110, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244552],
+            "7": [244553],
+            "10": [244554]
+        },
+        "restriction": {
+            "244554": [7913]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "夢の街ノーチラスへ向かう途中、自然保護区サンレス水郷の一角で休憩を取るサッズとヴァニラ。ルシやドッジのことで、二人はそれぞれの悩みを抱えていた。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "自然保護区サンレス水郷",
+            "music": "♪サンレス水郷",
+            "music_id": "4001405"
+        }
+    },
     "215000101": {
         "name": "The Cure for Insomnia",
         "compendium_id": 45,
@@ -5056,7 +5366,7 @@
         }
     },
     "254000201": {
-        "name": "あなたの言　まずは聞きましょう",
+        "name": "Now Unto Me, Your Innocence You Must Prove",
         "compendium_id": 169,
         "compendium_shown": true,
         "rarity": 1,
@@ -5087,15 +5397,15 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "０組の前に立ちふさがった蒼龍最強の戦士ホシヒメ。０組がコンコルディア女王の仇であるという誤解をとくために、デュースは命を懸けて身の潔白を証明する。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "あなたの言　まずは聞きましょう",
-            "music": "♪寂しき心",
+            "desc": "Celestia, the strongest warrior in Concordia, impedes Class Zero's path. With the students wrongly suspected of murdering the queen of Concordia, Deuce risks her life to prove Class Zero's innocence.",
+            "info": "Celestia, the strongest warrior in Concordia, impedes Class Zero's path. With the students wrongly suspected of murdering the queen of Concordia, Deuce risks her life to prove Class Zero's innocence.",
+            "shop": "Now Unto Me, Your Innocence You Must Prove",
+            "music": "The Forlorn Heart",
             "music_id": "4001205"
         }
     },
     "254000301": {
-        "name": "VSカトル・バシュタール",
+        "name": "Besting Qator Bashtar",
         "compendium_id": 170,
         "compendium_shown": true,
         "rarity": 1,
@@ -5126,10 +5436,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "コンコルディア王国に勝利し、オリエンス統一への最後の障害となるミリテス皇国首都を攻略すべく、作戦を開始した０組。その前に、皇国最強の魔導アーマー乗り・カトルが立ちはだかる。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "VSカトル・バシュタール",
-            "music": "♪戦-白の兵器",
+            "desc": "The Kingdom of Concordia is fallen, and Class Zero now moves to conquer the capital of the Milites Empire—the final obstacle toward Orience's unification. Before achieving their aim, however, they must contend with the empire's strongest magitek armor pilot: Qator Bashtar.",
+            "info": "The Kingdom of Concordia is fallen, and Class Zero now moves to conquer the capital of the Milites Empire—the final obstacle toward Orience's unification. Before achieving their aim, however, they must contend with the empire's strongest magitek armor pilot: Qator Bashtar.",
+            "shop": "Besting Qator Bashtar",
+            "music": "War: The White Weapon",
             "music_id": "4001206"
         }
     },
@@ -5565,6 +5875,45 @@
             "music_id": "400733"
         }
     },
+    "339000201": {
+        "name": "I summon thee, Veritas of the Light!",
+        "compendium_id": 176,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11010,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244510],
+            "7": [244511],
+            "10": [244512]
+        },
+        "restriction": {
+            "244512": [7952]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "In an attempt to turn the tide against Abbott's cannon fire, Jayden uses the power of his ring. The vision he summons is none other than Veritas of the Light of the Sworn Eight.",
+            "info": "In an attempt to turn the tide against Abbott's cannon fire, Jayden uses the power of his ring. The vision he summons is none other than Veritas of the Light of the Sworn Eight.",
+            "shop": "I summon thee, Veritas of the Light!",
+            "music": "Collided Armies",
+            "music_id": "400756"
+        }
+    },
     "342000101": {
         "name": "I'm Back!!",
         "compendium_id": 72,
@@ -5605,7 +5954,7 @@
         }
     },
     "342000201": {
-        "name": "珠魅の存亡をかけた冒険",
+        "name": "Saving the Jumi",
         "compendium_id": 164,
         "compendium_shown": true,
         "rarity": 1,
@@ -5636,10 +5985,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "マナの木の前に立つシャイロ、セラフィナ、瑠璃、そして真珠姫。宝石泥棒から核を狙われ、絶滅の危機に瀕している珠魅たちを救うための冒険が始まる。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "珠魅の存亡をかけた冒険",
-            "music": "♪Legend of MANA ～Title Theme～",
+            "desc": "Shiloh, Serafina, Elazul, and Pearl stand before the towering Mana Tree. Here begins their adventure to protect the Jumi, whose very existence is threatened by the Jewel Hunter, a villain who hunts the Jumi for their cores.",
+            "info": "Shiloh, Serafina, Elazul, and Pearl stand before the towering Mana Tree. Here begins their adventure to protect the Jumi, whose very existence is threatened by the Jewel Hunter, a villain who hunts the Jumi for their cores.",
+            "shop": "Saving the Jumi",
+            "music": "Legend of MANA ~Title Theme~",
             "music_id": "400751"
         }
     },
@@ -6020,6 +6369,41 @@
             "shop": "ケンオウ集結！！！",
             "music": "♪Moment of Recall",
             "music_id": "400003"
+        }
+    },
+    "347000101": {
+        "name": "ドラゴンの島",
+        "compendium_id": 183,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20040,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [110, 110, 0, 0],
+            "DEF": [110, 110, 0, 0],
+            "MAG": [110, 110, 0, 0],
+            "SPR": [110, 110, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244611, 244612, 244613]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "スマートフォン版「Voice of Cards」リリース記念",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "ドラゴンの島",
+            "music": "♪竜を追いかけて ～旅立ちの声～",
+            "music_id": "400757"
         }
     },
     "401000101": {
@@ -7786,7 +8170,7 @@
         "compendium_id": 9047,
         "compendium_shown": true,
         "rarity": 1,
-        "game_id": 11001,
+        "game_id": 20010,
         "job_id": 0,
         "unit_type": 0,
         "stats": {
@@ -8414,6 +8798,569 @@
             "shop": "Star-Rending Claws",
             "music": "Parallel Star",
             "music_id": "400402"
+        }
+    },
+    "401006501": {
+        "name": "The Cost of Power",
+        "compendium_id": 9064,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [80, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917287],
+            "7": [917288],
+            "10": [917289]
+        },
+        "restriction": {
+            "917289": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Nora and her brother reach the deepest part of an ancient ruin believed to house a powerful treasure. They find an artifact emitting mysterious violet-colored energy and Nora goes to retrieve it, but her brother is suddenly attacked by a ferocious monster. Nora manages to absorb the mighty power of the artifact and returns to help her brother, but it is too late...",
+            "info": "Nora and her brother reach the deepest part of an ancient ruin believed to house a powerful treasure. They find an artifact emitting mysterious violet-colored energy and Nora goes to retrieve it, but her brother is suddenly attacked by a ferocious monster. Nora manages to absorb the mighty power of the artifact and returns to help her brother, but it is too late...",
+            "shop": "The Cost of Power",
+            "music": "Sacred Ground",
+            "music_id": "400319"
+        }
+    },
+    "401006601": {
+        "name": "An Unforgettable Smile",
+        "compendium_id": 9065,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 90009,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [750, 1500, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [60, 110, 0, 0],
+            "DEF": [60, 110, 0, 0],
+            "MAG": [60, 110, 0, 0],
+            "SPR": [60, 110, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917245],
+            "7": [917246],
+            "10": [917247]
+        },
+        "restriction": {
+            "917247": [9505]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "With wonderful dance skills and never-ending positivity, the beautiful Addison charms everyone in her path.<br>It is rumored that, even before her arrival, she had fans in Ardra who somehow followed her exploits, but the truth of this will likely remain a mystery.",
+            "info": "With wonderful dance skills and never-ending positivity, the beautiful Addison charms everyone in her path.<br>It is rumored that, even before her arrival, she had fans in Ardra who somehow followed her exploits, but the truth of this will likely remain a mystery.",
+            "shop": "An Unforgettable Smile",
+            "music": "Chill Out",
+            "music_id": "400337"
+        }
+    },
+    "401006701": {
+        "name": "Sage Without Emotion",
+        "compendium_id": 9066,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [135, 135, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917275, 917276, 917278]
+        },
+        "restriction": {
+            "917278": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "After being sealed in a crystal where he was constantly exposed to humanity's negative emotions, a certain sage began to hate all forms of life. Now all that remains within him is the desire to destroy the repulsiveness that is humanity, and with it, the false sun known as \"Rain.\" To reach liberation by returning all to nothingness–that is the one and only truth he embraces.",
+            "info": "After being sealed in a crystal where he was constantly exposed to humanity's negative emotions, a certain sage began to hate all forms of life. Now all that remains within him is the desire to destroy the repulsiveness that is humanity, and with it, the false sun known as \"Rain.\" To reach liberation by returning all to nothingness–that is the one and only truth he embraces.",
+            "shop": "Sage Without Emotion",
+            "music": "A Climactic Clash",
+            "music_id": "400334"
+        }
+    },
+    "401006801": {
+        "name": "Indomitable Military Strategist",
+        "compendium_id": 9067,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [750, 750, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [135, 135, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917340, 917341, 917342]
+        },
+        "restriction": {
+            "917342": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "To stay a surging wave of monsters, the military strategist unleashes roaring white rapids. To protect the peaceful lives of the citizens, the military strategist spares no effort in demonstrating the brilliance of his mind to ease the weight of the world shouldered by his friends who stand at the frontlines.",
+            "info": "To stay a surging wave of monsters, the military strategist unleashes roaring white rapids. To protect the peaceful lives of the citizens, the military strategist spares no effort in demonstrating the brilliance of his mind to ease the weight of the world shouldered by his friends who stand at the frontlines.",
+            "shop": "Indomitable Military Strategist",
+            "music": "Forging a Dream",
+            "music_id": "400401"
+        }
+    },
+    "401006901": {
+        "name": "Battle with Eithne",
+        "compendium_id": 9068,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [65, 130, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917368],
+            "7": [917369],
+            "10": [917370]
+        },
+        "restriction": {
+            "917370": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A young man finds himself in a predicament among the burning buildings, face-to-face with a young woman enwrapped in a pitch-black aura. However, just as her blade is about to deal the finishing blow, Elena and the rest of her comrades come to his aid. No matter what past the two might have had, Elena refuses to just stand by and watch.",
+            "info": "A young man finds himself in a predicament among the burning buildings, face-to-face with a young woman enwrapped in a pitch-black aura. However, just as her blade is about to deal the finishing blow, Elena and the rest of her comrades come to his aid. No matter what past the two might have had, Elena refuses to just stand by and watch.",
+            "shop": "Battle with Eithne",
+            "music": "Sacred Ground",
+            "music_id": "400319"
+        }
+    },
+    "401007001": {
+        "name": "Turning Point",
+        "compendium_id": 9069,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917439, 917440, 917441]
+        },
+        "restriction": {
+            "917439": [9503],
+            "917440": [9503],
+            "917441": [9503]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Richt could not believe his eyes.<br>Eithne, a dear friend he grew up with and wanted nothing more than to protect, had now turned her blade against him. Even cornered at the end of Eithne's dark enshrouded blade, Richt cannot bring himself to draw his own blade against her.",
+            "info": "Richt could not believe his eyes.<br>Eithne, a dear friend he grew up with and wanted nothing more than to protect, had now turned her blade against him. Even cornered at the end of Eithne's dark enshrouded blade, Richt cannot bring himself to draw his own blade against her.",
+            "shop": "Turning Point",
+            "music": "Chaotic Darkness",
+            "music_id": "400335"
+        }
+    },
+    "401007101": {
+        "name": "Flash of Steel",
+        "compendium_id": 9070,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11010,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [135, 135, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917346, 917347, 917349]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Day after day, this samurai's blade is stained red with the blood of the wicked as she endeavors to fulfill her duty to her master and purge the world of darkness. Although her own flesh and blood fell into the very darkness she means to eradicate, she swore herself to the path of the blade.",
+            "info": "Day after day, this samurai's blade is stained red with the blood of the wicked as she endeavors to fulfill her duty to her master and purge the world of darkness. Although her own flesh and blood fell into the very darkness she means to eradicate, she swore herself to the path of the blade.",
+            "shop": "Flash of Steel",
+            "music": "Odyssey",
+            "music_id": "400318"
+        }
+    },
+    "401007201": {
+        "name": "Hero of Grandshelt",
+        "compendium_id": 9071,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [1000, 1000, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [135, 135, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917507, 917508, 917512]
+        },
+        "restriction": {
+            "917512": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "His confident gaze commands the respect and admiration of all. His magnificent twin swords fill the evils they face with awe and despair in equal measure. The mantle of hero is one he wears well, as even now, he stands at the front lines alongside the youths to whom the torch is passed.",
+            "info": "His confident gaze commands the respect and admiration of all. His magnificent twin swords fill the evils they face with awe and despair in equal measure. The mantle of hero is one he wears well, as even now, he stands at the front lines alongside the youths to whom the torch is passed.",
+            "shop": "Hero of Grandshelt",
+            "music": "Force and Furious",
+            "music_id": "400309"
+        }
+    },
+    "401007301": {
+        "name": "A Home Destroyed",
+        "compendium_id": 9072,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [80, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917525],
+            "7": [917526],
+            "10": [917527]
+        },
+        "restriction": {
+            "917527": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A young woman's village was ravaged by bandits. Left with nothing but a few rations, she sets off to travel the landsーperhaps in search of a more peaceful lifeーaccompanied only by her crow companions.",
+            "info": "A young woman's village was ravaged by bandits. Left with nothing but a few rations, she sets off to travel the landsーperhaps in search of a more peaceful lifeーaccompanied only by her crow companions.",
+            "shop": "A Home Destroyed",
+            "music": "Marching Ever Onward",
+            "music_id": "400210"
+        }
+    },
+    "401007401": {
+        "name": "Fundamental Forces, Assemble!",
+        "compendium_id": 9073,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [777, 777, 0, 0],
+            "MP": [77, 77, 0, 0],
+            "ATK": [100, 100, 0, 0],
+            "DEF": [100, 100, 0, 0],
+            "MAG": [100, 100, 0, 0],
+            "SPR": [100, 100, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917360, 917361, 917362]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "From the pages of Fundamental Forces, a graphic novel beloved throughout Paladia, comes the Warriors of the Crystals! Beat back the forces of the Dark Crystal that threaten the lands alongside these heroes blessed by the Crystals!",
+            "info": "From the pages of Fundamental Forces, a graphic novel beloved throughout Paladia, comes the Warriors of the Crystals! Beat back the forces of the Dark Crystal that threaten the lands alongside these heroes blessed by the Crystals!",
+            "shop": "Fundamental Forces, Assemble!",
+            "music": "Forging a Dream",
+            "music_id": "400401"
+        }
+    },
+    "401007501": {
+        "name": "Ever-Rising Flames",
+        "compendium_id": 9074,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [85, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [85, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917500],
+            "7": [917501],
+            "10": [917502]
+        },
+        "restriction": null,
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "The thoughts and feelings contained within the armor respond to Rain's conviction. The Aether he releases both shields his allies and dispels Dioxus's miasma, while the two swords he wields cuts down all enemies in his path.",
+            "info": "The thoughts and feelings contained within the armor respond to Rain's conviction. The Aether he releases both shields his allies and dispels Dioxus's miasma, while the two swords he wields cuts down all enemies in his path.",
+            "shop": "Ever-Rising Flames",
+            "music": "Forging a Dream",
+            "music_id": "400401"
+        }
+    },
+    "401007601": {
+        "name": "Moonlit Night Parade of One",
+        "compendium_id": 9075,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [500, 500, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [135, 135, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917593, 917594, 917595]
+        },
+        "restriction": {
+            "917595": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Well aware of her own battle prowess, this demon needs no procession of followers and fears not the moonlight that pierces the darkness of the night. She simply goes her own way, head held high.",
+            "info": "Well aware of her own battle prowess, this demon needs no procession of followers and fears not the moonlight that pierces the darkness of the night. She simply goes her own way, head held high.",
+            "shop": "Moonlit Night Parade of One",
+            "music": "MUSASABI",
+            "music_id": "400214"
+        }
+    },
+    "401007701": {
+        "name": "Bunny Bosom Buddies",
+        "compendium_id": 9076,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [1000, 1000, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [135, 135, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917514, 917515, 917516]
+        },
+        "restriction": {
+            "917516": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Basking in bunniferous company are Esther and Sylvie, enjoying a blessed breather from battling the baddies that toil to bring about world obliteration.",
+            "info": "Basking in bunniferous company are Esther and Sylvie, enjoying a blessed breather from battling the baddies that toil to bring about world obliteration.",
+            "shop": "Bunny Bosom Buddies",
+            "music": "Chill Out",
+            "music_id": "400337"
+        }
+    },
+    "401007801": {
+        "name": "The Book Burning",
+        "compendium_id": 9077,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [80, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917648],
+            "7": [917649],
+            "10": [917650]
+        },
+        "restriction": {
+            "917650": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A certain scholar is reading in the library when it is suddenly attacked by a mysterious hooded figure. In an attempt to destroy as many texts as possible, the figure unleashes a flurry of flames, only to have his plan quite literally backfire against the scholar's powerful magic. With his quick thinking and quicker magic, Kir manages to prevent further damage to the library.",
+            "info": "A certain scholar is reading in the library when it is suddenly attacked by a mysterious hooded figure. In an attempt to destroy as many texts as possible, the figure unleashes a flurry of flames, only to have his plan quite literally backfire against the scholar's powerful magic. With his quick thinking and quicker magic, Kir manages to prevent further damage to the library.",
+            "shop": "The Book Burning",
+            "music": "Overcome the Menace",
+            "music_id": "400315"
+        }
+    },
+    "401008001": {
+        "name": "Son of a Hero",
+        "compendium_id": 9079,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [140, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917809, 917810, 917811]
+        },
+        "restriction": {
+            "917811": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "His unwavering gaze, fixed firmly on the future, is a beacon of hope for the masses who look to him as a shining paragon. Those who follow in his footsteps are nigh endless—perhaps because he too treads the path of a man who commands the utmost respect and honor.",
+            "info": "His unwavering gaze, fixed firmly on the future, is a beacon of hope for the masses who look to him as a shining paragon. Those who follow in his footsteps are nigh endless—perhaps because he too treads the path of a man who commands the utmost respect and honor.",
+            "shop": "Son of a Hero",
+            "music": "Dawn",
+            "music_id": "400329"
         }
     },
     "900020101": {
