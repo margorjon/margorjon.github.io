@@ -1,6 +1,192 @@
-[  
+[
+	{
+		"date": "March 21st, 2024",
+		"sources": [
+			{"type": "banner", "units": ["401016107", "401016117"]},
+			{"type": "storyPart", "name": "Vision Cards", "ids": ["401010101", "401010201"]}
+		]
+	},
+	{
+		"date": "March 14th, 2024",
+		"sources": [
+			{"type": "banner", "units": ["100043107", "100043117"]},
+			{"type": "storyPart", "name": "Vision Cards", "ids": ["100009001", "207000401"]},
+			{"type": "storyPart", "name": "Items", "ids": ["504244970"]}
+		]
+	},
+	{
+		"date": "March 7th, 2024",
+		"sources": [
+			{"type": "banner", "units": ["100043007", "100043017", "100043207", "100043217"]},
+			{"type": "storyPart", "name": "Vision Cards", "ids": ["100008901", "100009101"]}
+		]
+	},
+	{
+		"date": "February 29th, 2024",
+		"sources": [
+			{"type": "banner", "units": ["304000807"]}
+		]
+	},
+	{
+		"date": "February 22th, 2024",
+		"sources": [
+			{"type": "banner", "units": ["304000607", "304000707"]},
+            {"type": "storyPart", "name": "Vision Cards", "ids":["304000101"]},
+			{"type": "storyPart", "name": "Items", "ids": ["302024700", "303014400", "405032500", "405032600", "405032700", "405033000", "409083300", "504244963"]}
+        ]
+	},
     {
-    "date":"August 10th, 2023","sources": [
+        "date":"February 15th, 2024","sources": 
+        [
+            {"type":"banner", "units":["401016007"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["401009801","401010001"]}
+        ]
+    },
+    {
+        "date":"February 8th, 2024","sources": 
+        [
+            {"type":"banner", "units":["100044107","100044207"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["401009901","100008801"]},
+            {"type":"storyPart", "name":"The Great Phantom Bird", "ids": ["405036900","405037000","405037100","405037100"]}
+        ]
+    },
+    {
+        "date":"February 3rd, 2024","sources": 
+        [
+            {"type":"banner", "units":["206003507","401015907"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["401009501","401009701","206000601"]},
+            {"type":"storyPart", "name":"Hellknight at Tomb's End", "ids": ["405031700","405031800"]},
+            {"type":"storyPart", "name":"Clash of Wills: Obnixus Drop (Inferno) Exchange", "ids": ["1100000816","1100000817","1100000818","1500000256","1500000257"]}
+        ]
+    },
+    {
+        "date":"January 18th, 2024","sources": 
+        [
+            {"type":"banner", "units":["215003307","215003207"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["215000501","401009601"]},
+            {"type":"storyPart", "name":"Ogre Plagued with Starscourge", "ids": ["405035900","405036000","405036100","405036200","405036300","405036400","405036500","405036600","405036700"]}
+        ]
+    },
+    {
+        "date":"January 11th, 2024","sources": 
+        [
+            {"type":"banner", "units":["215003407"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["215000501"]},
+            {"type":"storyPart", "name":"The Long Road", "ids": ["308012700","308012800",
+            "308012900","308013000","313012600","313012700","313012800","313012900","405035100","405035200",
+            "405035300","405035400","405035500","405035600","405035700","405035800","405035900","409083700",
+            "409083800","409083900","409084000","504244910","504244911","504244912","504244913","504244914"]},
+            {"type":"storyPart", "name":"Steel Castle Coin Exchange Update", "ids":["1100000808","1100000809","1100000810","1100000811","1100000812","1100000813"]}
+        ]
+    }, 
+    {
+        "date":"January 4th, 2024","sources": 
+        [
+            {"type":"banner", "units":["215003107"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["215000401"]},
+            {"type":"storyPart", "name":"City of Daemons", "ids": ["301009300","301009400","301009500","301009600","301009700"]},
+            {"type":"storyPart", "name":"Return To Insomnia", "ids":["409083600"]}
+        ]
+    }, 
+    {
+        "date":"December 21st, 2023","sources": 
+        [
+            {"type":"banner", "units":["401015807"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["401008901", "401009301"]},
+            {"type":"storyPart", "name":"Clash of Wills: Xenostone Shard Equippable Ability Pop-Up Exchange", "ids": ["1500000252", "1500000253"]}
+        ]
+    }, 
+    {
+        "date":"November 7th, 2023","sources": 
+        [
+            {"type":"banner", "units":["344001107", "344001207", "344001307"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["344000601", "344000701"]}
+        ]
+    }, 
+    {
+        "date":"November 2nd, 2023","sources": 
+        [
+            {"type":"banner", "units":["344000807", "344000907", "344001007"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["344000501"]},
+            {"type":"storyPart", "name":"DRAGON QUEST - The Adventure of Dai Box Summon", "ids": ["302024100","406008800","405031100","403059900"]}
+        ]
+    },
+    {
+        "date":"October 26th, 2023","sources": 
+        [
+            {"type":"banner", "units":["401015507"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["401008601", "401009101"]},
+            {"type":"storyPart", "name":"The Crystal Tower - Exploration", "ids": ["310014200","302023600","302023700","404007300","404007400","406008000","406008100","401004400","401004500","409081500","409081600","409081700","409081800"]},
+            {"type":"storyPart", "name":"Clash of Wills Gear Upgrades", "ids": ["1100000802","1100000803","1100000804","1100000805","1100000806"]},
+            {"type":"storyPart", "name":"Clash of Wills: Obnixus Drop (Snow) Exchange", "ids": ["1500000243","1500000244"]}
+        ]
+    },
+    {
+        "date":"October 19th, 2023","sources": 
+        [
+            {"type":"banner", "units":["201000807","203004507"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["201000301", "203000301", "100008701"]},
+            {"type":"storyPart", "name":"Start of a Long Journey", "ids": ["407007700"]}
+        ]
+    },
+    {
+        "date":"October 12th, 2023","sources": 
+        [
+            {"type":"banner", "units":["100042807","100042907"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["401009001"]},
+            {"type":"storyPart", "name":"Shiva's Icebound Katana", "ids": ["304012600"]},
+            {"type":"storyPart", "name":"Steel Castle Coin Exchange Update", "ids":["1100000792","1100000793","1100000794","1100000795","1100000796","1100000797"]}
+        ]
+    },
+    {
+        "date":"October 5th, 2023","sources": 
+        [
+            {"type":"banner", "units":["100042407","100042607"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["100008401"]},
+            {"type":"storyPart", "name":"Carbuncle's Jeweled Staff", "ids":["311009200","311009300","311009400"]}
+        ]
+    },
+    {
+        "date":"September 28st, 2023","sources": [
+            {"type":"banner", "units":["100042107", "100042507", "100042707"]},
+            {"type":"storyPart", "name":"Vision Cards", "ids": ["100008601", "401008501"]},
+            {"type":"storyPart", "name":"Genesis of Chaos", "ids":["302023400"]},
+            {"type":"storyPart", "name":"An Esper of Strange Appearance", "ids":["310013900","310014000","310014100"]},
+            {"type":"storyPart", "name":"A Vision of Might", "ids":["409080700","409080800","409080900","409081000"]},
+            {"type":"storyPart", "name":"SBB: Safer-Sephiroth EXT", "ids":["1500000240","1500000241","1500000242"]}
+        ]
+    },
+    {
+    "date":"September 21st, 2023","sources": [
+        {"type":"banner", "units":["401015307"]},
+        {"type":"storyPart", "name":"Vision Cards", "ids": ["401008401", "401008201", "100008001"]},
+        {"type":"storyPart", "name":"Influence of Deep", "ids":["1100000764","1100000784","1100000765", "1100000785", "1500000235"]}
+    ]},
+    {
+    "date":"September 14th, 2023","sources": [
+        {"type":"banner", "units":["213001707", "213001807", "213001907"]},
+        {"type":"storyPart", "name":"Vision Cards", "ids": ["213000501"]},
+        {"type":"storyPart", "name":"Beast Hemmed in Stone", "ids":["313012100","313012200","313012300"]}
+    ]},
+    {
+    "date":"September 7th, 2023","sources": [
+        {"type":"banner", "units":["401015407"]},
+        {"type":"storyPart", "name":"Vision Cards", "ids": ["401008301"]}
+    ]},
+    {
+    "date":"August 31st, 2023","sources": [
+        {"type":"banner", "units":["100042307", "100041607"]},
+        {"type":"storyPart", "name":"Vision Cards", "ids": ["100008101"]},
+        {"type":"storyPart", "name":"Hidden Chamber of Arms", "ids": ["310013500"]},
+        {"type":"storyPart", "name":"The Sealed Tower", "ids": ["407007500", "309010600", "504100930"]}
+    ]},
+    {
+    "date":"August 24th, 2023","sources": [
+        {"type":"banner", "units":["401015207"]},
+        {"type":"storyPart", "name":"Vision Cards", "ids": ["401007901", "401008101"]}
+    ]},
+    {
+    "date":"August 17th, 2023","sources": [
         {"type":"banner", "units":["213001407", "213001507"]},
         {"type":"storyPart", "name":"Vision Cards", "ids": ["213000301", "213000401", "401008001"]},
         {"type":"storyPart", "name":"Cast From Paradise", "ids": ["409077600","409077700","409077800","409077900","409078000","409078100","409078200","409078300","409078400","409078500","409078600","409078700","409078800","409078900"

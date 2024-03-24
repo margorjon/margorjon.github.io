@@ -1,7 +1,5 @@
 import fs from 'fs';
 import request from 'request';
-import experiments  from 'webpack';
-import PNG from 'pngjs';
 
 var stats = ["HP","MP","ATK","DEF","MAG","SPR"];
 var elements = ["fire", "ice", "lightning", "water", "wind", "earth", "light", "dark"];
@@ -45,6 +43,29 @@ var elementsMap = {
     "Dark": "dark"
 }
 
+var espersMap = {
+    "セイレーン": "Siren",
+    "イフリート": "Ifrit",
+    "シヴァ": "Shiva",
+    "カーバンクル": "Carbuncle",
+    "ディアボロス": "Diabolos",
+    "ゴーレム": "Golem",
+    "ラムウ": "Ramuh",
+    "タイタン": "Titan",
+    "テトラシルフィード": "Tetra Sylphid",
+    "オーディン": "Odin",
+    "ラクシュミ": "Lakshmi",
+    "アレキサンダー": "Alexander",
+    "フェニックス": "Phoenix",
+    "バハムート": "Bahamut",
+    "フェンリル": "Fenrir",
+    "リヴァイアサン": "Leviathan",
+    "アニマ": "Anima",
+    "阿修羅": "Asura",
+    "黒龍": "Kokuryu",
+    "Garuda": "Garuda",
+}
+
 var unitNamesById = {};
 var unitIdByTmrId = {};
 var oldItemsAccessById = {};
@@ -62,6 +83,7 @@ async function getData(filename, callback) {
             if (!error && response.statusCode == 200) {
                 console.log(filename + " downloaded");
                 var result = JSON.parse(body);
+                fs.writeFileSync('./sources/' + filename, body);
                 callback(result);
             } else {
                 console.log(error)
@@ -135,8 +157,8 @@ function beginScript() {
                                     // node is equal to the object at the current nodeID
                                     var node = boardIn[nodeId];
     
-                                    //If the node.parent_node_id is null se tthe rootNodeId to that nodeId
-                                    if (!node.parent_node_id) {
+                                    //If the node.parent_node_id is null set the rootNodeId to that nodeId
+                                    if (!node.parent_node_id && !node.reward) {
                                         rootNodeId = nodeId
                                     } else {
                                         // Otherwise nodeOut = getNode() and with the returned value set the nodeByIds[nodeId] to that node.
@@ -161,6 +183,8 @@ function beginScript() {
 
                             console.log("Writing esperBoards.json to static/GL")
                             fs.writeFileSync('../../static/GL/esperBoards.json', JSON.stringify(out));
+                            //once this is done also write it to esperBoards.json in the tools/GL folder
+                            fs.writeFileSync('./esperBoards.json', JSON.stringify(out));
                     });
                 });
             });

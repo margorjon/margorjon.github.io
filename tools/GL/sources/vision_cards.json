@@ -1616,9 +1616,9 @@
             "HP": [400, 800, 0, 0],
             "MP": [0, 0, 0, 0],
             "ATK": [0, 0, 0, 0],
-            "DEF": [40, 80, 0, 0],
+            "DEF": [60, 120, 0, 0],
             "MAG": [0, 0, 0, 0],
-            "SPR": [40, 80, 0, 0],
+            "SPR": [60, 120, 0, 0],
             "element_resist": null,
             "status_resist": null
         },
@@ -1958,10 +1958,10 @@
         "stats": {
             "HP": [0, 0, 0, 0],
             "MP": [0, 0, 0, 0],
-            "ATK": [40, 80, 0, 0],
-            "DEF": [20, 40, 0, 0],
-            "MAG": [40, 80, 0, 0],
-            "SPR": [20, 40, 0, 0],
+            "ATK": [60, 120, 0, 0],
+            "DEF": [30, 60, 0, 0],
+            "MAG": [60, 120, 0, 0],
+            "SPR": [30, 60, 0, 0],
             "element_resist": null,
             "status_resist": null
         },
@@ -2095,8 +2095,8 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "In one particular world, there exists a tradition wherein participants show off their talents at feasts for special occasions. To the delight of the guests, Rain's and Lasswell's visions decide to cross swords for their performance, putting on a bold show in the process.",
-            "info": "In one particular world, there exists a tradition wherein participants show off their talents at feasts for special occasions. To the delight of the guests, Rain's and Lasswell's visions decide to cross swords for their performance, putting on a bold show in the process.",
+            "desc": "In one particular world, there exists a tradition wherein participants show off their talents at feasts for special occasions. For their performance, Rain and Lasswell crossed swords and put on a bold show in the process, to the delight of the guests.",
+            "info": "In one particular world, there exists a tradition wherein participants show off their talents at feasts for special occasions. For their performance, Rain and Lasswell crossed swords and put on a bold show in the process, to the delight of the guests.",
             "shop": "A Dynamic Demonstration",
             "music": "MUSASABI",
             "music_id": "400214"
@@ -2191,7 +2191,7 @@
             "MP": [0, 0, 0, 0],
             "ATK": [70, 140, 0, 0],
             "DEF": [0, 0, 0, 0],
-            "MAG": [0, 0, 0, 0],
+            "MAG": [70, 140, 0, 0],
             "SPR": [0, 0, 0, 0],
             "element_resist": null,
             "status_resist": null
@@ -2706,7 +2706,7 @@
         }
     },
     "100008001": {
-        "name": "自己犠牲と別れ",
+        "name": "Parting in Self-Sacrifice",
         "compendium_id": 172,
         "compendium_shown": true,
         "rarity": 1,
@@ -2739,15 +2739,15 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "オメガと一体化したスネフリンガは、火口に飛び込むことでこの怪物を倒そうとする。その決断を認められず涙するリダル。自分のために泣いてくれる幼馴染に感謝の言葉を残し、彼女は溶岩の中へと没した。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "自己犠牲と別れ",
-            "music": "♪The Oath",
+            "desc": "Now fully merged with Omega, Snovlinka prepares to leap into a volcano, that she may destroy the monster once and for all. Riddar weeps bitterly, unwilling to accept her decision. Touched by her friend's tears, Snovlinka offers words of heartfelt thanks before sinking into the lava below.",
+            "info": "Now fully merged with Omega, Snovlinka prepares to leap into a volcano, that she may destroy the monster once and for all. Riddar weeps bitterly, unwilling to accept her decision. Touched by her friend's tears, Snovlinka offers words of heartfelt thanks before sinking into the lava below.",
+            "shop": "Parting in Self-Sacrifice",
+            "music": "The Oath",
             "music_id": "400106"
         }
     },
     "100008101": {
-        "name": "ドレスでお散歩",
+        "name": "Dressed for a Stroll",
         "compendium_id": 181,
         "compendium_shown": true,
         "rarity": 1,
@@ -2778,10 +2778,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "完成したドレスを受け取るためグランシェルトを訪れたアヤカ。自分のために仕立てられた特別な一着に心弾んだ彼女は、ドレス姿で城下をお散歩。春の陽気も、着飾ったアヤカを祝福してくれているようだ。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "ドレスでお散歩",
-            "music": "♪Once more Dance?",
+            "desc": "Ayaka arrives in Grandshelt to pick up a dress that is finally finished. Heart sent aflutter at the gorgeous garment specially made for her, Ayaka dons it for a stroll in the castle town. Dressed to the nines, even the brisk spring weather seems to offer its tidings to her.",
+            "info": "Ayaka arrives in Grandshelt to pick up a dress that is finally finished. Heart sent aflutter at the gorgeous garment specially made for her, Ayaka dons it for a stroll in the castle town. Dressed to the nines, even the brisk spring weather seems to offer its tidings to her.",
+            "shop": "Dressed for a Stroll",
+            "music": "Once more Dance?",
             "music_id": "400203"
         }
     },
@@ -2818,6 +2818,501 @@
             "shop": "春のおでかけ",
             "music": "♪MUSASABI",
             "music_id": "400214"
+        }
+    },
+    "100008401": {
+        "name": "Fusion of Heroes",
+        "compendium_id": 186,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244620, 244621, 244622]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A collision of Taivas and Madeen, two figures known as heroes. By crossing their swords, they come to understand and acknowledge one another. Their fighting spirit then fuses together, giving birth to a new warrior.",
+            "info": "A collision of Taivas and Madeen, two figures known as heroes. By crossing their swords, they come to understand and acknowledge one another. Their fighting spirit then fuses together, giving birth to a new warrior.",
+            "shop": "Fusion of Heroes",
+            "music": "Celestial Battle",
+            "music_id": "400007"
+        }
+    },
+    "100008501": {
+        "name": "Esper and E-Spear",
+        "compendium_id": 187,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [85, 170, 0, 0],
+            "SPR": [85, 170, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244623],
+            "7": [244624],
+            "10": [244625]
+        },
+        "restriction": {
+            "244623": [7702],
+            "244624": [7702],
+            "244625": [7702]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A vision of Siren lending her power to Yshe, having been intrigued by Yshe's devotion to her spearmanship. The fusion of the two aims to reach new heights, going to the very limit of their newly gained power.",
+            "info": "A vision of Siren lending her power to Yshe, having been intrigued by Yshe's devotion to her spearmanship. The fusion of the two aims to reach new heights, going to the very limit of their newly gained power.",
+            "shop": "Esper and E-Spear",
+            "music": "Celestial Battle",
+            "music_id": "400007"
+        }
+    },
+    "100008601": {
+        "name": "Time Mage and Dimensional Esper",
+        "compendium_id": 184,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244601, 244602, 244603]
+        },
+        "restriction": {
+            "244601": [8015],
+            "244602": [8015],
+            "244603": [8015]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A vision of Roca fused with the esper Atomos. This esper, which can swallow time and space, gives even greater strength to her time magic. ...However, it seems something else got swallowed up by Atomos just before their fusion.",
+            "info": "A vision of Roca fused with the esper Atomos. This esper, which can swallow time and space, gives even greater strength to her time magic. ...However, it seems something else got swallowed up by Atomos just before their fusion.",
+            "shop": "Time Mage and Dimensional Esper",
+            "music": "Celestial Battle",
+            "music_id": "400007"
+        }
+    },
+    "100008701": {
+        "name": "Dragon King in Darkness",
+        "compendium_id": 185,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [85, 170, 0, 0],
+            "DEF": [85, 170, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244604],
+            "7": [244608],
+            "10": [244609]
+        },
+        "restriction": {
+            "244604": [7704],
+            "244608": [7704],
+            "244609": [7704]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A dark power, which caused the espers to rampage, has also infected Bahamut. The dragon king rages out of control while emitting an ominous aura, and while he once sided with Rain and his friends, he faces them now with animosity.",
+            "info": "A dark power, which caused the espers to rampage, has also infected Bahamut. The dragon king rages out of control while emitting an ominous aura, and while he once sided with Rain and his friends, he faces them now with animosity.",
+            "shop": "Dragon King in Darkness",
+            "music": "Sinister Souls",
+            "music_id": "400403"
+        }
+    },
+    "100008801": {
+        "name": "The Oracle's Grace",
+        "compendium_id": 206,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244944],
+            "7": [244945],
+            "10": [244946]
+        },
+        "restriction": {
+            "244946": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Lasswell and company were surrounded by monsters. In that dire moment, Physalis activated her newly acquired power, the Oracle's Grace, and one of the creatures came under her control, obeying her commands.",
+            "info": "Lasswell and company were surrounded by monsters. In that dire moment, Physalis activated her newly acquired power, the Oracle's Grace, and one of the creatures came under her control, obeying her commands.",
+            "shop": "The Oracle's Grace",
+            "music": "Point of No Return",
+            "music_id": "400317"
+        }
+    },
+    "100008901": {
+        "name": "Strike of the Water God",
+        "compendium_id": 210,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245049, 245050, 245051]
+        },
+        "restriction": {
+            "245051": [7216],
+            "245049": [7704],
+            "245050": [7704]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Rain unleashes Galaxius Nova, a mighty strike with the blessing of the Water God. The force of his blade parts the ocean and pierces his enemies!",
+            "info": "Rain unleashes Galaxius Nova, a mighty strike with the blessing of the Water God. The force of his blade parts the ocean and pierces his enemies!",
+            "shop": "Strike of the Water God",
+            "music": "♪Fight for Truth",
+            "music_id": "400415"
+        }
+    },
+    "100009001": {
+        "name": "Esper Against Esper",
+        "compendium_id": 211,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245052],
+            "7": [245053],
+            "10": [245054]
+        },
+        "restriction": {
+            "245054": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Bismarck, the Esper of Destruction, arrives in Lapis. Leviathan, the Water God, moves to stop it. These titanic mights go head to head in combat, and with the Water Temple as their stage, the two espers clash in a battle to the death beneath the crashing waves!",
+            "info": "Bismarck, the Esper of Destruction, arrives in Lapis. Leviathan, the Water God, moves to stop it. These titanic mights go head to head in combat, and with the Water Temple as their stage, the two espers clash in a battle to the death beneath the crashing waves!",
+            "shop": "Esper Against Esper",
+            "music": "Immense Danger",
+            "music_id": "400414"
+        }
+    },
+    "100009101": {
+        "name": "Struggle for the Root Crystal",
+        "compendium_id": 212,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245055, 245056, 245057]
+        },
+        "restriction": {
+            "245055": [7707],
+            "245056": [7707],
+            "245057": [8012]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "They fight battle after battle beneath the waves while surrounding the Root Crystal. These warriors, having received the blessing of the Water God, stand against that which tries to destroy their world!",
+            "info": "They fight battle after battle beneath the waves while surrounding the Root Crystal. These warriors, having received the blessing of the Water God, stand against that which tries to destroy their world!",
+            "shop": "Struggle for the Root Crystal",
+            "music": "♪Fight for Truth",
+            "music_id": "400415"
+        }
+    },
+    "100009201": {
+        "name": "窮地に現れしビジョン",
+        "compendium_id": 213,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245058],
+            "7": [245059],
+            "10": [245060]
+        },
+        "restriction": {
+            "245060": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "窮地に陥ったレインたちを救うべく現れた魔人フィーナのビジョン。破滅の力にも匹敵する強大な力を放ち、カオス＝ビスマルクに立ち向かう！",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "窮地に現れしビジョン",
+            "music": "♪Chaotic Waves",
+            "music_id": "400416"
+        }
+    },
+    "100009301": {
+        "name": "「想い」を司る幻獣",
+        "compendium_id": 215,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245061, 245062, 245063]
+        },
+        "restriction": {
+            "245061": [7704],
+            "245062": [7704],
+            "245063": [8015]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "魔人フィーナのビジョンが託した「永遠」が、ソフィの真の力を解放する。まばゆい光に包まれたソフィは、神々しい幻獣の姿へと変身。全てのものが想いに還元される空間を作りだし、決戦に挑む！",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "「想い」を司る幻獣",
+            "music": "♪Chaotic Waves",
+            "music_id": "400416"
+        }
+    },
+    "100009401": {
+        "name": "破滅の幻獣",
+        "compendium_id": 216,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [120, 120, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [120, 120, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245121, 245122, 245123]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "「破滅の幻獣」を追って、ラピスに現れた少女ソフィ。迫り来る「破滅の幻獣」を止められなければ、ラピスは消滅する――彼女の警告を信じたレインと仲間たちは、世界を救うために立ち上がった。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "破滅の幻獣",
+            "music": "♪Disruption in the Depths",
+            "music_id": "400413"
+        }
+    },
+    "100009601": {
+        "name": "7.5周年記念人気投票！",
+        "compendium_id": 214,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [100, 100, 0, 0],
+            "DEF": [100, 100, 0, 0],
+            "MAG": [100, 100, 0, 0],
+            "SPR": [100, 100, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245166, 245167, 245168]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "7.5周年記念FFBEオリジナルキャラクター大投票で栄冠を掴んだ5人、レイン、フィーナ、魔人フィーナ、タイヴァス、そしてダークレインが激突！人々が夢見たアルドール・オーダーの幻影が今ここに！",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "7.5周年記念人気投票！",
+            "music": "♪The Sky's the Limit!",
+            "music_id": "400340"
+        }
+    },
+    "100009701": {
+        "name": "クリスタル・プラネット",
+        "compendium_id": 217,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [500, 500, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [100, 100, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [100, 100, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245171, 245172, 245173]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "「クリスタル・プラネット -海底のファンタジーアクアリウム-」開催記念。<br>BGM：IBERIs＆「Bloom up the sky」",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "クリスタル・プラネット",
+            "music": "♪Bloom up the sky",
+            "music_id": "400780"
         }
     },
     "201000101": {
@@ -2897,6 +3392,46 @@
             "shop": "Battle with Marilith",
             "music": "Battle",
             "music_id": "400913"
+        }
+    },
+    "201000301": {
+        "name": "Battle with Garland",
+        "compendium_id": 188,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [65, 130, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244651],
+            "7": [244652],
+            "10": [244653]
+        },
+        "restriction": {
+            "244652": [8017],
+            "244653": [8017]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "The Warriors of Light face Garland within the Chaos Shrine. They ready their swords to save the kidnapped princess of Cornelia.",
+            "info": "The Warriors of Light face Garland within the Chaos Shrine. They ready their swords to save the kidnapped princess of Cornelia.",
+            "shop": "Battle with Garland",
+            "music": "Chaos Shrine FFPR Ver.",
+            "music_id": "4001503"
         }
     },
     "202000101": {
@@ -3014,6 +3549,45 @@
             "music_id": "4000092"
         }
     },
+    "202000401": {
+        "name": "ミンウ、死力を尽くして…",
+        "compendium_id": 189,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10002,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [55, 110, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [55, 110, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244654],
+            "7": [244655],
+            "10": [244656]
+        },
+        "restriction": {
+            "244656": [7902]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "ミシディアの塔で、封印された部屋の扉を開こうと、持てる魔力のすべてをぶつけるミンウ。究極魔法アルテマ入手のため、力を使い果たした彼は倒れてしまう。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "ミンウ、死力を尽くして…",
+            "music": "♪魔導士の塔 FFPR Ver.",
+            "music_id": "4001508"
+        }
+    },
     "203000101": {
         "name": "Crystal's Revelation",
         "compendium_id": 25,
@@ -3090,6 +3664,45 @@
             "shop": "Bahamut! Run Away! Run Away!",
             "music": "Battle 2",
             "music_id": "401004"
+        }
+    },
+    "203000301": {
+        "name": "Battle with Xande",
+        "compendium_id": 190,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10003,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244657],
+            "7": [244658],
+            "10": [244661]
+        },
+        "restriction": {
+            "244661": [7903]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "The Warriors of Light reach the top of the Crystal Tower thanks to the pure hearts of Sara and the others. There they face off against Xande, who aspires to drown the world in darkness.",
+            "info": "The Warriors of Light reach the top of the Crystal Tower thanks to the pure hearts of Sara and the others. There they face off against Xande, who aspires to drown the world in darkness.",
+            "shop": "Battle with Xande",
+            "music": "The Crystal Tower FFPR Ver.",
+            "music_id": "4001512"
         }
     },
     "204000101": {
@@ -3247,6 +3860,46 @@
             "shop": "Birth of a Paladin",
             "music": "The Red Wings",
             "music_id": "400932"
+        }
+    },
+    "204000601": {
+        "name": "リディアの勇気",
+        "compendium_id": 198,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10004,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [65, 130, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244784],
+            "7": [244785],
+            "10": [244786]
+        },
+        "restriction": {
+            "244785": [7904],
+            "244786": [7904]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "ファブールへ向かう途中、ホブス山の山道を塞ぐ氷に足止めされる一行。過去のトラウマから火を恐れていたリディアだったが、仲間たちのために勇気を振り絞ってファイアを唱える。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "リディアの勇気",
+            "music": "♪少女リディア FFPR Ver.",
+            "music_id": "4001616"
         }
     },
     "205000101": {
@@ -3445,6 +4098,45 @@
             "music_id": "400817"
         }
     },
+    "205000701": {
+        "name": "Battling the Wing Raptor",
+        "compendium_id": 195,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10005,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [55, 110, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [55, 110, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244742],
+            "7": [244743],
+            "10": [244744]
+        },
+        "restriction": {
+            "244744": [7905]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Bartz and his companions face a wing raptor that bars their way as they climb the stairs to the highest reaches of the Wind Shrine. Owing to the abrupt cessation of wind, monsters were able to make their way into the inner sanctum of the shrine.",
+            "info": "Bartz and his companions face a wing raptor that bars their way as they climb the stairs to the highest reaches of the Wind Shrine. Owing to the abrupt cessation of wind, monsters were able to make their way into the inner sanctum of the shrine.",
+            "shop": "Battling the Wing Raptor",
+            "music": "Battle 2 FFPR Ver.",
+            "music_id": "4001606"
+        }
+    },
     "206000101": {
         "name": "Search for the Esper",
         "compendium_id": 26,
@@ -3599,6 +4291,85 @@
             "shop": "Coin of Fate",
             "music": "Coin of Fate",
             "music_id": "400893"
+        }
+    },
+    "206000501": {
+        "name": "Ultros Reprise",
+        "compendium_id": 194,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10006,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244739, 244740, 244741]
+        },
+        "restriction": {
+            "244739": [8018],
+            "244740": [8018],
+            "244741": [8018]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Locke and his friends visit the Opera House in an attempt to reach Setzer, as they require use of his airship. Instead, they end up fighting on stage against Ultros, who has come to steal the show.",
+            "info": "Locke and his friends visit the Opera House in an attempt to reach Setzer, as they require use of his airship. Instead, they end up fighting on stage against Ultros, who has come to steal the show.",
+            "shop": "Ultros Reprise",
+            "music": "Grand Finale FFPR Ver.",
+            "music_id": "4001610"
+        }
+    },
+    "206000601": {
+        "name": "Searching for Friends",
+        "compendium_id": 197,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10006,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [65, 130, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244778],
+            "7": [244779],
+            "10": [244783]
+        },
+        "restriction": {
+            "244779": [7906],
+            "244783": [7906]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Setzer boards the Falcon, salvaged from its resting place in the depths of Darill's Tomb, along with his friends. The wings left to him by a friend who once dreamed of being the world's fastest in the skies now takes flight once more.",
+            "info": "Setzer boards the Falcon, salvaged from its resting place in the depths of Darill's Tomb, along with his friends. The wings left to him by a friend who once dreamed of being the world's fastest in the skies now takes flight once more.",
+            "shop": "Searching for Friends",
+            "music": "Searching for Friends FFPR Ver.",
+            "music_id": "4001613"
         }
     },
     "207000101": {
@@ -5001,7 +5772,7 @@
             "10": [239022]
         },
         "restriction": {
-            "239022": [7273]
+            "239022": [7913]
         },
         "max_level": 10,
         "exp_pattern": 110,
@@ -5134,7 +5905,7 @@
         }
     },
     "213000501": {
-        "name": "自然保護区サンレス水郷",
+        "name": "The Sunleth Waterscape Reserve",
         "compendium_id": 182,
         "compendium_shown": true,
         "rarity": 1,
@@ -5165,10 +5936,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "夢の街ノーチラスへ向かう途中、自然保護区サンレス水郷の一角で休憩を取るサッズとヴァニラ。ルシやドッジのことで、二人はそれぞれの悩みを抱えていた。",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "自然保護区サンレス水郷",
-            "music": "♪サンレス水郷",
+            "desc": "Sazh and Vanille rest in a corner of the Sunleth Waterscape while on their way to Nautilus, the City of Dreams. Yet even among nature's bounty, their minds are troubled by thoughts of l'Cie and Dajh.",
+            "info": "Sazh and Vanille rest in a corner of the Sunleth Waterscape while on their way to Nautilus, the City of Dreams. Yet even among nature's bounty, their minds are troubled by thoughts of l'Cie and Dajh.",
+            "shop": "The Sunleth Waterscape Reserve",
+            "music": "The Sunleth Waterscape",
             "music_id": "4001405"
         }
     },
@@ -5289,6 +6060,84 @@
             "music_id": "401026"
         }
     },
+    "215000401": {
+        "name": "Walk Tall, My Son",
+        "compendium_id": 203,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10015,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244803, 244804, 244805]
+        },
+        "restriction": {
+            "244803": [8019],
+            "244804": [8019],
+            "244805": [8019]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "On the eve of the signing of the armistice between Lucis and Niflheim, Noctis sets out from Insomnia for his soon-to-be wedding as part of the peace treaty. As they part, Regis’s words for his son reflect his innermost emotions as a father and as one of the line of Lucis. This would be their last farewell…",
+            "info": "On the eve of the signing of the armistice between Lucis and Niflheim, Noctis sets out from Insomnia for his soon-to-be wedding as part of the peace treaty. As they part, Regis’s words for his son reflect his innermost emotions as a father and as one of the line of Lucis. This would be their last farewell…",
+            "shop": "Walk Tall, My Son",
+            "music": "Departure",
+            "music_id": "4001704"
+        }
+    },
+    "215000501": {
+        "name": "Fight of the Draconian and the Infernian",
+        "compendium_id": 204,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10015,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244815],
+            "7": [244816],
+            "10": [244817]
+        },
+        "restriction": {
+            "244817": [7915]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "The Infernian, Ifrit, is locked in a dead heat with Noctis when the Draconian, Bahamut, joins the battle. Bahamut unleashes Ultima Sword from high above, but Ifrit dodges each attack and returns fire.",
+            "info": "The Infernian, Ifrit, is locked in a dead heat with Noctis when the Draconian, Bahamut, joins the battle. Bahamut unleashes Ultima Sword from high above, but Ifrit dodges each attack and returns fire.",
+            "shop": "Fight of the Draconian and the Infernian",
+            "music": "NOX DIVINA",
+            "music_id": "4001708"
+        }
+    },
     "249000101": {
         "name": "Y, R, P. - It's showtime, girls.",
         "compendium_id": 128,
@@ -5324,6 +6173,119 @@
             "shop": "Y, R, P. - It's showtime, girls.",
             "music": "YRP, Fight! No. 1",
             "music_id": "4000405"
+        }
+    },
+    "253000101": {
+        "name": "Blades of Grass",
+        "compendium_id": 199,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11002,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244749, 244750, 244751]
+        },
+        "restriction": {
+            "244749": [8014],
+            "244750": [8014],
+            "244751": [8014]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "During a battle against the Corpse Brigade, Ramza and Delita were confronted by the harsh reality of their differences in birth. Despairing at his powerlessness, Delita confides in Ramza the tempestuous feelings tormenting him. Time hanging heavy on their hands, the two of them blow blades of grass as whistles, just as Ramza’s late father, Barbaneth, had once taught them.",
+            "info": "During a battle against the Corpse Brigade, Ramza and Delita were confronted by the harsh reality of their differences in birth. Despairing at his powerlessness, Delita confides in Ramza the tempestuous feelings tormenting him. Time hanging heavy on their hands, the two of them blow blades of grass as whistles, just as Ramza’s late father, Barbaneth, had once taught them.",
+            "shop": "Blades of Grass",
+            "music": "Memories",
+            "music_id": "400765"
+        }
+    },
+    "253000201": {
+        "name": "Attack of the Thunder God",
+        "compendium_id": 201,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11002,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244752, 244753, 244754]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Orlandeau, head of the Order of the Southern Sky, shows his true strength. His enemies fall before his eyes as he unleashes attack after attack. His slashes, like bolts of lightning, are worthy of the name \"Thunder God.\"",
+            "info": "Orlandeau, head of the Order of the Southern Sky, shows his true strength. His enemies fall before his eyes as he unleashes attack after attack. His slashes, like bolts of lightning, are worthy of the name \"Thunder God.\"",
+            "shop": "Attack of the Thunder God",
+            "music": "Desert Land",
+            "music_id": "400762"
+        }
+    },
+    "253000301": {
+        "name": "Abduction at Orbonne Monastery",
+        "compendium_id": 200,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11002,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244758],
+            "7": [244759],
+            "10": [244760]
+        },
+        "restriction": {
+            "244760": [7932]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Orbonne Monastery comes under attack by men under Duke Goltanna’s command. While Agrias and Ramza meet them in combat, Princess Ovelia is stolen away by a solitary knight – who is none other than Delita, a man Ramza once called friend.",
+            "info": "Orbonne Monastery comes under attack by men under Duke Goltanna’s command. While Agrias and Ramza meet them in combat, Princess Ovelia is stolen away by a solitary knight – who is none other than Delita, a man Ramza once called friend.",
+            "shop": "Abduction at Orbonne Monastery",
+            "music": "The Enemy Approaches",
+            "music_id": "400766"
         }
     },
     "254000101": {
@@ -5441,6 +6403,46 @@
             "shop": "Besting Qator Bashtar",
             "music": "War: The White Weapon",
             "music_id": "4001206"
+        }
+    },
+    "304000101": {
+        "name": "The Beginning of a Legend",
+        "compendium_id": 202,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20005,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [75, 150, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244915],
+            "7": [244916],
+            "10": [244917]
+        },
+        "restriction": {
+            "244916": [8020],
+            "244917": [8020]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "An earthquake causes the ground to open beneath Randi and Elliot's feet, and they fall into a cavern beneath Potos Village. Randi springs into action when a Mantis Ant comes across them, the Mana Sword firmly grasped in his hands.",
+            "info": "An earthquake causes the ground to open beneath Randi and Elliot's feet, and they fall into a cavern beneath Potos Village. Randi springs into action when a Mantis Ant comes across them, the Mana Sword firmly grasped in his hands.",
+            "shop": "The Beginning of a Legend",
+            "music": "Danger",
+            "music_id": "400531"
         }
     },
     "306000101": {
@@ -5835,6 +6837,86 @@
             "music_id": "400003"
         }
     },
+    "338000301": {
+        "name": "ブリッグズの北壁",
+        "compendium_id": 207,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20032,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [75, 150, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244980],
+            "7": [244981],
+            "10": [244982]
+        },
+        "restriction": {
+            "244981": [8021],
+            "244982": [8021]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "ブリッグズの要塞を訪れたエルリック兄弟の前に姿を現したオリヴィエ少将。氷の女王と呼ばれる女将軍は、アームストロング少佐の紹介状をその場で破り捨てるのだった。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "ブリッグズの北壁",
+            "music": "♪Moment of Recall",
+            "music_id": "400003"
+        }
+    },
+    "338000401": {
+        "name": "傷の男VS紅蓮の錬金術師",
+        "compendium_id": 208,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20032,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [70, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [70, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244993],
+            "7": [244994],
+            "10": [244995]
+        },
+        "restriction": {
+            "244994": [8021],
+            "244995": [8021]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "列車上で戦う傷の男スカーと紅蓮の錬金術師キンブリー。イシュヴァールの内乱の際、スカーの兄や同胞を手にかけたキンブリーに、スカーは復讐心を燃やす。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "傷の男VS紅蓮の錬金術師",
+            "music": "♪Moment of Recall",
+            "music_id": "400003"
+        }
+    },
     "339000101": {
         "name": "Gigantic Crystal of Mystery",
         "compendium_id": 97,
@@ -6092,7 +7174,7 @@
             "10": [243537]
         },
         "restriction": {
-            "243537": [7276]
+            "243537": [7953]
         },
         "max_level": 10,
         "exp_pattern": 110,
@@ -6164,7 +7246,7 @@
             "10": [243572]
         },
         "restriction": {
-            "243572": [7276]
+            "243572": [7953]
         },
         "max_level": 10,
         "exp_pattern": 110,
@@ -6175,6 +7257,126 @@
             "desc": "The Legion Commanders of the Dark Army: with Mystvearn, the Shadow Vizier; Dragon Master General Baran; Hyunckel, the Dark Swordsman; the Beast King Crocodine; the Mystic Bishop Zaboera; and Blizzblaze General Flazzard all under the command of Dark Commander Hadlar, this is the very best the Army has to offer!",
             "info": "The Legion Commanders of the Dark Army: with Mystvearn, the Shadow Vizier; Dragon Master General Baran; Hyunckel, the Dark Swordsman; the Beast King Crocodine; the Mystic Bishop Zaboera; and Blizzblaze General Flazzard all under the command of Dark Commander Hadlar, this is the very best the Army has to offer!",
             "shop": "Assemble, Six Legion Commanders!",
+            "music": "Moment of Recall",
+            "music_id": "400003"
+        }
+    },
+    "344000501": {
+        "name": "Demonic Guard of Heaven and Earth",
+        "compendium_id": 191,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20037,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [75, 150, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244676],
+            "7": [244677],
+            "10": [244678]
+        },
+        "restriction": {
+            "244677": [7953],
+            "244678": [7953]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Avan, Larhart, and Hym face off against the Dark King Vearn. Even after launching their Coups de Grâce against him, these battle-seasoned warriors failed to pierce his ultimate technique, Demonic Guard of Heaven and Earth—a battle stance that executes three techniques of offense, defense, and spellcraft in an instant.",
+            "info": "Avan, Larhart, and Hym face off against the Dark King Vearn. Even after launching their Coups de Grâce against him, these battle-seasoned warriors failed to pierce his ultimate technique, Demonic Guard of Heaven and Earth—a battle stance that executes three techniques of offense, defense, and spellcraft in an instant.",
+            "shop": "Demonic Guard of Heaven and Earth",
+            "music": "Moment of Recall",
+            "music_id": "400003"
+        }
+    },
+    "344000601": {
+        "name": "Double Doruora!",
+        "compendium_id": 192,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20037,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [70, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [70, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244689],
+            "7": [244690],
+            "10": [244691]
+        },
+        "restriction": {
+            "244690": [7953],
+            "244691": [7953]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Going up against Dark King Vearn, who can block Doruora with his Staff of Edacity, Dai pins everything on an impromptu plan. Using the Silver Feather Leona flings to him, Dai recovers his Magic Power to release a second Doruora!",
+            "info": "Going up against Dark King Vearn, who can block Doruora with his Staff of Edacity, Dai pins everything on an impromptu plan. Using the Silver Feather Leona flings to him, Dai recovers his Magic Power to release a second Doruora!",
+            "shop": "Double Doruora!",
+            "music": "Moment of Recall",
+            "music_id": "400003"
+        }
+    },
+    "344000701": {
+        "name": "Dragonoid vs. Sovereign Supreme",
+        "compendium_id": 193,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20037,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [75, 150, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [244692],
+            "7": [244693],
+            "10": [244694]
+        },
+        "restriction": {
+            "244693": [7953],
+            "244694": [7953]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Dai, having unleashed the full strength of his Twin Dragon Crests and become a Dragonoid, battles Vearn, who has similarly unleashed the power of his third eye, the Sovereign Eye, and become a demon beast. The battle between these two, who fought to their very limits, finally comes to its climactic conclusion.",
+            "info": "Dai, having unleashed the full strength of his Twin Dragon Crests and become a Dragonoid, battles Vearn, who has similarly unleashed the power of his third eye, the Sovereign Eye, and become a demon beast. The battle between these two, who fought to their very limits, finally comes to its climactic conclusion.",
+            "shop": "Dragonoid vs. Sovereign Supreme",
             "music": "Moment of Recall",
             "music_id": "400003"
         }
@@ -6404,6 +7606,78 @@
             "shop": "ドラゴンの島",
             "music": "♪竜を追いかけて ～旅立ちの声～",
             "music_id": "400757"
+        }
+    },
+    "348000101": {
+        "name": "Engage Kill",
+        "compendium_id": 196,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20041,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [1000, 1000, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [110, 110, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [110, 110, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [244809, 244810, 244811]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "「丸戸史明×つなこ」で贈る『Project Engage』のゲーム化、アニメティック・タイムラインバトルRPG「Engage Kill」応援キャンペーン",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "Engage Kill",
+            "music": "♪MissionD",
+            "music_id": "400769"
+        }
+    },
+    "349000101": {
+        "name": "ミトコンドリア・イヴ",
+        "compendium_id": 218,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20042,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245124],
+            "7": [245125],
+            "10": [245126]
+        },
+        "restriction": null,
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "イヴに乗っ取られたメリッサによって観客が発火した後、アヤはピアノを弾いているメリッサを発見する。メリッサはイヴの正体を現し、ミトコンドリアを解放すると宣言。アヤと対峙する。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "ミトコンドリア・イヴ",
+            "music": "♪Kyrie",
+            "music_id": "400775"
         }
     },
     "401000101": {
@@ -7181,6 +8455,46 @@
             "shop": "Bringing Home the Bacon",
             "music": "Chill Out",
             "music_id": "400337"
+        }
+    },
+    "401002101": {
+        "name": "私が生んだ最強の敵",
+        "compendium_id": 209,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [65, 130, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [65, 130, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245046],
+            "7": [245047],
+            "10": [245048]
+        },
+        "restriction": {
+            "245047": [7216],
+            "245048": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "「最強の英雄になる」という願いを卵にかけたエスターは、これまでで最も恐ろしい敵である自分自身と戦うことに。己と同じ姿をした者を相手に、エスターは光の如き高速の一撃を見舞うのだった。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "私が生んだ最強の敵",
+            "music": "♪Another Tale to Tell",
+            "music_id": "400328"
         }
     },
     "401002201": {
@@ -8158,8 +9472,8 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "Lilith: she who rules the night. There are none among the denizens of the underworld who do not know her name. Lilith's overwhelming power demands her both fear and respect, although there seems to be something a bit different about her outfit tonight. Drawn forth by the sweet temptations she offers, those who people this dark realm rejoice. Knowing the banquet she's provided will vanish with the dawn, they eagerly partake, staining the deep hours of the night an ever-blacker shade as their voices echo in the dark.",
-            "info": "Lilith: she who rules the night. There are none among the denizens of the underworld who do not know her name. Lilith's overwhelming power demands her both fear and respect, although there seems to be something a bit different about her outfit tonight. Drawn forth by the sweet temptations she offers, those who people this dark realm rejoice. Knowing the banquet she's provided will vanish with the dawn, they eagerly partake, staining the deep hours of the night an ever-blacker shade as their voices echo in the dark.",
+            "desc": "Lilith: she who rules the night. There are none among the denizens of the underworld who do not know her name. Lilith's overwhelming power demands her both fear and respect, although there seems to be something a bit different about her outfit tonight. Drawn forth by the sweet temptations she offers, those who dwell in this dark realm rejoice. Knowing the banquet she's provided will vanish with the dawn, they eagerly partake, staining the deep hours of the night an ever-blacker shade as their voices echo in the dark.",
+            "info": "Lilith: she who rules the night. There are none among the denizens of the underworld who do not know her name. Lilith's overwhelming power demands her both fear and respect, although there seems to be something a bit different about her outfit tonight. Drawn forth by the sweet temptations she offers, those who dwell in this dark realm rejoice. Knowing the banquet she's provided will vanish with the dawn, they eagerly partake, staining the deep hours of the night an ever-blacker shade as their voices echo in the dark.",
             "shop": "Midnight Revellers",
             "music": "MUSASABI",
             "music_id": "400214"
@@ -9326,6 +10640,45 @@
             "music_id": "400315"
         }
     },
+    "401007901": {
+        "name": "Blood is Thicker than Water",
+        "compendium_id": 9078,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [80, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917760],
+            "7": [917761],
+            "10": [917763]
+        },
+        "restriction": {
+            "917763": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "With a vampire as a father and a succubus as a mother, Ellesperis was born into a unique family. From a young age , she was trained in the ways of the assassin. Although her family may have been a bit unorthodox, her parents were quite loving, and to this day she thinks of them fondly.",
+            "info": "With a vampire as a father and a succubus as a mother, Ellesperis was born into a unique family. From a young age , she was trained in the ways of the assassin. Although her family may have been a bit unorthodox, her parents were quite loving, and to this day she thinks of them fondly.",
+            "shop": "Blood is Thicker than Water",
+            "music": "End is Nigh",
+            "music_id": "400103"
+        }
+    },
     "401008001": {
         "name": "Son of a Hero",
         "compendium_id": 9079,
@@ -9361,6 +10714,836 @@
             "shop": "Son of a Hero",
             "music": "Dawn",
             "music_id": "400329"
+        }
+    },
+    "401008101": {
+        "name": "To the Uncharted Future!",
+        "compendium_id": 9080,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [135, 135, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [135, 135, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917812, 917813, 917814]
+        },
+        "restriction": {
+            "917814": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A serendipitous spark sees these two become fast friends, and they set forth together on a journey to discover the uncharted future. Their way is filled with the resplendent light of hope, and the wonders that await them at the end of their travels are certain to be delightful.",
+            "info": "A serendipitous spark sees these two become fast friends, and they set forth together on a journey to discover the uncharted future. Their way is filled with the resplendent light of hope, and the wonders that await them at the end of their travels are certain to be delightful.",
+            "shop": "To the Uncharted Future!",
+            "music": "Walkabout",
+            "music_id": "400308"
+        }
+    },
+    "401008201": {
+        "name": "Mitochondria Eve",
+        "compendium_id": 9081,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 90010,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 120, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [65, 120, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917691],
+            "7": [917692],
+            "10": [917693]
+        },
+        "restriction": null,
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "After the audience is killed by Melissa when she is possessed by Eve, Aya finds her playing the piano in a locked room. Melissa then transforms into Mitochondria Eve, declaring that today is the day for the mitochondria to be freed, and launches an attack on Aya.",
+            "info": "After the audience is killed by Melissa when she is possessed by Eve, Aya finds her playing the piano in a locked room. Melissa then transforms into Mitochondria Eve, declaring that today is the day for the mitochondria to be freed, and launches an attack on Aya.",
+            "shop": "Mitochondria Eve",
+            "music": "Kyrie",
+            "music_id": "9000543"
+        }
+    },
+    "401008301": {
+        "name": "Fashion Leaders",
+        "compendium_id": 9082,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [80, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917611],
+            "7": [917612],
+            "10": [917613]
+        },
+        "restriction": null,
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Addison Rae and Rain, draped in the coolest of garb. Anything these two wear becomes an instant trend. May it be as far as Lapis, Paladia, or even beyond, this pair may quite possibly heat up the fashion scene wherever they go.",
+            "info": "Addison Rae and Rain, draped in the coolest of garb. Anything these two wear becomes an instant trend. May it be as far as Lapis, Paladia, or even beyond, this pair may quite possibly heat up the fashion scene wherever they go.",
+            "shop": "Fashion Leaders",
+            "music": "Peaceful Village",
+            "music_id": "400201"
+        }
+    },
+    "401008401": {
+        "name": "Blood Moon",
+        "compendium_id": 9083,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [1500, 1500, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [135, 135, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917819, 917820, 917821]
+        },
+        "restriction": {
+            "917821": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Not a single trace remains of this assassin and master of hemomancy when she delivers her flawless executions. Some whispers in the dark claim the Blood Dancer is a cunning vampyr, while others insist the Blood Dancer is a cutthroat for coin in the guise of a child... But none truly know.",
+            "info": "Not a single trace remains of this assassin and master of hemomancy when she delivers her flawless executions. Some whispers in the dark claim the Blood Dancer is a cunning vampyr, while others insist the Blood Dancer is a cutthroat for coin in the guise of a child... But none truly know.",
+            "shop": "Blood Moon",
+            "music": "End is Nigh",
+            "music_id": "400103"
+        }
+    },
+    "401008501": {
+        "name": "Midnight Blossoms",
+        "compendium_id": 9084,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [140, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917837, 917838, 917839]
+        },
+        "restriction": {
+            "917839": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "In a place of tranquil rest, far from the reaches of society, this comely kitsune shrine maiden of light pink hair amuses herself with a little fox. One would never guess from this sight alone that she is a spirit possessed of great power.",
+            "info": "In a place of tranquil rest, far from the reaches of society, this comely kitsune shrine maiden of light pink hair amuses herself with a little fox. One would never guess from this sight alone that she is a spirit possessed of great power.",
+            "shop": "Midnight Blossoms",
+            "music": "Peaceful Village",
+            "music_id": "400201"
+        }
+    },
+    "401008601": {
+        "name": "Tricks and Treats",
+        "compendium_id": 9085,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [80, 130, 0, 0],
+            "SPR": [80, 130, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [917853],
+            "7": [917854],
+            "10": [917855]
+        },
+        "restriction": {
+            "917855": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A dressed-up Chow appears to surprise children with delectable sweets. However, when his sudden appearance causes a boy to fall down in surprise, Chow comforts him with a special trick. For children, Chow is ready to share both his tricks and treats!",
+            "info": "A dressed-up Chow appears to surprise children with delectable sweets. However, when his sudden appearance causes a boy to fall down in surprise, Chow comforts him with a special trick. For children, Chow is ready to share both his tricks and treats!",
+            "shop": "Tricks and Treats",
+            "music": "Once more Dance?",
+            "music_id": "400203"
+        }
+    },
+    "401008701": {
+        "name": "Battle Against Veritas of the Frost",
+        "compendium_id": 9086,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917986, 917987, 917988]
+        },
+        "restriction": {
+            "917986": [9515],
+            "917987": [9515],
+            "917988": [9515]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "By fusing with Panthera Ultimus, Hyoh is able to use Ultima Weapon to its max potential. Wielding the ultimate power in hand, Hyoh faces a mighty foe–Veritas of the Frost.",
+            "info": "By fusing with Panthera Ultimus, Hyoh is able to use Ultima Weapon to its max potential. Wielding the ultimate power in hand, Hyoh faces a mighty foe–Veritas of the Frost.",
+            "shop": "Battle Against Veritas of the Frost",
+            "music": "Overcome the Menace",
+            "music_id": "400315"
+        }
+    },
+    "401008801": {
+        "name": "Confronting a Legend",
+        "compendium_id": 9087,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [170, 170, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917936, 917937, 917938]
+        },
+        "restriction": {
+            "917936": [9503],
+            "917937": [9503],
+            "917938": [9503]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Veritas of the Frost, a hero of Aldore and member of the Sworn Eight, waits to intercept Hyoh on his mission. As a Veritas, he gives off a commanding aura and is not afraid to make his ideals known. With Panthera Ultimus at his side, Hyoh faces off against the legendary warrior.",
+            "info": "Veritas of the Frost, a hero of Aldore and member of the Sworn Eight, waits to intercept Hyoh on his mission. As a Veritas, he gives off a commanding aura and is not afraid to make his ideals known. With Panthera Ultimus at his side, Hyoh faces off against the legendary warrior.",
+            "shop": "Confronting a Legend",
+            "music": "Chaotic Darkness",
+            "music_id": "400335"
+        }
+    },
+    "401008901": {
+        "name": "Merry Tonberry",
+        "compendium_id": 9088,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [500, 1000, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [918053],
+            "7": [918054],
+            "10": [918055]
+        },
+        "restriction": {
+            "918055": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Amidst an enchanting snow-covered landscape, Beryl, dressed for the season, places bags of colorful gifts onto a sleigh. Beryl hopes that the presents reach their intended recipients, bringing not only joy but also the hope of brighter days ahead.",
+            "info": "Amidst an enchanting snow-covered landscape, Beryl, dressed for the season, places bags of colorful gifts onto a sleigh. Beryl hopes that the presents reach their intended recipients, bringing not only joy but also the hope of brighter days ahead.",
+            "shop": "Merry Tonberry",
+            "music": "Unfettered Waltz",
+            "music_id": "400212"
+        }
+    },
+    "401009001": {
+        "name": "A Knight and Her Moogle",
+        "compendium_id": 9089,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [140, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917842, 917843, 917844]
+        },
+        "restriction": {
+            "917844": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Physalis, rumored to be the strongest knight's apprentice, devotes herself to her daily training with constant companion Moog by her side. Albeit still a rookie, she possesses an unusually powerful technique, one strike of which is accompanied by a breathtakingly beautiful formation of ice.",
+            "info": "Physalis, rumored to be the strongest knight's apprentice, devotes herself to her daily training with constant companion Moog by her side. Albeit still a rookie, she possesses an unusually powerful technique, one strike of which is accompanied by a breathtakingly beautiful formation of ice.",
+            "shop": "A Knight and Her Moogle",
+            "music": "Snowdrop",
+            "music_id": "400316"
+        }
+    },
+    "401009101": {
+        "name": "Chow's Cheerful Hallow's Eve",
+        "compendium_id": 9090,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [140, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [917916, 917917, 917918]
+        },
+        "restriction": {
+            "917918": [9516]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Open the door, and oh, a surprise visitor! On the other side of the door with a sparkle in his eye sits the guardian beast Chow, said to bring happiness to those he meets. Will you ask the adorable pooch for a trick or a treat?",
+            "info": "Open the door, and oh, a surprise visitor! On the other side of the door with a sparkle in his eye sits the guardian beast Chow, said to bring happiness to those he meets. Will you ask the adorable pooch for a trick or a treat?",
+            "shop": "Chow's Cheerful Hallow's Eve",
+            "music": "Thump!",
+            "music_id": "400338"
+        }
+    },
+    "401009201": {
+        "name": "Biting Frost vs. Burning Flame",
+        "compendium_id": 9091,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [140, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918046, 918047, 918048]
+        },
+        "restriction": {
+            "918048": [9517]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Standing before Hyoh is one of the Sworn Eight made legend, Veritas of the Frost. With the power of his newfound partner, Panthera Ultimus, Hyoh brings the full power of his Ultima Weapon to bear, and clashes with the mighty foe that seeks to bar his way.",
+            "info": "Standing before Hyoh is one of the Sworn Eight made legend, Veritas of the Frost. With the power of his newfound partner, Panthera Ultimus, Hyoh brings the full power of his Ultima Weapon to bear, and clashes with the mighty foe that seeks to bar his way.",
+            "shop": "Biting Frost vs. Burning Flame",
+            "music": "A Climactic Clash",
+            "music_id": "400334"
+        }
+    },
+    "401009301": {
+        "name": "Training Grounds",
+        "compendium_id": 9092,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [140, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918128, 918129, 918130]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "With one swing of his blade, this silent swordsman weaves the waters; with two, he summons a tsunami to crush his foes and swallow all in its path. To control and refine his enormous power, he never fails to train every single day.",
+            "info": "With one swing of his blade, this silent swordsman weaves the waters; with two, he summons a tsunami to crush his foes and swallow all in its path. To control and refine his enormous power, he never fails to train every single day.",
+            "shop": "Training Grounds",
+            "music": "MUSASABI",
+            "music_id": "400214"
+        }
+    },
+    "401009401": {
+        "name": "Champion of the Light Crystal",
+        "compendium_id": 9093,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [170, 170, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918134, 918135, 918136]
+        },
+        "restriction": {
+            "918134": [9518],
+            "918135": [9518],
+            "918136": [9518]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Richt, having received the blessing of the Light Crystal, swings his sword to defeat evil. His gaze is unclouded and unwavering, for he now sees the path his conviction bids him walk. The fate that awaits him, however, is a cruel one indeed.",
+            "info": "Richt, having received the blessing of the Light Crystal, swings his sword to defeat evil. His gaze is unclouded and unwavering, for he now sees the path his conviction bids him walk. The fate that awaits him, however, is a cruel one indeed.",
+            "shop": "Champion of the Light Crystal",
+            "music": "Sacred Ground",
+            "music_id": "400319"
+        }
+    },
+    "401009501": {
+        "name": "The Swallow's Flight",
+        "compendium_id": 9094,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [90, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [918146],
+            "7": [918147],
+            "10": [918148]
+        },
+        "restriction": {
+            "918148": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Exceptionally skilled in the art of evasion, Mirei flits through the air with a practiced ease. With her swift and bounding path reminiscent of a swallow in flight, the deadly traps become nothing but minor obstacles as she races to secure her target.",
+            "info": "Exceptionally skilled in the art of evasion, Mirei flits through the air with a practiced ease. With her swift and bounding path reminiscent of a swallow in flight, the deadly traps become nothing but minor obstacles as she races to secure her target.",
+            "shop": "The Swallow's Flight",
+            "music": "MUSASABI",
+            "music_id": "400214"
+        }
+    },
+    "401009601": {
+        "name": "Equip Ultimate Armament!",
+        "compendium_id": 9095,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918137, 918138, 918139]
+        },
+        "restriction": {
+            "918137": [7702],
+            "918138": [7702],
+            "918139": [7702]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "An automaton who perpetually wondered about the human heart. Gathering together the thoughts entrusted to her by her companions, she unleashes the ultimate blast of power. Although she has yet to understand the human heart completely, she thinks she feels a warmness in her chest from the bonds she has forged.",
+            "info": "An automaton who perpetually wondered about the human heart. Gathering together the thoughts entrusted to her by her companions, she unleashes the ultimate blast of power. Although she has yet to understand the human heart completely, she thinks she feels a warmness in her chest from the bonds she has forged.",
+            "shop": "Equip Ultimate Armament!",
+            "music": "Break the Limit!",
+            "music_id": "400341"
+        }
+    },
+    "401009701": {
+        "name": "Eyes in the Night",
+        "compendium_id": 9096,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [1000, 1000, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [140, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918140, 918141, 918142]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Daughter to a nameless village of ninja, Mirei was finally deemed ready to be granted a mission after many years of relentlessly training to cultivate and hone the clandestine arts of her clan. But while her eyes stalk her prey in the dark of night, they look to the world spreading far beyond the horizon.",
+            "info": "Daughter to a nameless village of ninja, Mirei was finally deemed ready to be granted a mission after many years of relentlessly training to cultivate and hone the clandestine arts of her clan. But while her eyes stalk her prey in the dark of night, they look to the world spreading far beyond the horizon.",
+            "shop": "Eyes in the Night",
+            "music": "Secrets in her Eyes",
+            "music_id": "400310"
+        }
+    },
+    "401009801": {
+        "name": "Archer's Legacy",
+        "compendium_id": 9097,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [65, 130, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [918216],
+            "7": [918217],
+            "10": [918218]
+        },
+        "restriction": {
+            "918218": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "After accomplishing his dream of opening an archery hall, legendary archer Ang taught his villagers not only the art of the bow and arrow but also the values of courage, love, and loyalty. His legacy would live on through the next generation of archers, who aspired to someday surpass him in strength and protect the village from any threats.",
+            "info": "After accomplishing his dream of opening an archery hall, legendary archer Ang taught his villagers not only the art of the bow and arrow but also the values of courage, love, and loyalty. His legacy would live on through the next generation of archers, who aspired to someday surpass him in strength and protect the village from any threats.",
+            "shop": "Archer's Legacy",
+            "music": "Once more Dance?",
+            "music_id": "400203"
+        }
+    },
+    "401009901": {
+        "name": "Ruler of the Waters",
+        "compendium_id": 9098,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918294, 918295, 918296]
+        },
+        "restriction": {
+            "918294": [7704],
+            "918295": [7704],
+            "918296": [7704]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "When fused, the combined strength of Nichol, a Warden of the Waters, and the water god Leviathan brings forth billowing, roaring waves to crush all that stand before them. Even amidst the heat of battle, their attacks flow with an elegance evocative of a graceful dance.",
+            "info": "When fused, the combined strength of Nichol, a Warden of the Waters, and the water god Leviathan brings forth billowing, roaring waves to crush all that stand before them. Even amidst the heat of battle, their attacks flow with an elegance evocative of a graceful dance.",
+            "shop": "Ruler of the Waters",
+            "music": "Forging a Dream",
+            "music_id": "400401"
+        }
+    },
+    "401010001": {
+        "name": "Best in the Land",
+        "compendium_id": 9099,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [140, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [140, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918309, 918310, 918314]
+        },
+        "restriction": {
+            "918314": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Ang made his name known as a master of archery, a rare talent among a village of swordsmen. His arrows, shot with unparalleled accuracy, are said to pierce even the sun in their flight.",
+            "info": "Ang made his name known as a master of archery, a rare talent among a village of swordsmen. His arrows, shot with unparalleled accuracy, are said to pierce even the sun in their flight.",
+            "shop": "Best in the Land",
+            "music": "Forging a Dream",
+            "music_id": "400401"
+        }
+    },
+    "401010101": {
+        "name": "Magic Wrecking Ball",
+        "compendium_id": 9100,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [918316],
+            "7": [918317],
+            "10": [918318]
+        },
+        "restriction": {
+            "918318": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Zyrus quickly incapacitates a dragon with a barrage of magic like a wrecking ball before unleashing one final spell, leaving not even a scale of the mighty beast remaining. The silent mage refuses to show any mercy to dragons, which he sees as nothing more than creatures of destruction.",
+            "info": "Zyrus quickly incapacitates a dragon with a barrage of magic like a wrecking ball before unleashing one final spell, leaving not even a scale of the mighty beast remaining. The silent mage refuses to show any mercy to dragons, which he sees as nothing more than creatures of destruction.",
+            "shop": "Magic Wrecking Ball",
+            "music": "Monument Valley",
+            "music_id": "400325"
+        }
+    },
+    "401010201": {
+        "name": "Warden of the Aquapolis",
+        "compendium_id": 9101,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [160, 160, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [160, 160, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918372, 918373, 918377]
+        },
+        "restriction": {
+            "918377": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Ever gentle and kind to one and all, she conceals a determination stronger than even that of her brothers. As the Water Priestess, she communes with the Water God Leviathan in Olderion's times of need, and braves whatever trials that befall the aquapolis.",
+            "info": "Ever gentle and kind to one and all, she conceals a determination stronger than even that of her brothers. As the Water Priestess, she communes with the Water God Leviathan in Olderion's times of need, and braves whatever trials that befall the aquapolis.",
+            "shop": "Warden of the Aquapolis",
+            "music": "Odyssey",
+            "music_id": "400318"
         }
     },
     "900020101": {

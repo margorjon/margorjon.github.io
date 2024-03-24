@@ -1786,9 +1786,17 @@ function areConditionOK(item, equiped, level = 0, exLevel) {
         }
     }
     if (item.equipedConditions) {
-        for (var conditionIndex = 0, len = item.equipedConditions.length; conditionIndex < len; conditionIndex++) {
-            if (!isEquipedConditionOK(equiped, item.equipedConditions[conditionIndex])) {
-                return false;
+        if (item.equipedConditions.every(condition => weaponList.includes(condition))) {
+            if (equiped[0] && item.equipedConditions.includes(equiped[0].type) || equiped[1] && item.equipedConditions.includes(equiped[1].type)) {
+                return true;
+            }
+            return false;
+        } else {
+            // Otherweise loop through the item.equippedConditions and see if any of them are met usng the isEquipedConditionOK function
+            for (var conditionIndex = item.equipedConditions.length; conditionIndex--;) {
+                if (!isEquipedConditionOK(equiped, item.equipedConditions[conditionIndex])) {
+                    return false;
+                }
             }
         }
     }
@@ -1936,6 +1944,9 @@ function getEsperItem(esper) {
     }
     if (esper.conditional) {
         item.conditional = esper.conditional;
+    }
+    if (esper.jumpDamage) {
+        item.jumpDamage = esper.jumpDamage;
     }
     for (var i = baseStats.length; i--;) {
         if (esper[percentValues[baseStats[i]]]) {
@@ -2123,8 +2134,11 @@ function applyEnhancements(item, enhancements) {
         for (var i = enhancements.length; i--;) {
             var enhancement = enhancements[i];
             var enhancementValue;
-            if (enhancement == "rare_3" || enhancement == "rare_4" || enhancement == "rare_5") {
-                enhancementValue = itemEnhancementAbilities[enhancement][item.type];
+            // if enhancement is a number, look it up in the itemEnchantments
+            if (typeof enhancement === 'number') {
+                if (itemEnchantments[enhancement]){
+                    enhancementValue = itemEnchantments[enhancement].enchant;
+                }
             } else if (enhancement === 'special_1') {
                 enhancementValue = itemEnhancementAbilities[enhancement][item.id];
             } else {

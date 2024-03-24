@@ -117,7 +117,8 @@ table.allEspers > tbody > tr > td.stats .bonus {
     justify-content: space-between;
     overflow-x: auto;
     overflow-y: hidden;
-    scroll-behavior: smooth;: touch;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
@@ -198,12 +199,12 @@ table.allEspers > tbody > tr > td.stats .bonus {
 }
 
 #gridTrimmer.star3 {
-    width:940px;
+    width: 970px;
     height:860px;
 }
 
 #gridTrimmer.star3 #gridContainer {
-    margin-left: 10px;
+    margin-left: -1px;
     margin-top: 20px;
 }
 
