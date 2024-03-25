@@ -40,5 +40,5 @@ route.get('/:server/unit/:unitId', async (req, res) => {
       res.status(500).send({error: "Unknown server: " + server});
   }
 });
-
+console.log(route);
 export default route;
