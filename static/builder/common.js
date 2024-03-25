@@ -1699,7 +1699,7 @@ function getStatBonusCap(stat, unitBuild) {
         case 'evade.physical':
             return 100;
         default:
-            return 400;
+            return 600;
     }
 }
 
