@@ -4552,7 +4552,7 @@ function ensureInitUnitWithSkills(unitId) {
         if (unitsWithSkills[unitId]) {
             resolve(unitsWithSkills[unitId]);
         } else {
-            $.get(`/${server}/unit/${unitId}`, function(result) {
+            $.get(`https://www.ffbeequipnext.com/${server}/unit/${unitId}`, function(result) {
                 unitsWithSkills[unitId] = result;
                 if (units[unitId].braveShift) {
                     ensureInitUnitWithSkills(units[unitId].braveShift).then(() => {
