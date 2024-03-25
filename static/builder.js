@@ -4549,7 +4549,7 @@ function notLoaded() {
 
 function ensureInitUnitWithSkills(unitId) {
     return new Promise(resolve => {
-        if (unitsWithSkills[unitId]) {
+        if (false) {
             resolve(unitsWithSkills[unitId]);
         } else {
             $.get(`https://www.ffbeequipnext.com/${server}/unit/${unitId}`, function(result) {
