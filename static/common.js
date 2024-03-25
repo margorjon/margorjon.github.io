@@ -2637,7 +2637,7 @@ $(function() {
 
     readUrlParams();
 
-    $.get("/" + server + '/dataVersion.json', function(result) {
+    $.get("/static/" + server + '/dataVersion.json', function(result) {
         var dataVersion = result.version;
         var selectedLanguage = language ? language : "en";
 
