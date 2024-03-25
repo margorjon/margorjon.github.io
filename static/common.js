@@ -2686,10 +2686,10 @@ $(function() {
                 notLoaded();
             }
         });
-        $.get(server + '/settings', function(result) {
+        $.get("/static/" + server + '/settings', function(result) {
             userSettings = result;
         });
-        $.get(server + '/units', function(result) {
+        $.get("/static/" + server + '/units', function(result) {
             ownedUnits = result;
             actuallyOwnedUnits = result;
             if (result.version && result.version == 3) {
