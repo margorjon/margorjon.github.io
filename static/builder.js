@@ -4619,7 +4619,7 @@ function startPage() {
     });
 
     // try to read unit skill from cache
-    var unitsWithSkillsData = staticFileCache.retrieve(`/static/${server}/unitsWithSkill.json`);
+    var unitsWithSkillsData = staticFileCache.retrieve(`./static/${server}/unitsWithSkill.json`);
     if (unitsWithSkillsData && !$.isEmptyObject(unitsWithSkillsData)) {
         unitsWithSkills = unitsWithSkillsData;
     }
@@ -4633,7 +4633,7 @@ function startPage() {
 
         waitingCallbackKeyReady("defaultBuilderEspers");
     });
-    $.get("/static/" + server + "/units.json", async function(result) {
+    $.get("./static/" + server + "/units.json", async function(result) {
         ownedUnits = result;
         await onEquipmentsChange(); // wait for onEquipmentsChange to finish
     }, 'json').fail(function(jqXHR, textStatus, errorThrown ) {
