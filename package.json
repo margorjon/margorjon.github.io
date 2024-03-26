@@ -16,7 +16,7 @@
     "start": "node server.js",
     "start:useDist": "DEV_USE_DIST=yes node server.js"
   },
-  "type": "commonjs",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lyrgard/ffbeEquip.git"
