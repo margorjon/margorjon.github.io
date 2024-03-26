@@ -11,7 +11,7 @@
     "test": "nyc mocha test/server --recursive",
     "test:web": "mocha-webpack --webpack-config test/webpack.config.js --require test/setup.js test/static/*.js",
     "build:dev": "webpack --mode development --watch",
-    "build": "webpack --mode production --hide-modules",
+    "build": "webpack --mode production",
     "prestart": "node config.js",
     "start": "node server.js",
     "start:useDist": "DEV_USE_DIST=yes node server.js"
