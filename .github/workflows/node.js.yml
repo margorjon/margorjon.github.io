@@ -29,8 +29,8 @@ jobs:
     #- run: npm ci
     - run: npm install esm
     - run: npm install
-    - run: npm run start:useDist
-    #- run: npm run build --if-present
+    #- run: npm run start:useDist
+    - run: npm run build --if-present
     #- run: npm test
     #- run: npm run build
     #- run: npm run build:dev
