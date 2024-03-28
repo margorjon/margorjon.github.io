@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const cssnano = require('cssnano');
 const glob = require('glob');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StringReplacePlugin = require("string-replace-webpack-plugin");
 const md5File = require('md5-file');
 
@@ -97,7 +97,7 @@ module.exports = {
     filename: '_[name].js',
   },
   plugins: [
-    new CleanWebpackPlugin('dist'),
+    new CleanWebpackPlugin(),
     new StringReplacePlugin(),
   ],
 };
