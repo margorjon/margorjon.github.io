@@ -55,7 +55,7 @@ module.exports = {
           { loader: 'file-loader', options: { name: '[path][name].[ext]', context: './static/' } },
           { loader: 'extract-loader', options: {} },
           //{ loader: 'html-loader', options: { attrs: ['link:href', 'script:src'], minimize: true } },
-          { loader: 'html-loader', options: { sources: { list: [{tag: "link", attribute: "href", type: "src",}, {tag: "script", attribute: "src", type: "src",}] }, minimize: true } },
+          { loader: 'html-loader', options: { sources: { list: ["...", { tag: "link", attribute: "href", type: "src", }, { tag: "script", attribute: "src", type: "src", } ] }, minimize: true } },
         ],
       },
       {
