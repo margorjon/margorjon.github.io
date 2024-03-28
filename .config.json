@@ -1,5 +1,5 @@
 {
-    "env": "development",
+    "env": "production",
     "port": 3000,
     "secret": "o8eu5y9w5hto384jtoqaj423tja240tja20p4tj0pa34j9t",
     "google": {
