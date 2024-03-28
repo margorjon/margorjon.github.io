@@ -1,11 +1,19 @@
-const path = require('path');
-const fs = require('fs');
-const cssnano = require('cssnano');
-const glob = require('glob');
-//const CleanWebpackPlugin = require('clean-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const StringReplacePlugin = require("string-replace-webpack-plugin");
-const md5File = require('md5-file');
+//const path = require('path');
+//const fs = require('fs');
+//const cssnano = require('cssnano');
+//const glob = require('glob');
+////const CleanWebpackPlugin = require('clean-webpack-plugin');
+//const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+//const StringReplacePlugin = require("string-replace-webpack-plugin");
+//const md5File = require('md5-file');
+import path from 'path';
+import fs from 'fs';
+import cssnano from 'cssnano';
+import glob from 'glob';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
+import StringReplacePlugin from 'string-replace-webpack-plugin';
+import md5File from 'md5-file';
+
 
 var existingHashes = {};
 const addFileHash = function (match, p1, p2, offset, string) {
