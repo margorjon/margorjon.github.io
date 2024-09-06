@@ -27,15 +27,15 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     #- run: npm ci
-    - run: npm install esm --save-dev
+    #- run: npm install esm --save-dev
     - run: npm install
-    - run: npm install gh-pages --save-dev
+    #- run: npm install gh-pages --save-dev
     #- run: npm run start:useDist
     - run: npm run build --if-present
     #- run: npm test
     #- run: npm run build
     #- run: npm run build:dev
-    #- run: npm run deploy
+    - run: npm run deploy
     #- run: npm start
     #- run: npm publish
     #- run: npm run esm
