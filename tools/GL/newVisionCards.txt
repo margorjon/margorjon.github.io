@@ -1,2 +1,2 @@
-"401010101":Magic Wrecking Ball
-"401010201":Warden of the Aquapolis
+"100010001":Entrusted to Rhus
+"401011801":Hero of Elmont

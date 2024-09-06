@@ -1,7 +1,7 @@
-Starting
 Starting 
-"401010101":Magic Wrecking Ball
-"401010201":Warden of the Aquapolis
+"100010001":Entrusted to Rhus
+"401011801":Hero of Elmont
 Starting
-"401016107":Blood Mage Zyrus
-"401016117":Blood Mage Zyrus BS
+"100044907":Azure Knight Lasswell
+"100044917":Azure Knight Lasswell BS
+Starting

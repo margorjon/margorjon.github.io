@@ -3133,7 +3133,7 @@
         }
     },
     "100009201": {
-        "name": "窮地に現れしビジョン",
+        "name": "Deliverance from Despair",
         "compendium_id": 213,
         "compendium_shown": true,
         "rarity": 1,
@@ -3164,15 +3164,15 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "窮地に陥ったレインたちを救うべく現れた魔人フィーナのビジョン。破滅の力にも匹敵する強大な力を放ち、カオス＝ビスマルクに立ち向かう！",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "窮地に現れしビジョン",
-            "music": "♪Chaotic Waves",
+            "desc": "A vision of Dark Fina, who has come to Rain and company's aid. With strength great enough to take on the power of destruction, she faces off against Chaos Bismarck!",
+            "info": "A vision of Dark Fina, who has come to Rain and company's aid. With strength great enough to take on the power of destruction, she faces off against Chaos Bismarck!",
+            "shop": "Deliverance from Despair",
+            "music": "Chaotic Waves",
             "music_id": "400416"
         }
     },
     "100009301": {
-        "name": "「想い」を司る幻獣",
+        "name": "Esper of Hope",
         "compendium_id": 215,
         "compendium_shown": true,
         "rarity": 1,
@@ -3203,10 +3203,10 @@
         "merge_exp": 400,
         "merge_stats": [0, 0, 0, 0, 0, 0],
         "details": {
-            "desc": "魔人フィーナのビジョンが託した「永遠」が、ソフィの真の力を解放する。まばゆい光に包まれたソフィは、神々しい幻獣の姿へと変身。全てのものが想いに還元される空間を作りだし、決戦に挑む！",
-            "info": "ビジョンカードが経験値を獲得！",
-            "shop": "「想い」を司る幻獣",
-            "music": "♪Chaotic Waves",
+            "desc": "Sophie’s true power is unleashed by the Permanence bequeathed to her by the vision of Dark Fina, and she transforms into an empyreal esper wreathed in refulgent light. Creating a space where everything is reduced to thoughts and emotions, she stands as the last bastion of hope for the world.",
+            "info": "Sophie’s true power is unleashed by the Permanence bequeathed to her by the vision of Dark Fina, and she transforms into an empyreal esper wreathed in refulgent light. Creating a space where everything is reduced to thoughts and emotions, she stands as the last bastion of hope for the world.",
+            "shop": "Esper of Hope",
+            "music": "Chaotic Waves",
             "music_id": "400416"
         }
     },
@@ -3243,6 +3243,45 @@
             "shop": "破滅の幻獣",
             "music": "♪Disruption in the Depths",
             "music_id": "400413"
+        }
+    },
+    "100009501": {
+        "name": "融合はさせない！",
+        "compendium_id": 222,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245282],
+            "7": [245283],
+            "10": [245284]
+        },
+        "restriction": {
+            "245284": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "オメガに取り込まれつつあるネイリッカとファイサリス。それを止めるべく、オメガの中に残されていたスネフリンガの意識は、二人に向かって手を差し伸べるが……。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "融合はさせない！",
+            "music": "♪Dawn",
+            "music_id": "400329"
         }
     },
     "100009601": {
@@ -3313,6 +3352,123 @@
             "shop": "クリスタル・プラネット",
             "music": "♪Bloom up the sky",
             "music_id": "400780"
+        }
+    },
+    "100009801": {
+        "name": "再び、魔人の力を",
+        "compendium_id": 223,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245285, 245286, 245287]
+        },
+        "restriction": {
+            "245285": [7706],
+            "245286": [7706],
+            "245287": [8018]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "白金の鎧の男の攻撃で窮地に立たされたレインたち。絶体絶命の中、ロカが「力が欲しい」と願うと、内に眠る魔人の力の一部が目覚めた。彼女は、鎧の男に向かって渾身の力でメテオを放つ。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "再び、魔人の力を",
+            "music": "♪Sacred Ground",
+            "music_id": "400319"
+        }
+    },
+    "100009901": {
+        "name": "Wish to Change the World",
+        "compendium_id": 237,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245552],
+            "7": [245553],
+            "10": [245554]
+        },
+        "restriction": {
+            "245554": [8022]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "In what seemed like a hopeless situation, a vision appeared of the hero Taivas. In order to change the world, he joins his partner Vanharma along with Rain and the others in a battle against a mighty foe!",
+            "info": "In what seemed like a hopeless situation, a vision appeared of the hero Taivas. In order to change the world, he joins his partner Vanharma along with Rain and the others in a battle against a mighty foe!",
+            "shop": "Wish to Change the World",
+            "music": "Levonia",
+            "music_id": "400013"
+        }
+    },
+    "100010001": {
+        "name": "Entrusted to Rhus",
+        "compendium_id": 238,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245555],
+            "7": [245556],
+            "10": [245557]
+        },
+        "restriction": {
+            "245557": [8022]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Rain and his Wygar stand off against Omega. In order for Rhus to use Omnibus, Omega's movements need to be stopped. Rain bravely steps up to the challenge to prevent anyone from being sacrificed!",
+            "info": "Rain and his Wygar stand off against Omega. In order for Rhus to use Omnibus, Omega's movements need to be stopped. Rain bravely steps up to the challenge to prevent anyone from being sacrificed!",
+            "shop": "Entrusted to Rhus",
+            "music": "Ω",
+            "music_id": "5000002"
         }
     },
     "201000101": {
@@ -4866,6 +5022,45 @@
             "music_id": "4000711"
         }
     },
+    "207001401": {
+        "name": "ブーゲンハーゲンの天文台",
+        "compendium_id": 233,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10007,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245495],
+            "7": [245496],
+            "10": [245497]
+        },
+        "restriction": {
+            "245497": [7907]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "ブーゲンハーゲンの天文台に招かれたクラウドたち。宇宙の仕組みがインプットされた立体ホログラフィは、誰もが驚くほど精巧に作られている。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "ブーゲンハーゲンの天文台",
+            "music": "♪コスモ天文台",
+            "music_id": "4002201"
+        }
+    },
     "208000101": {
         "name": "True Feelings",
         "compendium_id": 95,
@@ -5417,7 +5612,7 @@
             "MP": [0, 0, 0, 0],
             "ATK": [0, 0, 0, 0],
             "DEF": [0, 0, 0, 0],
-            "MAG": [55, 110, 0, 0],
+            "MAG": [65, 130, 0, 0],
             "SPR": [0, 0, 0, 0],
             "element_resist": null,
             "status_resist": null
@@ -5428,7 +5623,7 @@
             "10": [243705]
         },
         "restriction": {
-            "243705": [7210]
+            "243705": [7910]
         },
         "max_level": 10,
         "exp_pattern": 110,
@@ -5501,7 +5696,9 @@
             "7": [243735],
             "10": [243736]
         },
-        "restriction": null,
+        "restriction": {
+            "243736": [7910]
+        },
         "max_level": 10,
         "exp_pattern": 110,
         "stat_pattern": 100,
@@ -5513,6 +5710,84 @@
             "shop": "Kimahri not pass!",
             "music": "Servants of the Mountain",
             "music_id": "400855"
+        }
+    },
+    "210000801": {
+        "name": "The Start of Jecht's Journey",
+        "compendium_id": 220,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10010,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245229, 245230, 245231]
+        },
+        "restriction": {
+            "245229": [8022],
+            "245230": [8022],
+            "245231": [8022]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "After being teleported to Spira, Jecht was imprisoned by the Temple of Yevon due to suspicious activity. It is then that the summoner Braska requests his aid on a pilgrimage to Zanarkand.",
+            "info": "After being teleported to Spira, Jecht was imprisoned by the Temple of Yevon due to suspicious activity. It is then that the summoner Braska requests his aid on a pilgrimage to Zanarkand.",
+            "shop": "The Start of Jecht's Journey",
+            "music": "Jecht's Theme",
+            "music_id": "4000306"
+        }
+    },
+    "210000901": {
+        "name": "Never Forget Them",
+        "compendium_id": 221,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10010,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245232, 245233, 245234]
+        },
+        "restriction": {
+            "245232": [7707],
+            "245233": [7707],
+            "245234": [8022]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Yuna stands before the crowds gathered at the stadium in Luca. Having defeated Sin and bringing about the Eternal Calm, she now addresses the people as a high summoner.",
+            "info": "Yuna stands before the crowds gathered at the stadium in Luca. Having defeated Sin and bringing about the Eternal Calm, she now addresses the people as a high summoner.",
+            "shop": "Never Forget Them",
+            "music": "Ending Theme",
+            "music_id": "4001905"
         }
     },
     "211000101": {
@@ -5746,6 +6021,45 @@
             "shop": "A New Sky",
             "music": "Phon Coast (Zodiac Age Version)",
             "music_id": "400976"
+        }
+    },
+    "212000601": {
+        "name": "Destruction of the Sun-Cryst",
+        "compendium_id": 230,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10012,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245310],
+            "7": [245311],
+            "10": [245312]
+        },
+        "restriction": {
+            "245312": [7912]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Ashe and the others venture to the top of the Pharos at Ridorana to destroy the Sun-Cryst. The Mist overflowing from it prevents them from approaching, but Reddas successfully attacks the Sun-Cryst at the cost of his own life.",
+            "info": "Ashe and the others venture to the top of the Pharos at Ridorana to destroy the Sun-Cryst. The Mist overflowing from it prevents them from approaching, but Reddas successfully attacks the Sun-Cryst at the cost of his own life.",
+            "shop": "Destruction of the Sun-Cryst",
+            "music": "The Sochen Cave Palace (Zodiac Age Version)",
+            "music_id": "4002106"
         }
     },
     "213000101": {
@@ -6138,6 +6452,123 @@
             "music_id": "4001708"
         }
     },
+    "216000101": {
+        "name": "Beyond a Shadow of the Self",
+        "compendium_id": 234,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10016,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245498],
+            "7": [245499],
+            "10": [245500]
+        },
+        "restriction": {
+            "245500": [8024]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Ifrit primed, Clive faces off with an infernal Eikon. He comes to terms with that fateful night at Phoenix Gate and, in accepting the truth about himself, begins to move forward.",
+            "info": "Ifrit primed, Clive faces off with an infernal Eikon. He comes to terms with that fateful night at Phoenix Gate and, in accepting the truth about himself, begins to move forward.",
+            "shop": "Beyond a Shadow of the Self",
+            "music": "Find the Flame",
+            "music_id": "4002304"
+        }
+    },
+    "216000201": {
+        "name": "Shiva vs. Titan",
+        "compendium_id": 235,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10016,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245501],
+            "7": [245502],
+            "10": [245503]
+        },
+        "restriction": {
+            "245503": [8024]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Shiva, an Eikon commanded by the Iron Kingdom, and Titan, likewise fielded by Dhalmekia, engage in battle at the Nysa Defile. Shiva deftly unleashes a barrage of ice magic at Titan, whose gargantuan form rocks the very land.",
+            "info": "Shiva, an Eikon commanded by the Iron Kingdom, and Titan, likewise fielded by Dhalmekia, engage in battle at the Nysa Defile. Shiva deftly unleashes a barrage of ice magic at Titan, whose gargantuan form rocks the very land.",
+            "shop": "Shiva vs. Titan",
+            "music": "Shattered",
+            "music_id": "4002310"
+        }
+    },
+    "216000301": {
+        "name": "Roaring Thunder, Howling Wind",
+        "compendium_id": 236,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 10016,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245504],
+            "7": [245505],
+            "10": [245506]
+        },
+        "restriction": {
+            "245506": [8024]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A storm rages in Caer Norvent as the Dominants of Ramuh and Garuda vie for custody of the Dominant of Fire and several captive Bearers. Each channel Eikonic power into their bodies as they battle, entering a semi-primed state even as they retain their human forms.",
+            "info": "A storm rages in Caer Norvent as the Dominants of Ramuh and Garuda vie for custody of the Dominant of Fire and several captive Bearers. Each channel Eikonic power into their bodies as they battle, entering a semi-primed state even as they retain their human forms.",
+            "shop": "Roaring Thunder, Howling Wind",
+            "music": "Thunderstorm",
+            "music_id": "4002313"
+        }
+    },
     "249000101": {
         "name": "Y, R, P. - It's showtime, girls.",
         "compendium_id": 128,
@@ -6484,6 +6915,45 @@
             "music_id": "400003"
         }
     },
+    "309000101": {
+        "name": "VS魔龍公ビューネイ",
+        "compendium_id": 227,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20008,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245301],
+            "7": [245302],
+            "10": [245303]
+        },
+        "restriction": {
+            "245303": [7955]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "グゥエインと力を合わせ、魔龍公ビューネイと戦う者たち。大空を翔けながらの死闘は勝敗が決まるその時まで続く。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "VS魔龍公ビューネイ",
+            "music": "♪四魔貴族バトル1",
+            "music_id": "4002008"
+        }
+    },
     "312000101": {
         "name": "I Could Kiss You!",
         "compendium_id": 54,
@@ -6534,9 +7004,9 @@
         "stats": {
             "HP": [0, 0, 0, 0],
             "MP": [0, 0, 0, 0],
-            "ATK": [50, 100, 0, 0],
+            "ATK": [60, 120, 0, 0],
             "DEF": [0, 0, 0, 0],
-            "MAG": [0, 0, 0, 0],
+            "MAG": [60, 120, 0, 0],
             "SPR": [0, 0, 0, 0],
             "element_resist": null,
             "status_resist": null
@@ -6547,7 +7017,7 @@
             "10": [242682]
         },
         "restriction": {
-            "242682": [7263]
+            "242682": [7954]
         },
         "max_level": 10,
         "exp_pattern": 110,
@@ -7573,6 +8043,84 @@
             "music_id": "400003"
         }
     },
+    "346000301": {
+        "name": "トリプルギガデイン！！",
+        "compendium_id": 231,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20039,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [65, 130, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [65, 130, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245415],
+            "7": [245416],
+            "10": [245417]
+        },
+        "restriction": {
+            "245417": [8027]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "巨大な魔獣となって海を行く異魔神にギガデインを放つ勇者たち。アルス、アラン、アステアの三人が放つギガデインは異魔神を沈黙させるほどの威力を持っていた。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "トリプルギガデイン！！",
+            "music": "♪Sacred Ground",
+            "music_id": "400319"
+        }
+    },
+    "346000401": {
+        "name": "魔王軍集結！！",
+        "compendium_id": 232,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20039,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [70, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245423],
+            "7": [245424],
+            "10": [245425]
+        },
+        "restriction": {
+            "245425": [8023]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "異魔神のもとに集う大幹部たち。竜王、冥王ゴルゴナ、獣王グノン、魔人王ジャガンらの四人は四魔王と呼ばれ、その圧倒的な力で世界の侵略を進めている。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "魔王軍集結！！",
+            "music": "♪White Maelstrom",
+            "music_id": "400348"
+        }
+    },
     "347000101": {
         "name": "ドラゴンの島",
         "compendium_id": 183,
@@ -7678,6 +8226,200 @@
             "shop": "ミトコンドリア・イヴ",
             "music": "♪Kyrie",
             "music_id": "400775"
+        }
+    },
+    "350000101": {
+        "name": "VSタイニィフェザー",
+        "compendium_id": 225,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20043,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [750, 1500, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [55, 110, 0, 0],
+            "DEF": [55, 110, 0, 0],
+            "MAG": [55, 110, 0, 0],
+            "SPR": [55, 110, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245295],
+            "7": [245296],
+            "10": [245297]
+        },
+        "restriction": {
+            "245297": [7955]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "風を司る四天王・タイニィフェザーとの死闘。かつて邪神サルーインと戦った雄大なる翼が、戦士たちの前に立ちはだかる！",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "VSタイニィフェザー",
+            "music": "♪バトル2",
+            "music_id": "4002002"
+        }
+    },
+    "351000101": {
+        "name": "VSロックブーケ",
+        "compendium_id": 226,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20044,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [0, 0, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [75, 150, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245298],
+            "7": [245299],
+            "10": [245300]
+        },
+        "restriction": {
+            "245299": [7955],
+            "245300": [7955]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "沈んだ塔の最深部で対峙する最終皇帝とロックブーケ。魅了によって男性を意のままに操る力を持つロックブーケが、ついにその本性を現す。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "VSロックブーケ",
+            "music": "♪七英雄バトル",
+            "music_id": "4002007"
+        }
+    },
+    "352000101": {
+        "name": "オルロワージュとの対峙",
+        "compendium_id": 228,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20045,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [70, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [70, 140, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245304],
+            "7": [245305],
+            "10": [245306]
+        },
+        "restriction": {
+            "245305": [7955],
+            "245306": [7955]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "一度は逃げたファシナトゥールの針の城へ戻ってきたアセルス。圧倒的な力を持つ妖魔の君オルロワージュに、強い意志で立ち向かう。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "オルロワージュとの対峙",
+            "music": "♪Last Battle -Asellus-",
+            "music_id": "4002013"
+        }
+    },
+    "353000101": {
+        "name": "南の砦の死闘",
+        "compendium_id": 229,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20046,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [75, 150, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [245307],
+            "7": [245308],
+            "10": [245309]
+        },
+        "restriction": {
+            "245308": [7955],
+            "245309": [7955]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "メルツィヒの砦に駐留中、モンスターの襲撃を受けたギュスターヴたち。毒に蝕まれるヨハンは、最後の力をふり絞ってギュスターヴを守るべく戦う。",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "南の砦の死闘",
+            "music": "♪Feldschlacht II",
+            "music_id": "4002018"
+        }
+    },
+    "354000101": {
+        "name": "BLOODY ESCAPE -地獄の逃走劇-",
+        "compendium_id": 224,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 20047,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [110, 110, 0, 0],
+            "DEF": [110, 110, 0, 0],
+            "MAG": [110, 110, 0, 0],
+            "SPR": [110, 110, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [245292, 245293, 245294]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "改造人間VS吸血鬼VSヤクザ　谷口悟朗による史上最狂の映画誕生――『BLOODY ESCAPE -地獄の逃走劇-』応援キャンペーン",
+            "info": "ビジョンカードが経験値を獲得！",
+            "shop": "BLOODY ESCAPE -地獄の逃走劇-",
+            "music": "♪Moment of Recall",
+            "music_id": "400003"
         }
     },
     "401000101": {
@@ -11544,6 +12286,567 @@
             "shop": "Warden of the Aquapolis",
             "music": "Odyssey",
             "music_id": "400318"
+        }
+    },
+    "401010301": {
+        "name": "A Hatred for Dragons",
+        "compendium_id": 9102,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918367, 918368, 918369]
+        },
+        "restriction": {
+            "918368": [7704],
+            "918369": [9503]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "While his origins are not well known, there are few who are unaware of the deep animosity he holds for dragons and the immense magic he wields to destroy them. The sight of him as he left town, having felled a giant dragon, boasted enough majesty to make his presence known.",
+            "info": "While his origins are not well known, there are few who are unaware of the deep animosity he holds for dragons and the immense magic he wields to destroy them. The sight of him as he left town, having felled a giant dragon, boasted enough majesty to make his presence known.",
+            "shop": "A Hatred for Dragons",
+            "music": "Chaotic Darkness",
+            "music_id": "400335"
+        }
+    },
+    "401010401": {
+        "name": "Searching Among the Flames",
+        "compendium_id": 9103,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [90, 140, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [918385],
+            "7": [918386],
+            "10": [918387]
+        },
+        "restriction": {
+            "918387": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Celeste relives the same nightmare every night, searching desperately among a city of flames for someone important to her. Whether that person be a friend, fellow officer, or loved one...only she knows.",
+            "info": "Celeste relives the same nightmare every night, searching desperately among a city of flames for someone important to her. Whether that person be a friend, fellow officer, or loved one...only she knows.",
+            "shop": "Searching Among the Flames",
+            "music": "Secrets in her Eyes",
+            "music_id": "400310"
+        }
+    },
+    "401010501": {
+        "name": "Knights of Boundless Power",
+        "compendium_id": 9104,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918446, 918447, 918448]
+        },
+        "restriction": {
+            "918448": [9503],
+            "918447": [9518]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "The ultimate knight, formed from a fusion of Rain and Lasswell—two knights who are unfathomably strong in their own right, but the power the Knights of Grandshelt wield can hardly be measured by any number of people. However mighty his foe may be, his blade will cleave any evil asunder.",
+            "info": "The ultimate knight, formed from a fusion of Rain and Lasswell—two knights who are unfathomably strong in their own right, but the power the Knights of Grandshelt wield can hardly be measured by any number of people. However mighty his foe may be, his blade will cleave any evil asunder.",
+            "shop": "Knights of Boundless Power",
+            "music": "Forging a Dream",
+            "music_id": "400401"
+        }
+    },
+    "401010601": {
+        "name": "The Apex of Strength",
+        "compendium_id": 9105,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [160, 160, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [160, 160, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918449, 918450, 918454]
+        },
+        "restriction": {
+            "918454": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "A member of Caledfwlch, this master of dual blades seeks unparalleled strength. His breathtaking bladework is reminiscent of an unabating stream, driven with the force of an overwhelming deluge. It is easy to imagine that the apex of strength he so desperately seeks is soon to be within grasp.",
+            "info": "A member of Caledfwlch, this master of dual blades seeks unparalleled strength. His breathtaking bladework is reminiscent of an unabating stream, driven with the force of an overwhelming deluge. It is easy to imagine that the apex of strength he so desperately seeks is soon to be within grasp.",
+            "shop": "The Apex of Strength",
+            "music": "United We Stand",
+            "music_id": "400102"
+        }
+    },
+    "401010701": {
+        "name": "Honorable Outlaw",
+        "compendium_id": 9106,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918469, 918470, 918471]
+        },
+        "restriction": {
+            "918469": [7708],
+            "918470": [7708],
+            "918471": [9503]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Steal from the rich and give to the poor—that is the rule Xon lives by. His daggers move with a swiftness one would never guess was honed on the streets. As for who taught him such polished techniques...only his beloved teddy bear Patches knows.",
+            "info": "Steal from the rich and give to the poor—that is the rule Xon lives by. His daggers move with a swiftness one would never guess was honed on the streets. As for who taught him such polished techniques...only his beloved teddy bear Patches knows.",
+            "shop": "Honorable Outlaw",
+            "music": "Order without Honor",
+            "music_id": "400331"
+        }
+    },
+    "401010801": {
+        "name": "Demon of Death and Destruction",
+        "compendium_id": 9107,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918455, 918456, 918457]
+        },
+        "restriction": {
+            "918456": [7708],
+            "918457": [9503]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "The elder of a pair of demons born from chaos, Lucius's visage contorts with unbridled rage as he tears asunder those who provoke his contempt, though the truly perceptive may see a measure of euphoria beneath his anger. Should they witness his arrogance and brutality first-hand, even the mightiest of demons would kneel before him.",
+            "info": "The elder of a pair of demons born from chaos, Lucius's visage contorts with unbridled rage as he tears asunder those who provoke his contempt, though the truly perceptive may see a measure of euphoria beneath his anger. Should they witness his arrogance and brutality first-hand, even the mightiest of demons would kneel before him.",
+            "shop": "Demon of Death and Destruction",
+            "music": "End is Nigh",
+            "music_id": "400103"
+        }
+    },
+    "401010901": {
+        "name": "Dioxus, Lord of Darkness",
+        "compendium_id": 9108,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [160, 160, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [160, 160, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918520, 918521, 918525]
+        },
+        "restriction": {
+            "918525": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "With the formidable strength of his Regalia and the Miasma that emanates from it, Dioxus—the former Veritas of the Dark—has Rain and the others cornered. It is unclear what fate will befall them, as even the strongest warrior would be forced to his knees by the might of such power.",
+            "info": "With the formidable strength of his Regalia and the Miasma that emanates from it, Dioxus—the former Veritas of the Dark—has Rain and the others cornered. It is unclear what fate will befall them, as even the strongest warrior would be forced to his knees by the might of such power.",
+            "shop": "Dioxus, Lord of Darkness",
+            "music": "Chaotic Darkness",
+            "music_id": "400335"
+        }
+    },
+    "401011001": {
+        "name": "Warrior of the Rainbow Crystal",
+        "compendium_id": 9109,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [75, 150, 0, 0],
+            "DEF": [75, 150, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "4": [918530],
+            "7": [918531],
+            "10": [918532]
+        },
+        "restriction": {
+            "918532": [7216]
+        },
+        "max_level": 10,
+        "exp_pattern": 110,
+        "stat_pattern": 100,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "After receiving the strength of her fellow warriors, Elena is bestowed with the blessing of the Rainbow Crystal, becoming the leader of the Fundamental Forces. The curtain now rises over their final battle with the Dark Crystal...",
+            "info": "After receiving the strength of her fellow warriors, Elena is bestowed with the blessing of the Rainbow Crystal, becoming the leader of the Fundamental Forces. The curtain now rises over their final battle with the Dark Crystal...",
+            "shop": "Warrior of the Rainbow Crystal",
+            "music": "Another Tale to Tell",
+            "music_id": "400328"
+        }
+    },
+    "401011101": {
+        "name": "She Who Harbors Darkness",
+        "compendium_id": 9110,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918591, 918592, 918593]
+        },
+        "restriction": {
+            "918593": [9519]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Eithne's dreams of peace vanish into the shadows after she is possessed by darkness. She stands before the Warriors of the Crystal with overwhelming strength powered by negative emotions.",
+            "info": "Eithne's dreams of peace vanish into the shadows after she is possessed by darkness. She stands before the Warriors of the Crystal with overwhelming strength powered by negative emotions.",
+            "shop": "She Who Harbors Darkness",
+            "music": "A Climatic Clash",
+            "music_id": "400334"
+        }
+    },
+    "401011201": {
+        "name": "Filled With Happiness and Hope",
+        "compendium_id": 9111,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918527, 918528, 918529]
+        },
+        "restriction": {
+            "918528": [7216],
+            "918529": [9503]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Poppy lets her heart guide her brush, unconcerned with what others think of her art. However, it's the creativity and genuineness of her finished masterpiece that fills the hearts of those who view it with a curious warmth.",
+            "info": "Poppy lets her heart guide her brush, unconcerned with what others think of her art. However, it's the creativity and genuineness of her finished masterpiece that fills the hearts of those who view it with a curious warmth.",
+            "shop": "Filled With Happiness and Hope",
+            "music": "Chill Out",
+            "music_id": "400337"
+        }
+    },
+    "401011301": {
+        "name": "Double-Edged Assault",
+        "compendium_id": 9112,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [160, 160, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [160, 160, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918650, 918651, 918655]
+        },
+        "restriction": {
+            "918655": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "One of the most influential members of the Orders, Hyoh once worked with a partner by his side. While said partner may have been a mere machine, there was still an undeniable bond between the two, and their strength combined allows Hyoh to attain the ultimate power.",
+            "info": "One of the most influential members of the Orders, Hyoh once worked with a partner by his side. While said partner may have been a mere machine, there was still an undeniable bond between the two, and their strength combined allows Hyoh to attain the ultimate power.",
+            "shop": "Double-Edged Assault",
+            "music": "Overcome the Menace",
+            "music_id": "400315"
+        }
+    },
+    "401011401": {
+        "name": "General Indomitable",
+        "compendium_id": 9113,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [170, 170, 0, 0],
+            "MAG": [0, 0, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918673, 918674, 918675]
+        },
+        "restriction": {
+            "918675": [9520]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Wilhelm was a general of the Zoldaad Empire whose name resounded across the battlefield. One wouldn't imagine that his combat experience and large exterior housed such a kind soul, and he left behind the foundation of a new Zoldaad as his legacy.",
+            "info": "Wilhelm was a general of the Zoldaad Empire whose name resounded across the battlefield. One wouldn't imagine that his combat experience and large exterior housed such a kind soul, and he left behind the foundation of a new Zoldaad as his legacy.",
+            "shop": "General Indomitable",
+            "music": "The Imperial Capital",
+            "music_id": "400202"
+        }
+    },
+    "401011501": {
+        "name": "Newfound Azure Light",
+        "compendium_id": 9114,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918656, 918657, 918658]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Although Elena, Warrior of the Azure Crystal, possesses strong qualities as a warrior, she never forgoes the opportunity to hone her skills. Having awoken a newfound power of the Crystal, she takes up her sword and shield as she continues her fight to protect the people against evil.",
+            "info": "Although Elena, Warrior of the Azure Crystal, possesses strong qualities as a warrior, she never forgoes the opportunity to hone her skills. Having awoken a newfound power of the Crystal, she takes up her sword and shield as she continues her fight to protect the people against evil.",
+            "shop": "Newfound Azure Light",
+            "music": "Celestial Battle",
+            "music_id": "400007"
+        }
+    },
+    "401011601": {
+        "name": "A Girl and Her Crows",
+        "compendium_id": 9115,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [1500, 1500, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [160, 160, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [160, 160, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918667, 918668, 918672]
+        },
+        "restriction": {
+            "918672": [7216]
+        },
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "Malphasie, a mysterious woman who lives with a murder of crows, soars the sky in a gale of pitch-black wings and unleashes a fierce blast of wind.",
+            "info": "Malphasie, a mysterious woman who lives with a murder of crows, soars the sky in a gale of pitch-black wings and unleashes a fierce blast of wind.",
+            "shop": "A Girl and Her Crows",
+            "music": "Secrets in her Eyes",
+            "music_id": "400310"
+        }
+    },
+    "401011801": {
+        "name": "Hero of Elmont",
+        "compendium_id": 9117,
+        "compendium_shown": true,
+        "rarity": 1,
+        "game_id": 11001,
+        "job_id": 0,
+        "unit_type": 0,
+        "stats": {
+            "HP": [0, 0, 0, 0],
+            "MP": [0, 0, 0, 0],
+            "ATK": [170, 170, 0, 0],
+            "DEF": [0, 0, 0, 0],
+            "MAG": [170, 170, 0, 0],
+            "SPR": [0, 0, 0, 0],
+            "element_resist": null,
+            "status_resist": null
+        },
+        "skills": {
+            "1": [918796, 918797, 918798]
+        },
+        "restriction": null,
+        "max_level": 1,
+        "exp_pattern": 1,
+        "stat_pattern": 1,
+        "merge_exp": 400,
+        "merge_stats": [0, 0, 0, 0, 0, 0],
+        "details": {
+            "desc": "With his mechanical partner Runda at his side, the warrior Taivas boasts the best sword in Elmont. He extinguishes any and all foes with the flames that rise with each swing of his blade.",
+            "info": "With his mechanical partner Runda at his side, the warrior Taivas boasts the best sword in Elmont. He extinguishes any and all foes with the flames that rise with each swing of his blade.",
+            "shop": "Hero of Elmont",
+            "music": "A Climactic Clash",
+            "music_id": "400334"
         }
     },
     "900020101": {

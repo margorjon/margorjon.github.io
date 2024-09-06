@@ -11479,8 +11479,8 @@
         "icon": "ability_77.png",
         "strings": {
             "names": ["Shielder", "守護增強", "실드", "Dernier rempart", "Abschirmer", "Protector", "Shielder", "Shielder\u001a"],
-            "desc_short": ["Boost DEF by 20%", "提高20%防禦", "방어력 20% 상승", "Augmente la DEF de 20%", "Erhöht ABW um 20%.", "Aumenta la DEF un 20%", "Meningkatkan DEF sebanyak 20%", "เพิ่มค่า\u001a \u001aDEF\u001a \u001a20%"],
-            "desc_long": ["Boosts DEF by 20%.", "提高20%防禦。", "방어력이 20% 상승합니다.", "Augmente la DEF de 20%", "Erhöht ABW um 20%.", "Aumenta la DEF un 20%", "Meningkatkan DEF sebanyak 20%.", "เพิ่มค่า\u001a \u001aDEF\u001a \u001a20%"]
+            "desc_short": ["Boost HP and DEF by 40%", "提高40%HP防禦", null, null, null, null, "Boost HP and DEF by 40%", "Boost\u001a \u001aHP\u001a \u001aand\u001a \u001aDEF\u001a \u001aby\u001a \u001a40%"],
+            "desc_long": ["Boosts HP and DEF by 40%.", "提高40%HP防禦。", null, null, null, null, "Boosts HP and DEF by 40%.", "Boosts\u001a \u001aHP\u001a \u001aand\u001a \u001aDEF\u001a \u001aby\u001a \u001a40%.\u001a"]
         }
     },
     "504229031": {
@@ -11496,8 +11496,8 @@
         "icon": "ability_77.png",
         "strings": {
             "names": ["Soulful", "靈魂增強", "소울풀", "Sensibilité", "Übervoller Geist", "Sensibilidad", "Soulful", "Soulful\u001a"],
-            "desc_short": ["Boost SPR by 20%", "提高20%精神", "정신력 20% 상승", "Augmente la PSY de 20%", "Erhöht PSY um 20%.", "Aumenta el ESP un 20%", "Meningkatkan SPR sebanyak 20%", "เพิ่มค่า\u001a \u001aSPR\u001a \u001a20%"],
-            "desc_long": ["Boosts SPR by 20%.", "提高20%精神。", "정신력이 20% 상승합니다.", "Augmente la PSY de 20%", "Erhöht PSY um 20%.", "Aumenta el ESP un 20%.", "Meningkatkan SPR sebanyak 20%.", "เพิ่มค่า\u001a \u001aSPR\u001a \u001a20%"]
+            "desc_short": ["Boost MAG and SPR by 40%", "提高40%魔力精神", null, null, null, null, "Boost MAG and SPR by 40%", "Boost\u001a \u001aMAG\u001a \u001aand\u001a \u001aSPR\u001a \u001aby\u001a \u001a40%"],
+            "desc_long": ["Boosts MAG and SPR by 40%.", "提高40%魔力精神。", null, null, null, null, "Boosts MAG and SPR by 40%.", "Boosts\u001a \u001aMAG\u001a \u001aand\u001a \u001aSPR\u001a \u001aby\u001a \u001a40%.\u001a"]
         }
     },
     "504229032": {
@@ -24198,88 +24198,88 @@
         }
     },
     "504242673": {
-        "name": "Zohar Access",
+        "name": "Zohar Access I",
         "compendium_id": 1382,
         "compendium_shown": true,
-        "requirements": ["UNIT_ID", [331001007, 331001017, 331001107, 331001117, 331000105, 331000127, 331000205]],
+        "requirements": ["RULE", [7954]],
         "skills": [242673],
-        "effects": ["Grant 'Zohar Access' passive"],
-        "unique": false,
-        "price_buy": 100000,
-        "price_sell": 10000,
-        "icon": "ability_79.png",
-        "strings": {
-            "names": ["Zohar Access", "佐哈爾通行證", "조하르 액세스", "Accès au Zohar", "Zohar-Zugang", "Acceso Zohar", "Akses Zohar", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a"],
-            "desc_short": ["Boost physical and magic damage against machina monsters at the beginning of battle for caster (Id, Grahf, Fei, and Elly only)", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle (Khusus Id, Grahf, Fei, dan Elly)", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"],
-            "desc_long": ["Boosts physical and magic damage against machina monsters at the beginning of battle for caster. Id, Grahf, Fei, and Elly only.", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果。(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle. Khusus Id, Grahf, Fei, dan Elly.", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"]
-        }
-    },
-    "504242674": {
-        "name": "Zohar Access I",
-        "compendium_id": 1383,
-        "compendium_shown": true,
-        "requirements": ["UNIT_ID", [331001007, 331001017, 331001107, 331001117, 331000105, 331000127, 331000205]],
-        "skills": [242674],
         "effects": ["Grant 'Zohar Access I' passive"],
         "unique": false,
         "price_buy": 100000,
         "price_sell": 10000,
         "icon": "ability_79.png",
         "strings": {
-            "names": ["Zohar Access I", "佐哈爾通行證 I", "조하르 액세스 I", "Accès au Zohar I", "Zohar-Zugang I", "Acceso Zohar I", "Akses Zohar I", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aI\u001a"],
-            "desc_short": ["Boost physical and magic damage against machina monsters at the beginning of battle for caster (Id, Grahf, Fei, and Elly only)", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle (Khusus Id, Grahf, Fei, dan Elly)", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"],
-            "desc_long": ["Boosts physical and magic damage against machina monsters at the beginning of battle for caster. Id, Grahf, Fei, and Elly only.", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果。(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle. Khusus Id, Grahf, Fei, dan Elly.", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"]
+            "names": ["Zohar Access I", "佐哈爾通行證", "조하르 액세스", "Accès au Zohar", "Zohar-Zugang", "Acceso Zohar", "Akses Zohar", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a"],
+            "desc_short": ["Boost physical and magic damage against machina monsters by 15% (Xenogears category units only)", "物理、魔法攻擊時提高15%對機械系魔物的傷害(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Boost physical and magic damage against machina monsters by 15% (Xenogears category units only)", "Boost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a15% (Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a)\u001a"],
+            "desc_long": ["Boosts physical and magic damage against machina monsters by 15%. Xenogears category units only.", "物理、魔法攻擊時提高15%對機械系魔物的傷害。(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Boosts physical and magic damage against machina monsters by 15%. Xenogears category units only.", "Boosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a15%. Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a.\u001a"]
         }
     },
-    "504242675": {
+    "504242674": {
         "name": "Zohar Access II",
-        "compendium_id": 1384,
+        "compendium_id": 1383,
         "compendium_shown": true,
-        "requirements": ["UNIT_ID", [331001007, 331001017, 331001107, 331001117, 331000105, 331000127, 331000205]],
-        "skills": [242675],
+        "requirements": ["RULE", [7954]],
+        "skills": [242674],
         "effects": ["Grant 'Zohar Access II' passive"],
         "unique": false,
         "price_buy": 100000,
         "price_sell": 10000,
         "icon": "ability_79.png",
         "strings": {
-            "names": ["Zohar Access II", "佐哈爾通行證 II", "조하르 액세스 II", "Accès au Zohar II", "Zohar-Zugang II", "Acceso Zohar II", "Akses Zohar II", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aII\u001a"],
-            "desc_short": ["Boost physical and magic damage against machina monsters at the beginning of battle for caster (Id, Grahf, Fei, and Elly only)", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle (Khusus Id, Grahf, Fei, dan Elly)", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"],
-            "desc_long": ["Boosts physical and magic damage against machina monsters at the beginning of battle for caster. Id, Grahf, Fei, and Elly only.", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果。(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle. Khusus Id, Grahf, Fei, dan Elly.", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"]
+            "names": ["Zohar Access II", "佐哈爾通行證 I", "조하르 액세스 I", "Accès au Zohar I", "Zohar-Zugang I", "Acceso Zohar I", "Akses Zohar I", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aI\u001a"],
+            "desc_short": ["Boost physical and magic damage against machina monsters by 30% (Xenogears category units only)", "物理、魔法攻擊時提高30%對機械系魔物的傷害(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Boost physical and magic damage against machina monsters by 30% (Xenogears category units only)", "Boost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a30% (Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a)\u001a"],
+            "desc_long": ["Boosts physical and magic damage against machina monsters by 30%. Xenogears category units only.", "物理、魔法攻擊時提高30%對機械系魔物的傷害。(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Boosts physical and magic damage against machina monsters by 30%. Xenogears category units only.", "Boosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a30%. Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a.\u001a"]
         }
     },
-    "504242676": {
+    "504242675": {
         "name": "Zohar Access III",
-        "compendium_id": 1385,
+        "compendium_id": 1384,
         "compendium_shown": true,
-        "requirements": ["UNIT_ID", [331001007, 331001017, 331001107, 331001117, 331000105, 331000127, 331000205]],
-        "skills": [242676],
+        "requirements": ["RULE", [7954]],
+        "skills": [242675],
         "effects": ["Grant 'Zohar Access III' passive"],
         "unique": false,
         "price_buy": 100000,
         "price_sell": 10000,
         "icon": "ability_79.png",
         "strings": {
-            "names": ["Zohar Access III", "佐哈爾通行證 III", "조하르 액세스 III", "Accès au Zohar III", "Zohar-Zugang III", "Acceso Zohar III", "Akses Zohar III", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aIII\u001a"],
-            "desc_short": ["Boost physical and magic damage against machina monsters at the beginning of battle for caster (Id, Grahf, Fei, and Elly only)", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle (Khusus Id, Grahf, Fei, dan Elly)", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"],
-            "desc_long": ["Boosts physical and magic damage against machina monsters at the beginning of battle for caster. Id, Grahf, Fei, and Elly only.", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果。(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle. Khusus Id, Grahf, Fei, dan Elly.", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"]
+            "names": ["Zohar Access III", "佐哈爾通行證 II", "조하르 액세스 II", "Accès au Zohar II", "Zohar-Zugang II", "Acceso Zohar II", "Akses Zohar II", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aII\u001a"],
+            "desc_short": ["Boost physical and magic damage against machina monsters by 45% (Xenogears category units only)", "物理、魔法攻擊時提高45%對機械系魔物的傷害(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Boost physical and magic damage against machina monsters by 45% (Xenogears category units only)", "Boost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a45% (Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a)\u001a"],
+            "desc_long": ["Boosts physical and magic damage against machina monsters by 45%. Xenogears category units only.", "物理、魔法攻擊時提高45%對機械系魔物的傷害。(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Boosts physical and magic damage against machina monsters by 45%. Xenogears category units only.", "Boosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a45%. Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a.\u001a"]
         }
     },
-    "504242677": {
+    "504242676": {
         "name": "Zohar Access IV",
-        "compendium_id": 1386,
+        "compendium_id": 1385,
         "compendium_shown": true,
-        "requirements": ["UNIT_ID", [331001007, 331001017, 331001107, 331001117, 331000105, 331000127, 331000205]],
-        "skills": [242677],
+        "requirements": ["RULE", [7954]],
+        "skills": [242676],
         "effects": ["Grant 'Zohar Access IV' passive"],
         "unique": false,
         "price_buy": 100000,
         "price_sell": 10000,
         "icon": "ability_79.png",
         "strings": {
-            "names": ["Zohar Access IV", "佐哈爾通行證 IV", "조하르 액세스 IV", "Accès au Zohar IV", "Zohar-Zugang IV", "Acceso Zohar IV", "Akses Zohar IV", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aIV\u001a"],
-            "desc_short": ["Boost physical and magic damage against machina monsters at the beginning of battle for caster (Id, Grahf, Fei, and Elly only)", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle (Khusus Id, Grahf, Fei, dan Elly)", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"],
-            "desc_long": ["Boosts physical and magic damage against machina monsters at the beginning of battle for caster. Id, Grahf, Fei, and Elly only.", "戰鬥開始時賦予自身物理、魔法攻擊時提高對機械系魔物傷害的效果。(伊多、格拉夫、飛、艾蕾專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Meningkatkan damage fisik dan magic diri sendiri terhadap jenis mesin di awal battle. Khusus Id, Grahf, Fei, dan Elly.", "เพิ่มค่า\u001aความเสียหาย\u001aทางกายภาพ\u001aและ\u001aพลัง\u001aเวทย์\u001aของ\u001aผู้ใช้\u001aเมื่อ\u001aโจมตี\u001aศัตรู\u001aชนิด\u001aจักรกล\u001aเมื่อ\u001aเริ่มต้น\u001aการต่อสู้\u001a \u001a(\u001aId\u001a,\u001a \u001aGrahf\u001a,\u001a \u001aFei\u001a \u001aและ\u001a \u001aElly\u001a \u001aเท่านั้น\u001a)\u001a"]
+            "names": ["Zohar Access IV", "佐哈爾通行證 III", "조하르 액세스 III", "Accès au Zohar III", "Zohar-Zugang III", "Acceso Zohar III", "Akses Zohar III", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aIII\u001a"],
+            "desc_short": ["Boost physical and magic damage against machina monsters by 60% (Xenogears category units only)", "物理、魔法攻擊時提高60%對機械系魔物的傷害(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Boost physical and magic damage against machina monsters by 60% (Xenogears category units only)", "Boost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a60% (Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a)\u001a"],
+            "desc_long": ["Boosts physical and magic damage against machina monsters by 60%. Xenogears category units only.", "物理、魔法攻擊時提高60%對機械系魔物的傷害。(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Boosts physical and magic damage against machina monsters by 60%. Xenogears category units only.", "Boosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a60%. Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a.\u001a"]
+        }
+    },
+    "504242677": {
+        "name": "Zohar Access V",
+        "compendium_id": 1386,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7954]],
+        "skills": [242677],
+        "effects": ["Grant 'Zohar Access V' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": ["Zohar Access V", "佐哈爾通行證 IV", "조하르 액세스 IV", "Accès au Zohar IV", "Zohar-Zugang IV", "Acceso Zohar IV", "Akses Zohar IV", "เชื่อมต่อ\u001aกับ\u001a \u001aZohar\u001a \u001aIV\u001a"],
+            "desc_short": ["Boost physical and magic damage against machina monsters by 75%, and boost LB damage by 25% (Xenogears category units only)", "物理、魔法攻擊時提高75%對機械系魔物的傷害+提高25%極限技的傷害(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과 부여(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat (Id, Grahf, Fei et Elly uniquement)", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen (nur Es, Grahf, Fei und Elly).", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate (solo Id, Graf, Fei y Elly)", "Boost physical and magic damage against machina monsters by 75%, and boost LB damage by 25% (Xenogears category units only)", "Boost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a75%, and\u001a \u001aboost\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a25% (Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a)\u001a"],
+            "desc_long": ["Boosts physical and magic damage against machina monsters by 75%, and boosts LB damage by 25%. Xenogears category units only.", "物理、魔法攻擊時提高75%對機械系魔物的傷害，並且提高25%極限技的傷害(Xenogears類別兵員專屬)", "전투 시작 시 자신에게 물리, 마법 공격 시 기계형 마물에 대한 피해량 상승 효과를 부여합니다.(이드, 그라프, 페이, 엘리 전용)", "Augmente les dégâts physiques et magiques infligés aux machines par le lanceur au début du combat. Id, Grahf, Fei et Elly uniquement.", "Erhöht zu Beginn des Kampfes physischen sowie magischen Schaden des Benutzers gegen Maschinen. Nur Es, Grahf, Fei und Elly.", "Aumenta el daño físico y mágico del usuario contra máquinas al inicio del combate. Solo Id, Graf, Fei y Elly.", "Boosts physical and magic damage against machina monsters by 75%, and boosts LB damage by 25%. Xenogears category units only.", "Boosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a75%, and\u001a \u001aboosts\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a25%. Xenogears\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a.\u001a"]
         }
     },
     "504242890": {
@@ -29918,20 +29918,38 @@
         }
     },
     "504245083": {
-        "name": "護りの操剣",
+        "name": "Honorable Protector",
         "compendium_id": 1591,
         "compendium_shown": true,
         "requirements": null,
         "skills": [245083],
-        "effects": ["Grant '護りの操剣' passive"],
-        "unique": false,
+        "effects": ["Grant 'Honorable Protector' passive"],
+        "unique": true,
         "price_buy": 100000,
         "price_sell": 10000,
         "icon": "ability_6000200.png",
         "strings": {
-            "names": [null, null, null, null, null, null, null, null],
-            "desc_short": [null, null, null, null, null, null, null, null],
-            "desc_long": [null, null, null, null, null, null, null, null]
+            "names": ["Honorable Protector", "守護操劍", "Honorable Protector", "Honorable Protector", "Honorable Protector", "Honorable Protector", "Honorable Protector", "Honorable\u001a \u001aProtector\u001a"],
+            "desc_short": [
+                "Boost equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands (Not stackable)",
+                "只裝備1把劍大劍時武具攻擊精神提升100%[無法重複裝備]",
+                "Boost equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands (Not stackable)",
+                "Boost equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands (Not stackable)",
+                "Boost equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands (Not stackable)",
+                "Boost equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands (Not stackable)",
+                "Boost equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands (Not stackable)",
+                "Boost\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aSPR\u001a \u001aby\u001a \u001a100% when\u001a \u001aa\u001a \u001asingle\u001a \u001asword\u001a \u001aor\u001a \u001alarge\u001a \u001asword\u001a \u001ais\u001a \u001aequipped\u001a \u001ain\u001a \u001aone\u001a \u001aor\u001a \u001aboth\u001a \u001ahands\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands. Not stackable.",
+                "只裝備1把劍大劍時武具攻擊精神提升100%。[無法重複裝備]",
+                "Boosts equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands. Not stackable.",
+                "Boosts equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands. Not stackable.",
+                "Boosts equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands. Not stackable.",
+                "Boosts equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands. Not stackable.",
+                "Boosts equipment ATK and SPR by 100% when a single sword or large sword is equipped in one or both hands. Not stackable.",
+                "Boosts\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aSPR\u001a \u001aby\u001a \u001a100% when\u001a \u001aa\u001a \u001asingle\u001a \u001asword\u001a \u001aor\u001a \u001alarge\u001a \u001asword\u001a \u001ais\u001a \u001aequipped\u001a \u001ain\u001a \u001aone\u001a \u001aor\u001a \u001aboth\u001a \u001ahands\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
         }
     },
     "504245086": {
@@ -29969,20 +29987,20 @@
         }
     },
     "504245088": {
-        "name": "魔人がもたらす魔力",
+        "name": "Demonic-Strength Magic",
         "compendium_id": 1589,
         "compendium_shown": true,
         "requirements": ["RULE", [8012]],
         "skills": [245088],
-        "effects": ["Grant '魔人がもたらす魔力' passive"],
+        "effects": ["Grant 'Demonic-Strength Magic' passive"],
         "unique": false,
         "price_buy": 400000,
         "price_sell": 40000,
         "icon": "ability_77.png",
         "strings": {
-            "names": [null, null, null, null, null, null, null, null],
-            "desc_short": [null, null, null, null, null, null, null, null],
-            "desc_long": [null, null, null, null, null, null, null, null]
+            "names": ["Demonic-Strength Magic", "魔人身懷的魔力", "Demonic-Strength Magic", "Demonic-Strength Magic", "Demonic-Strength Magic", "Demonic-Strength Magic", "Demonic-Strength Magic", "Demonic-Strength\u001a \u001aMagic\u001a"],
+            "desc_short": ["Boost MAG by 500", "提高500魔力", "Boost MAG by 500", "Boost MAG by 500", "Boost MAG by 500", "Boost MAG by 500", "Boost MAG by 500", "Boost\u001a \u001aMAG\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts MAG by 500.", "提高500魔力。", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts\u001a \u001aMAG\u001a \u001aby\u001a \u001a500.\u001a"]
         }
     },
     "504245089": {
@@ -30019,21 +30037,108 @@
             "desc_long": [null, null, null, null, null, null, null, null]
         }
     },
+    "504245133": {
+        "name": "Little Guardian's Resolve",
+        "compendium_id": 1605,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245133],
+        "effects": ["Grant 'Little Guardian's Resolve' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_99.png",
+        "strings": {
+            "names": ["Little Guardian's Resolve", "小小守護者的決心", "Little Guardian's Resolve", "Little Guardian's Resolve", "Little Guardian's Resolve", "Little Guardian's Resolve", "Little Guardian's Resolve", "Little\u001a \u001aGuardian\u001a'\u001as\u001a \u001aResolve\u001a"],
+            "desc_short": [
+                "Boost MP and MAG by 40%, boost light resistance by 30%, and fill LB gauge by 200 every turn (Not stackable)",
+                "提高40%MP魔力、30%光屬性耐性，並且每回合增加200極限技槽。[無法重複裝備]",
+                "Boost MP and MAG by 40%, boost light resistance by 30%, and fill LB gauge by 200 every turn (Not stackable)",
+                "Boost MP and MAG by 40%, boost light resistance by 30%, and fill LB gauge by 200 every turn (Not stackable)",
+                "Boost MP and MAG by 40%, boost light resistance by 30%, and fill LB gauge by 200 every turn (Not stackable)",
+                "Boost MP and MAG by 40%, boost light resistance by 30%, and fill LB gauge by 200 every turn (Not stackable)",
+                "Boost MP and MAG by 40%, boost light resistance by 30%, and fill LB gauge by 200 every turn (Not stackable)",
+                "Boost\u001a \u001aMP\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a40%, boost\u001a \u001alight\u001a \u001aresistance\u001a \u001aby\u001a \u001a30%, and\u001a \u001afill\u001a \u001aLB\u001a \u001agauge\u001a \u001aby\u001a \u001a200\u001a \u001aevery\u001a \u001aturn\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts MP and MAG by 40%, boosts light resistance by 30%, and fills LB gauge by 200 every turn. Not stackable.",
+                "提高40%MP魔力、30%光屬性耐性+每回合增加200極限技槽[無法重複裝備]",
+                "Boosts MP and MAG by 40%, boosts light resistance by 30%, and fills LB gauge by 200 every turn. Not stackable.",
+                "Boosts MP and MAG by 40%, boosts light resistance by 30%, and fills LB gauge by 200 every turn. Not stackable.",
+                "Boosts MP and MAG by 40%, boosts light resistance by 30%, and fills LB gauge by 200 every turn. Not stackable.",
+                "Boosts MP and MAG by 40%, boosts light resistance by 30%, and fills LB gauge by 200 every turn. Not stackable.",
+                "Boosts MP and MAG by 40%, boosts light resistance by 30%, and fills LB gauge by 200 every turn. Not stackable.",
+                "Boosts\u001a \u001aMP\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a40%, boosts\u001a \u001alight\u001a \u001aresistance\u001a \u001aby\u001a \u001a30%, and\u001a \u001afills\u001a \u001aLB\u001a \u001agauge\u001a \u001aby\u001a \u001a200\u001a \u001aevery\u001a \u001aturn\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "504245136": {
+        "name": "Maturing Nanomachines",
+        "compendium_id": 1612,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245136],
+        "effects": ["Grant 'Maturing Nanomachines' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_98.png",
+        "strings": {
+            "names": ["Maturing Nanomachines", "會成長的奈米機器", null, null, null, null, "Maturing Nanomachines", "Maturing\u001a \u001aNanomachines\u001a"],
+            "desc_short": [
+                "Boost MAG by 60% and dark resistance by 40% (Not stackable)",
+                "提高60%魔力、40%暗屬性耐性[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost MAG by 60% and dark resistance by 40% (Not stackable)",
+                "Boost\u001a \u001aMAG\u001a \u001aby\u001a \u001a60% and\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a40% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts MAG by 60% and dark resistance by 40%. Not stackable.",
+                "提高60%魔力、40%暗屬性耐性。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts MAG by 60% and dark resistance by 40%. Not stackable.",
+                "Boosts\u001a \u001aMAG\u001a \u001aby\u001a \u001a60% and\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a40%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "504245141": {
+        "name": "Will to Overcome the Self",
+        "compendium_id": 1613,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245141],
+        "effects": ["Grant 'Will to Overcome the Self' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_95.png",
+        "strings": {
+            "names": ["Will to Overcome the Self", "戰勝自己的決心", null, null, null, null, "Will to Overcome the Self", "Will\u001a \u001ato\u001a \u001aOvercome\u001a \u001athe\u001a \u001aSelf\u001a"],
+            "desc_short": ["Boost LB damage by 50%, and boost ATK by 70% when when equipped with fists (Not stackable)", "提高50%極限技的傷害+裝備格鬥武器時提高70%攻擊", null, null, null, null, "Boost LB damage by 50%, and boost ATK by 70% when when equipped with fists (Not stackable)", "Boost\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aboost\u001a \u001aATK\u001a \u001aby\u001a \u001a70% when\u001a \u001awhen\u001a \u001aequipped\u001a \u001awith\u001a \u001afists\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"],
+            "desc_long": ["Boosts LB damage by 50%, and boosts ATK by 70% when when equipped with fists. Not stackable.", "提高50%極限技的傷害，以及裝備格鬥武器時提高70%攻擊。", null, null, null, null, "Boosts LB damage by 50%, and boosts ATK by 70% when when equipped with fists. Not stackable.", "Boosts\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aboosts\u001a \u001aATK\u001a \u001aby\u001a \u001a70% when\u001a \u001awhen\u001a \u001aequipped\u001a \u001awith\u001a \u001afists\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"]
+        }
+    },
     "504245143": {
-        "name": "闇を征す力",
+        "name": "Strength to Overcome Darkness",
         "compendium_id": 1602,
         "compendium_shown": true,
         "requirements": ["RULE", [8017]],
         "skills": [245143],
-        "effects": ["Grant '闇を征す力' passive"],
-        "unique": false,
+        "effects": ["Grant 'Strength to Overcome Darkness' passive"],
+        "unique": true,
         "price_buy": 400000,
         "price_sell": 40000,
         "icon": "ability_77.png",
         "strings": {
-            "names": [null, null, null, null, null, null, null, null],
-            "desc_short": [null, null, null, null, null, null, null, null],
-            "desc_long": [null, null, null, null, null, null, null, null]
+            "names": ["Strength to Overcome Darkness", "克服黑暗的力量", null, null, null, null, "Strength to Overcome Darkness", "Strength\u001a \u001ato\u001a \u001aOvercome\u001a \u001aDarkness\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
         }
     },
     "504245145": {
@@ -30105,20 +30210,37 @@
         }
     },
     "504245149": {
-        "name": "根源が秘めし想い+4",
+        "name": "Source of Hope V",
         "compendium_id": 1599,
         "compendium_shown": true,
         "requirements": ["RULE", [8017]],
         "skills": [245149],
-        "effects": ["Grant '根源が秘めし想い+4' passive"],
+        "effects": ["Grant 'Source of Hope V' passive"],
         "unique": false,
         "price_buy": 400000,
         "price_sell": 40000,
         "icon": "ability_77.png",
         "strings": {
-            "names": [null, null, null, null, null, null, null, null],
-            "desc_short": [null, null, null, null, null, null, null, null],
+            "names": ["Source of Hope V", "根源所秘藏的思念+4", null, null, null, null, "Source of Hope V", "Source\u001a \u001aof\u001a \u001aHope\u001a \u001aV\u001a"],
+            "desc_short": ["Boost ATK by 60% for Blessing of the Crystals units", "提高「水晶的加護」類別的兵員60%攻擊", null, null, null, null, "Boost ATK by 60% for Blessing of the Crystals units", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a60% for\u001a \u001aBlessing\u001a \u001aof\u001a \u001athe\u001a \u001aCrystals\u001a \u001aunits\u001a"],
             "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245154": {
+        "name": "Strength to Challenge Deus",
+        "compendium_id": 1614,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245154],
+        "effects": ["Grant 'Strength to Challenge Deus' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Strength to Challenge Deus", "能與迪烏斯抗衡的力量", null, null, null, null, "Strength to Challenge Deus", "Strength\u001a \u001ato\u001a \u001aChallenge\u001a \u001aDeus\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
         }
     },
     "504245165": {
@@ -30153,6 +30275,2000 @@
             "names": [null, null, null, null, null, null, null, null],
             "desc_short": [null, null, null, null, null, null, null, null],
             "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245188": {
+        "name": "Ether Veiler I",
+        "compendium_id": 1607,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245188],
+        "effects": ["Grant 'Ether Veiler I' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_9.png",
+        "strings": {
+            "names": ["Ether Veiler I", "以太力量", null, null, null, null, "Ether Veiler I", "Ether\u001a \u001aVeiler\u001a \u001aI\u001a"],
+            "desc_short": ["Boost fire, water, wind, earth, light, and dark resistance by 10%", "提高10%火水風土光暗屬性耐性", null, null, null, null, "Boost fire, water, wind, earth, light, and dark resistance by 10%", "Boost\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a10%"],
+            "desc_long": ["Boosts fire, water, wind, earth, light, and dark resistance by 10%.", "提高10%火水風土光暗屬性耐性", null, null, null, null, "Boosts fire, water, wind, earth, light, and dark resistance by 10%.", "Boosts\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a10%.\u001a"]
+        }
+    },
+    "504245189": {
+        "name": "Ether Veiler II",
+        "compendium_id": 1608,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245189],
+        "effects": ["Grant 'Ether Veiler II' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_9.png",
+        "strings": {
+            "names": ["Ether Veiler II", "以太力量+1", null, null, null, null, "Ether Veiler II", "Ether\u001a \u001aVeiler\u001a \u001aII\u001a"],
+            "desc_short": ["Boost fire, water, wind, earth, light, and dark resistance by 15%, and boost LB damage by 10%", "提高15%火水風土光暗屬性耐性+提高10%極限技的傷害", null, null, null, null, "Boost fire, water, wind, earth, light, and dark resistance by 15%, and boost LB damage by 10%", "Boost\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a15%, and\u001a \u001aboost\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a10%"],
+            "desc_long": ["Boosts fire, water, wind, earth, light, and dark resistance by 15%, and boosts LB damage by 10%.", "提高15%火水風土光暗屬性耐性，以及提高10%極限技的傷害", null, null, null, null, "Boosts fire, water, wind, earth, light, and dark resistance by 15%, and boosts LB damage by 10%.", "Boosts\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a15%, and\u001a \u001aboosts\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a10%.\u001a"]
+        }
+    },
+    "504245190": {
+        "name": "Ether Veiler III",
+        "compendium_id": 1609,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245190],
+        "effects": ["Grant 'Ether Veiler III' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_9.png",
+        "strings": {
+            "names": ["Ether Veiler III", "以太力量+2", null, null, null, null, "Ether Veiler III", "Ether\u001a \u001aVeiler\u001a \u001aIII\u001a"],
+            "desc_short": ["Boost fire, water, wind, earth, light, and dark resistance by 20%, and boost LB damage by 15%", "提高20%火水風土光暗屬性耐性+提高15%極限技的傷害", null, null, null, null, "Boost fire, water, wind, earth, light, and dark resistance by 20%, and boost LB damage by 15%", "Boost\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a20%, and\u001a \u001aboost\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a15%"],
+            "desc_long": ["Boosts fire, water, wind, earth, light, and dark resistance by 20%, and boosts LB damage by 15%.", "提高20%火水風土光暗屬性耐性，以及提高15%極限技的傷害", null, null, null, null, "Boosts fire, water, wind, earth, light, and dark resistance by 20%, and boosts LB damage by 15%.", "Boosts\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a20%, and\u001a \u001aboosts\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a15%.\u001a"]
+        }
+    },
+    "504245191": {
+        "name": "Ether Veiler IV",
+        "compendium_id": 1610,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245191],
+        "effects": ["Grant 'Ether Veiler IV' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_9.png",
+        "strings": {
+            "names": ["Ether Veiler IV", "以太力量+3", null, null, null, null, "Ether Veiler IV", "Ether\u001a \u001aVeiler\u001a \u001aIV\u001a"],
+            "desc_short": ["Boost fire, water, wind, earth, light, and dark resistance by 25%, and boost LB damage by 20%", "提高25%火水風土光暗屬性耐性+提高20%極限技的傷害", null, null, null, null, "Boost fire, water, wind, earth, light, and dark resistance by 25%, and boost LB damage by 20%", "Boost\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a25%, and\u001a \u001aboost\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a20%"],
+            "desc_long": ["Boosts fire, water, wind, earth, light, and dark resistance by 25%, and boosts LB damage by 20%.", "提高25%火水風土光暗屬性耐性，以及提高20%極限技的傷害", null, null, null, null, "Boosts fire, water, wind, earth, light, and dark resistance by 25%, and boosts LB damage by 20%.", "Boosts\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a25%, and\u001a \u001aboosts\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a20%.\u001a"]
+        }
+    },
+    "504245192": {
+        "name": "Ether Veiler V",
+        "compendium_id": 1611,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245192],
+        "effects": ["Grant 'Ether Veiler V' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_9.png",
+        "strings": {
+            "names": ["Ether Veiler V", "以太力量+4", null, null, null, null, "Ether Veiler V", "Ether\u001a \u001aVeiler\u001a \u001aV\u001a"],
+            "desc_short": ["Boost fire, water, wind, earth, light, and dark resistance by 30%, and boost LB damage by 25%", "提高30%火水風土光暗屬性耐性+提高25%極限技的傷害", null, null, null, null, "Boost fire, water, wind, earth, light, and dark resistance by 30%, and boost LB damage by 25%", "Boost\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a30%, and\u001a \u001aboost\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a25%"],
+            "desc_long": ["Boosts fire, water, wind, earth, light, and dark resistance by 30%, and boosts LB damage by 25%.", "提高30%火水風土光暗屬性耐性，以及提高25%極限技的傷害", null, null, null, null, "Boosts fire, water, wind, earth, light, and dark resistance by 30%, and boosts LB damage by 25%.", "Boosts\u001a \u001afire\u001a,\u001a \u001awater\u001a,\u001a \u001awind\u001a,\u001a \u001aearth\u001a,\u001a \u001alight\u001a,\u001a \u001aand\u001a \u001adark\u001a \u001aresistance\u001a \u001aby\u001a \u001a30%, and\u001a \u001aboosts\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a25%.\u001a"]
+        }
+    },
+    "504245204": {
+        "name": "Top Blitzer's Pride",
+        "compendium_id": 1616,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245204],
+        "effects": ["Grant 'Top Blitzer's Pride' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_98.png",
+        "strings": {
+            "names": ["Top Blitzer's Pride", "一流選手的驕傲", null, null, null, null, "Top Blitzer's Pride", "Top\u001a \u001aBlitzer\u001a'\u001as\u001a \u001aPride\u001a"],
+            "desc_short": [
+                "Boost ATK by 50%, dark resistance by 30%, and LB damage by 25% (Not stackable)",
+                "提高50%攻擊、30%暗屬性耐性+提高25%極限技的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK by 50%, dark resistance by 30%, and LB damage by 25% (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a50%, dark\u001a \u001aresistance\u001a \u001aby\u001a \u001a30%, and\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a25% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK by 50%, dark resistance by 30%, and LB damage by 25%. Not stackable.",
+                "提高50%攻擊、30%暗屬性耐性，並且提高25%極限技的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK by 50%, dark resistance by 30%, and LB damage by 25%. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a50%, dark\u001a \u001aresistance\u001a \u001aby\u001a \u001a30%, and\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a25%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "504245213": {
+        "name": "Balthasar's Granddaughter",
+        "compendium_id": 1606,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245213],
+        "effects": ["Grant 'Balthasar's Granddaughter' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Balthasar's Granddaughter", "賢者巴薩扎爾的孫女", "Balthasar's Granddaughter", "Balthasar's Granddaughter", "Balthasar's Granddaughter", "Balthasar's Granddaughter", "Balthasar's Granddaughter", "Balthasar\u001a'\u001as\u001a \u001aGranddaughter\u001a"],
+            "desc_short": ["Boost MAG by 500", "提高500魔力", "Boost MAG by 500", "Boost MAG by 500", "Boost MAG by 500", "Boost MAG by 500", "Boost MAG by 500", "Boost\u001a \u001aMAG\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts MAG by 500.", "提高500魔力。", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts MAG by 500.", "Boosts\u001a \u001aMAG\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245240": {
+        "name": "谷底に眠る祈り子",
+        "compendium_id": 1617,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245240],
+        "effects": ["Grant '谷底に眠る祈り子' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245241": {
+        "name": "谷底に眠る祈り子+1",
+        "compendium_id": 1618,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245241],
+        "effects": ["Grant '谷底に眠る祈り子+1' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245242": {
+        "name": "谷底に眠る祈り子+2",
+        "compendium_id": 1619,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245242],
+        "effects": ["Grant '谷底に眠る祈り子+2' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245243": {
+        "name": "谷底に眠る祈り子+3",
+        "compendium_id": 1620,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245243],
+        "effects": ["Grant '谷底に眠る祈り子+3' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245244": {
+        "name": "Cavern of the Fayth V",
+        "compendium_id": 1621,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245244],
+        "effects": ["Grant 'Cavern of the Fayth V' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Cavern of the Fayth V", "沉眠於谷底的祈禱者+4", null, null, null, null, "Cavern of the Fayth V", "Cavern\u001a \u001aof\u001a \u001athe\u001a \u001aFayth\u001a \u001aV\u001a"],
+            "desc_short": ["Boost ATK by 60%", "提高60%攻擊", null, null, null, null, "Boost ATK by 60%", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a60%"],
+            "desc_long": ["Boosts ATK by 60%.", "提高60%攻擊。", null, null, null, null, "Boosts ATK by 60%.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a60%.\u001a"]
+        }
+    },
+    "504245248": {
+        "name": "空を駆ける願い",
+        "compendium_id": 1632,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245248],
+        "effects": ["Grant '空を駆ける願い' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245259": {
+        "name": "テグミンの武勇",
+        "compendium_id": 1624,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245259],
+        "effects": ["Grant 'テグミンの武勇' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245260": {
+        "name": "巫女の願い",
+        "compendium_id": 1622,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8023]],
+        "skills": [245260],
+        "effects": ["Grant '巫女の願い' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245261": {
+        "name": "オメガとの同調",
+        "compendium_id": 1623,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245261],
+        "effects": ["Grant 'オメガとの同調' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245264": {
+        "name": "シノンの斧使い",
+        "compendium_id": 1628,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245264],
+        "effects": ["Grant 'シノンの斧使い' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_76.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245266": {
+        "name": "半人半妖の生き様",
+        "compendium_id": 1629,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245266],
+        "effects": ["Grant '半人半妖の生き様' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245267": {
+        "name": "選んだ未来",
+        "compendium_id": 1630,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245267],
+        "effects": ["Grant '選んだ未来' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_98.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245275": {
+        "name": "エロールの加護",
+        "compendium_id": 1625,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245275],
+        "effects": ["Grant 'エロールの加護' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_99.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245280": {
+        "name": "エイルネップの女王",
+        "compendium_id": 1626,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245280],
+        "effects": ["Grant 'エイルネップの女王' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_95.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245291": {
+        "name": "同化の法",
+        "compendium_id": 1627,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8023]],
+        "skills": [245291],
+        "effects": ["Grant '同化の法' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245313": {
+        "name": "忠義の心",
+        "compendium_id": 1648,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245313],
+        "effects": ["Grant '忠義の心' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_76.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245330": {
+        "name": "鋼鉄の異端児",
+        "compendium_id": 1631,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245330],
+        "effects": ["Grant '鋼鉄の異端児' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_95.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245341": {
+        "name": "氷のメガリスを制した力",
+        "compendium_id": 1636,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245341],
+        "effects": ["Grant '氷のメガリスを制した力' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245342": {
+        "name": "氷のメガリスを制した力+1",
+        "compendium_id": 1637,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245342],
+        "effects": ["Grant '氷のメガリスを制した力+1' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245343": {
+        "name": "氷のメガリスを制した力+2",
+        "compendium_id": 1638,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245343],
+        "effects": ["Grant '氷のメガリスを制した力+2' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245344": {
+        "name": "氷のメガリスを制した力+3",
+        "compendium_id": 1639,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245344],
+        "effects": ["Grant '氷のメガリスを制した力+3' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245345": {
+        "name": "氷のメガリスを制した力+4",
+        "compendium_id": 1640,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245345],
+        "effects": ["Grant '氷のメガリスを制した力+4' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245350": {
+        "name": "異端の神の力",
+        "compendium_id": 1633,
+        "compendium_shown": true,
+        "requirements": ["UNIT_ID", [212003107, 212003117]],
+        "skills": [245350],
+        "effects": ["Grant '異端の神の力' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245351": {
+        "name": "神々が操る歴史の終焉",
+        "compendium_id": 1634,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245351],
+        "effects": ["Grant '神々が操る歴史の終焉' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_19.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245352": {
+        "name": "神々に抗いし者",
+        "compendium_id": 1635,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8023]],
+        "skills": [245352],
+        "effects": ["Grant '神々に抗いし者' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245363": {
+        "name": "背徳の皇帝を従えし力",
+        "compendium_id": 1643,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245363],
+        "effects": ["Grant '背徳の皇帝を従えし力' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245364": {
+        "name": "背徳の皇帝を従えし力+1",
+        "compendium_id": 1644,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245364],
+        "effects": ["Grant '背徳の皇帝を従えし力+1' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245365": {
+        "name": "背徳の皇帝を従えし力+2",
+        "compendium_id": 1645,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245365],
+        "effects": ["Grant '背徳の皇帝を従えし力+2' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245366": {
+        "name": "背徳の皇帝を従えし力+3",
+        "compendium_id": 1646,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245366],
+        "effects": ["Grant '背徳の皇帝を従えし力+3' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245367": {
+        "name": "Emperor Subjugator V",
+        "compendium_id": 1647,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8018]],
+        "skills": [245367],
+        "effects": ["Grant 'Emperor Subjugator V' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Emperor Subjugator V", "征服背德皇帝之力+4", null, null, null, null, "Emperor Subjugator V", "Emperor\u001a \u001aSubjugator\u001a \u001aV\u001a"],
+            "desc_short": ["Boost ATK by 60%", "提高60%攻擊", null, null, null, null, "Boost ATK by 60%", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a60%"],
+            "desc_long": ["Boosts ATK by 60%.", "提高60%攻擊。", null, null, null, null, "Boosts ATK by 60%.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a60%.\u001a"]
+        }
+    },
+    "504245368": {
+        "name": "旧ダルマスカ王国の勇将",
+        "compendium_id": 1649,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8024]],
+        "skills": [245368],
+        "effects": ["Grant '旧ダルマスカ王国の勇将' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245375": {
+        "name": "暗黒亀を打ち破りし力",
+        "compendium_id": 1650,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8019]],
+        "skills": [245375],
+        "effects": ["Grant '暗黒亀を打ち破りし力' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245376": {
+        "name": "暗黒亀を打ち破りし力+1",
+        "compendium_id": 1651,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8019]],
+        "skills": [245376],
+        "effects": ["Grant '暗黒亀を打ち破りし力+1' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245377": {
+        "name": "暗黒亀を打ち破りし力+2",
+        "compendium_id": 1652,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8019]],
+        "skills": [245377],
+        "effects": ["Grant '暗黒亀を打ち破りし力+2' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245378": {
+        "name": "暗黒亀を打ち破りし力+3",
+        "compendium_id": 1653,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8019]],
+        "skills": [245378],
+        "effects": ["Grant '暗黒亀を打ち破りし力+3' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245379": {
+        "name": "Darktoise Destroyer V",
+        "compendium_id": 1654,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8019]],
+        "skills": [245379],
+        "effects": ["Grant 'Darktoise Destroyer V' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Darktoise Destroyer V", "擊潰暗黑龜之力+4", null, null, null, null, "Darktoise Destroyer V", "Darktoise\u001a \u001aDestroyer\u001a \u001aV\u001a"],
+            "desc_short": ["Boost ATK by 60%", "提高60%攻擊", null, null, null, null, "Boost ATK by 60%", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a60%"],
+            "desc_long": ["Boosts ATK by 60%.", "提高60%攻擊。", null, null, null, null, "Boosts ATK by 60%.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a60%.\u001a"]
+        }
+    },
+    "504245390": {
+        "name": "ルナフレア号の航海",
+        "compendium_id": 1660,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245390],
+        "effects": ["Grant 'ルナフレア号の航海' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245391": {
+        "name": "ルナフレア号の航海+1",
+        "compendium_id": 1661,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245391],
+        "effects": ["Grant 'ルナフレア号の航海+1' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245392": {
+        "name": "ルナフレア号の航海+2",
+        "compendium_id": 1662,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245392],
+        "effects": ["Grant 'ルナフレア号の航海+2' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245393": {
+        "name": "ルナフレア号の航海+3",
+        "compendium_id": 1663,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245393],
+        "effects": ["Grant 'ルナフレア号の航海+3' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245394": {
+        "name": "ルナフレア号の航海+4",
+        "compendium_id": 1664,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245394],
+        "effects": ["Grant 'ルナフレア号の航海+4' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245395": {
+        "name": "蜃気楼の塔での修業",
+        "compendium_id": 1665,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245395],
+        "effects": ["Grant '蜃気楼の塔での修業' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_6000200.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245396": {
+        "name": "蜃気楼の塔での修業+1",
+        "compendium_id": 1666,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245396],
+        "effects": ["Grant '蜃気楼の塔での修業+1' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_6000200.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245397": {
+        "name": "蜃気楼の塔での修業+2",
+        "compendium_id": 1667,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245397],
+        "effects": ["Grant '蜃気楼の塔での修業+2' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_6000200.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245398": {
+        "name": "蜃気楼の塔での修業+3",
+        "compendium_id": 1668,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245398],
+        "effects": ["Grant '蜃気楼の塔での修業+3' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_6000200.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245399": {
+        "name": "蜃気楼の塔での修業+4",
+        "compendium_id": 1669,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245399],
+        "effects": ["Grant '蜃気楼の塔での修業+4' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_6000200.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245400": {
+        "name": "勇者に託された希望",
+        "compendium_id": 1670,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245400],
+        "effects": ["Grant '勇者に託された希望' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245401": {
+        "name": "勇者に託された希望+1",
+        "compendium_id": 1671,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245401],
+        "effects": ["Grant '勇者に託された希望+1' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245402": {
+        "name": "勇者に託された希望+2",
+        "compendium_id": 1672,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245402],
+        "effects": ["Grant '勇者に託された希望+2' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245403": {
+        "name": "勇者に託された希望+3",
+        "compendium_id": 1673,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245403],
+        "effects": ["Grant '勇者に託された希望+3' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245404": {
+        "name": "勇者に託された希望+4",
+        "compendium_id": 1674,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7934]],
+        "skills": [245404],
+        "effects": ["Grant '勇者に託された希望+4' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245405": {
+        "name": "聖なる剣撃",
+        "compendium_id": 1675,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8027]],
+        "skills": [245405],
+        "effects": ["Grant '聖なる剣撃' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245406": {
+        "name": "聖なる剣撃+1",
+        "compendium_id": 1676,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8027]],
+        "skills": [245406],
+        "effects": ["Grant '聖なる剣撃+1' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245407": {
+        "name": "聖なる剣撃+2",
+        "compendium_id": 1677,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8027]],
+        "skills": [245407],
+        "effects": ["Grant '聖なる剣撃+2' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245408": {
+        "name": "聖なる剣撃+3",
+        "compendium_id": 1678,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8027]],
+        "skills": [245408],
+        "effects": ["Grant '聖なる剣撃+3' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245409": {
+        "name": "聖なる剣撃+4",
+        "compendium_id": 1679,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8027]],
+        "skills": [245409],
+        "effects": ["Grant '聖なる剣撃+4' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245410": {
+        "name": "光の祝福",
+        "compendium_id": 1656,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8027]],
+        "skills": [245410],
+        "effects": ["Grant '光の祝福' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245412": {
+        "name": "ローラン騎士の剣技",
+        "compendium_id": 1655,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245412],
+        "effects": ["Grant 'ローラン騎士の剣技' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245414": {
+        "name": "地下世界の反抗",
+        "compendium_id": 1657,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245414],
+        "effects": ["Grant '地下世界の反抗' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_9.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245419": {
+        "name": "異魔神に立ち向かう少年",
+        "compendium_id": 1681,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245419],
+        "effects": ["Grant '異魔神に立ち向かう少年' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_78.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245420": {
+        "name": "人々に愛される勇者",
+        "compendium_id": 1683,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8027]],
+        "skills": [245420],
+        "effects": ["Grant '人々に愛される勇者' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245430": {
+        "name": "暗黒の魔界より生ずる魔神",
+        "compendium_id": 1680,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245430],
+        "effects": ["Grant '暗黒の魔界より生ずる魔神' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_6000200.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245433": {
+        "name": "高密度魔法言語",
+        "compendium_id": 1682,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8023]],
+        "skills": [245433],
+        "effects": ["Grant '高密度魔法言語' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245440": {
+        "name": "雄々しき海の王",
+        "compendium_id": 1658,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245440],
+        "effects": ["Grant '雄々しき海の王' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_18.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245443": {
+        "name": "偉大なる海の支配者",
+        "compendium_id": 1659,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245443],
+        "effects": ["Grant '偉大なる海の支配者' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245463": {
+        "name": "傭兵の高機動剣技",
+        "compendium_id": 1690,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245463],
+        "effects": ["Grant '傭兵の高機動剣技' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_6000100.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245464": {
+        "name": "真実へ向かう者",
+        "compendium_id": 1691,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8024]],
+        "skills": [245464],
+        "effects": ["Grant '真実へ向かう者' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245469": {
+        "name": "インファイトスタイル",
+        "compendium_id": 1700,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245469],
+        "effects": ["Grant 'インファイトスタイル' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_72.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245470": {
+        "name": "突出した格闘センス",
+        "compendium_id": 1701,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245470],
+        "effects": ["Grant '突出した格闘センス' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245473": {
+        "name": "反乱の闘志",
+        "compendium_id": 1684,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245473],
+        "effects": ["Grant '反乱の闘志' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245476": {
+        "name": "ウェポンマスター",
+        "compendium_id": 1685,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245476],
+        "effects": ["Grant 'ウェポンマスター' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245477": {
+        "name": "屈強な体躯",
+        "compendium_id": 1686,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245477],
+        "effects": ["Grant '屈強な体躯' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_15.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245483": {
+        "name": "Brotherly Oath",
+        "compendium_id": 1704,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7701]],
+        "skills": [245483],
+        "effects": ["Grant 'Brotherly Oath' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Brotherly Oath", "與約書亞的誓言", null, null, null, null, "Brotherly Oath", "Brotherly\u001a \u001aOath\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245484": {
+        "name": "Shiva's Dominant",
+        "compendium_id": 1705,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245484],
+        "effects": ["Grant 'Shiva's Dominant' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_15.png",
+        "strings": {
+            "names": ["Shiva's Dominant", "濕婆的顯化者", null, null, null, null, "Shiva's Dominant", "Shiva\u001a'\u001as\u001a \u001aDominant\u001a"],
+            "desc_short": [
+                "Boost ATK by 60% and ice resistance by 40% (Not stackable)",
+                "提高60%攻擊、40%冰屬性耐性[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK by 60% and ice resistance by 40% (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a60% and\u001a \u001aice\u001a \u001aresistance\u001a \u001aby\u001a \u001a40% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK by 60% and ice resistance by 40%. Not stackable.",
+                "提高60%攻擊、40%冰屬性耐性。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK by 60% and ice resistance by 40%. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a60% and\u001a \u001aice\u001a \u001aresistance\u001a \u001aby\u001a \u001a40%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "504245487": {
+        "name": "Savage Past",
+        "compendium_id": 1706,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7702]],
+        "skills": [245487],
+        "effects": ["Grant 'Savage Past' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Savage Past", "野獸一般的過去", null, null, null, null, "Savage Past", "Savage\u001a \u001aPast\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245491": {
+        "name": "Bonds Between Companions",
+        "compendium_id": 1708,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7703]],
+        "skills": [245491],
+        "effects": ["Grant 'Bonds Between Companions' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Bonds Between Companions", "與同伴的羈絆", null, null, null, null, "Bonds Between Companions", "Bonds\u001a \u001aBetween\u001a \u001aCompanions\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245507": {
+        "name": "果てなき野心",
+        "compendium_id": 1687,
+        "compendium_shown": true,
+        "requirements": ["UNIT_ID", [202002807, 202002817]],
+        "skills": [245507],
+        "effects": ["Grant '果てなき野心' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245508": {
+        "name": "パンデモニウムの支配者",
+        "compendium_id": 1688,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245508],
+        "effects": ["Grant 'パンデモニウムの支配者' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245509": {
+        "name": "皇帝復活",
+        "compendium_id": 1689,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7902]],
+        "skills": [245509],
+        "effects": ["Grant '皇帝復活' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245510": {
+        "name": "誇り高き一族",
+        "compendium_id": 1692,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245510],
+        "effects": ["Grant '誇り高き一族' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_76.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245518": {
+        "name": "より高きを求めて",
+        "compendium_id": 1694,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245518],
+        "effects": ["Grant 'より高きを求めて' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245519": {
+        "name": "星の運命の番人",
+        "compendium_id": 1695,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245519],
+        "effects": ["Grant '星の運命の番人' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245520": {
+        "name": "星の運命の番人+1",
+        "compendium_id": 1696,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245520],
+        "effects": ["Grant '星の運命の番人+1' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245521": {
+        "name": "星の運命の番人+2",
+        "compendium_id": 1697,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245521],
+        "effects": ["Grant '星の運命の番人+2' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245522": {
+        "name": "星の運命の番人+3",
+        "compendium_id": 1698,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245522],
+        "effects": ["Grant '星の運命の番人+3' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245523": {
+        "name": "星の運命の番人+4",
+        "compendium_id": 1699,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245523],
+        "effects": ["Grant '星の運命の番人+4' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245524": {
+        "name": "野生の闘志",
+        "compendium_id": 1693,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8014]],
+        "skills": [245524],
+        "effects": ["Grant '野生の闘志' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245526": {
+        "name": "シノビの特殊技能",
+        "compendium_id": 1702,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245526],
+        "effects": ["Grant 'シノビの特殊技能' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245529": {
+        "name": "シノビの忍術",
+        "compendium_id": 1703,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7706]],
+        "skills": [245529],
+        "effects": ["Grant 'シノビの忍術' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245534": {
+        "name": "ダークラムウシナジー",
+        "compendium_id": 1707,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245534],
+        "effects": ["Grant 'ダークラムウシナジー' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245539": {
+        "name": "Garuda's Dominant",
+        "compendium_id": 1709,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245539],
+        "effects": ["Grant 'Garuda's Dominant' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_12.png",
+        "strings": {
+            "names": ["Garuda's Dominant", "迦樓羅的顯化者", null, null, null, null, "Garuda's Dominant", "Garuda\u001a'\u001as\u001a \u001aDominant\u001a"],
+            "desc_short": [
+                "Boost ATK by 60% and wind resistance by 40% (Not stackable)",
+                "提高60%攻擊、40%風屬性耐性[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK by 60% and wind resistance by 40% (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a60% and\u001a \u001awind\u001a \u001aresistance\u001a \u001aby\u001a \u001a40% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK by 60% and wind resistance by 40%. Not stackable.",
+                "提高60%攻擊、40%風屬性耐性。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK by 60% and wind resistance by 40%. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a60% and\u001a \u001awind\u001a \u001aresistance\u001a \u001aby\u001a \u001a40%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "504245542": {
+        "name": "Unrequited Devotion",
+        "compendium_id": 1710,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7705]],
+        "skills": [245542],
+        "effects": ["Grant 'Unrequited Devotion' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Unrequited Devotion", "一廂情願的獻身", null, null, null, null, "Unrequited Devotion", "Unrequited\u001a \u001aDevotion\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245549": {
+        "name": "Hero Resurrected",
+        "compendium_id": 1713,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7707]],
+        "skills": [245549],
+        "effects": ["Grant 'Hero Resurrected' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Hero Resurrected", "復甦的英雄", null, null, null, null, "Hero Resurrected", "Hero\u001a \u001aResurrected\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245558": {
+        "name": "第１部隊の指揮官",
+        "compendium_id": 1715,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245558],
+        "effects": ["Grant '第１部隊の指揮官' passive"],
+        "unique": false,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245561": {
+        "name": "カレドヴルフ式双剣技",
+        "compendium_id": 1716,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8024]],
+        "skills": [245561],
+        "effects": ["Grant 'カレドヴルフ式双剣技' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245565": {
+        "name": "As a member of Unit 1!",
+        "compendium_id": 1711,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245565],
+        "effects": ["Grant 'As a member of Unit 1!' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["As a member of Unit 1!", "作為第１部隊的一員！", null, null, null, null, "As a member of Unit 1!", "As\u001a \u001aa\u001a \u001amember\u001a \u001aof\u001a \u001aUnit\u001a \u001a1\u001a!\u001a"],
+            "desc_short": [
+                "Boost ATK by 50% and fire, lightning, and light resistance by 30% (Not stackable)",
+                "提高50%攻擊、30%火雷光屬性耐性[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK by 50% and fire, lightning, and light resistance by 30% (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a50% and\u001a \u001afire\u001a,\u001a \u001alightning\u001a,\u001a \u001aand\u001a \u001alight\u001a \u001aresistance\u001a \u001aby\u001a \u001a30% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK by 50% and fire, lightning, and light resistance by 30%. Not stackable.",
+                "提高50%攻擊、30%火雷光屬性耐性。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK by 50% and fire, lightning, and light resistance by 30%. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a50% and\u001a \u001afire\u001a,\u001a \u001alightning\u001a,\u001a \u001aand\u001a \u001alight\u001a \u001aresistance\u001a \u001aby\u001a \u001a30%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "504245568": {
+        "name": "Burning Crimson Soul",
+        "compendium_id": 1712,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8022]],
+        "skills": [245568],
+        "effects": ["Grant 'Burning Crimson Soul' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Burning Crimson Soul", "緋炎燃燒之魂", null, null, null, null, "Burning Crimson Soul", "Burning\u001a \u001aCrimson\u001a \u001aSoul\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245594": {
+        "name": "Serendipitous Spearman",
+        "compendium_id": 1717,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245594],
+        "effects": ["Grant 'Serendipitous Spearman' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_79.png",
+        "strings": {
+            "names": ["Serendipitous Spearman", "與長槍邂逅的後代", null, null, null, null, "Serendipitous Spearman", "Serendipitous\u001a \u001aSpearman\u001a"],
+            "desc_short": [
+                "Boost ATK by 70% and boost physical and magic damage against humans and insects by 50% (Not stackable)",
+                "提高70%攻擊+物理、魔法攻擊時提高50%對人蟲系魔物的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK by 70% and boost physical and magic damage against humans and insects by 50% (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a70% and\u001a \u001aboost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ahumans\u001a \u001aand\u001a \u001ainsects\u001a \u001aby\u001a \u001a50% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK by 70% and boosts physical and magic damage against humans and insects by 50%. Not stackable.",
+                "提高70%攻擊，以及物理、魔法攻擊時提高50%對人蟲系魔物的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK by 70% and boosts physical and magic damage against humans and insects by 50%. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a70% and\u001a \u001aboosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ahumans\u001a \u001aand\u001a \u001ainsects\u001a \u001aby\u001a \u001a50%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "504245597": {
+        "name": "Sentimental Spearman",
+        "compendium_id": 1718,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8019]],
+        "skills": [245597],
+        "effects": ["Grant 'Sentimental Spearman' passive"],
+        "unique": true,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Sentimental Spearman", "深情厚誼的長槍騎士", null, null, null, null, "Sentimental Spearman", "Sentimental\u001a \u001aSpearman\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "504245598": {
+        "name": "疾風の体術",
+        "compendium_id": 1714,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [245598],
+        "effects": ["Grant '疾風の体術' passive"],
+        "unique": false,
+        "price_buy": 200000,
+        "price_sell": 20000,
+        "icon": "ability_97.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245599": {
+        "name": "破壊衝動を制する力",
+        "compendium_id": 1719,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8004]],
+        "skills": [245599],
+        "effects": ["Grant '破壊衝動を制する力' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245600": {
+        "name": "破壊衝動を制する力+1",
+        "compendium_id": 1720,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8004]],
+        "skills": [245600],
+        "effects": ["Grant '破壊衝動を制する力+1' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245601": {
+        "name": "破壊衝動を制する力+2",
+        "compendium_id": 1721,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8004]],
+        "skills": [245601],
+        "effects": ["Grant '破壊衝動を制する力+2' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245602": {
+        "name": "破壊衝動を制する力+3",
+        "compendium_id": 1722,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8004]],
+        "skills": [245602],
+        "effects": ["Grant '破壊衝動を制する力+3' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": [null, null, null, null, null, null, null, null],
+            "desc_short": [null, null, null, null, null, null, null, null],
+            "desc_long": [null, null, null, null, null, null, null, null]
+        }
+    },
+    "504245603": {
+        "name": "Fighting the Urge to Destroy",
+        "compendium_id": 1723,
+        "compendium_shown": true,
+        "requirements": ["RULE", [8004]],
+        "skills": [245603],
+        "effects": ["Grant 'Fighting the Urge to Destroy' passive"],
+        "unique": false,
+        "price_buy": 400000,
+        "price_sell": 40000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Fighting the Urge to Destroy", "遏制破壞衝動的力量+4", null, null, null, null, "Fighting the Urge to Destroy", "Fighting\u001a \u001athe\u001a \u001aUrge\u001a \u001ato\u001a \u001aDestroy\u001a"],
+            "desc_short": ["Boost ATK by 60% for FFBE S4 category units", "提高「FFBE S4」類別的兵員60%攻擊", null, null, null, null, "Boost ATK by 60% for FFBE S4 category units", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a60% for\u001a \u001aFFBE\u001a \u001aS\u001a4\u001a \u001acategory\u001a \u001aunits\u001a"],
+            "desc_long": ["Boosts ATK by 60% for FFBE S4 category units.", "提高「FFBE S4」類別的兵員60%攻擊。", null, null, null, null, "Boosts ATK by 60% for FFBE S4 category units.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a60% for\u001a \u001aFFBE\u001a \u001aS\u001a4\u001a \u001acategory\u001a \u001aunits\u001a.\u001a"]
         }
     },
     "504400110": {
@@ -38124,6 +40240,494 @@
             "names": ["Advanced Hemomancy", "高級血魔法", null, null, null, null, "Advanced Hemomancy", "Advanced\u001a \u001aHemomancy\u001a"],
             "desc_short": ["Boost MAG by 500 (Clash of Wills category units only)", "提高500魔力(意志對決類別兵員專屬)", null, null, null, null, "Boost MAG by 500 (Clash of Wills category units only)", "Boost\u001a \u001aMAG\u001a \u001aby\u001a \u001a500\u001a \u001a(\u001aClash\u001a \u001aof\u001a \u001aWills\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a)\u001a"],
             "desc_long": ["Boosts MAG by 500. Clash of Wills category units only.", "提高500魔力。(意志對決類別兵員專屬)", null, null, null, null, "Boosts MAG by 500. Clash of Wills category units only.", "Boosts\u001a \u001aMAG\u001a \u001aby\u001a \u001a500.\u001a \u001aClash\u001a \u001aof\u001a \u001aWills\u001a \u001acategory\u001a \u001aunits\u001a \u001aonly\u001a.\u001a"]
+        }
+    },
+    "1500000260": {
+        "name": "Wings of the Warrior",
+        "compendium_id": 90261,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918389],
+        "effects": ["Grant 'Wings of the Warrior' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_6000100.png",
+        "strings": {
+            "names": ["Wings of the Warrior", "戰士的雙翼", null, null, null, null, "Wings of the Warrior", "Wings\u001a \u001aof\u001a \u001athe\u001a \u001aWarrior\u001a"],
+            "desc_short": [
+                "Boost damage limit for various chains by 100%, and boost physical and magic damage against beasts and machina monsters by 100% (Not stackable)",
+                "提高100%各種CHAIN的傷害上限+物理、魔法攻擊時提高100%對獸機械系魔物的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost damage limit for various chains by 100%, and boost physical and magic damage against beasts and machina monsters by 100% (Not stackable)",
+                "Boost\u001a \u001adamage\u001a \u001alimit\u001a \u001afor\u001a \u001avarious\u001a \u001achains\u001a \u001aby\u001a \u001a100%, and\u001a \u001aboost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a \u001aand\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a100% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts damage limit for various chains by 100%, and boosts physical and magic damage against beasts and machina monsters by 100%. Not stackable.",
+                "提高100%各種CHAIN的傷害上限，以及物理、魔法攻擊時提高100%對獸機械系魔物的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts damage limit for various chains by 100%, and boosts physical and magic damage against beasts and machina monsters by 100%. Not stackable.",
+                "Boosts\u001a \u001adamage\u001a \u001alimit\u001a \u001afor\u001a \u001avarious\u001a \u001achains\u001a \u001aby\u001a \u001a100%, and\u001a \u001aboosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a \u001aand\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a100%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000261": {
+        "name": "Recognized Potential",
+        "compendium_id": 90262,
+        "compendium_shown": true,
+        "requirements": ["RULE", [9503]],
+        "skills": [918390],
+        "effects": ["Grant 'Recognized Potential' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Recognized Potential", "備受認可的潛力", null, null, null, null, "Recognized Potential", "Recognized\u001a \u001aPotential\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "1500000262": {
+        "name": "Gleaming Rain",
+        "compendium_id": 90263,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918467],
+        "effects": ["Grant 'Gleaming Rain' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_18.png",
+        "strings": {
+            "names": ["Gleaming Rain", "閃閃發光的雨滴", null, null, null, null, "Gleaming Rain", "Gleaming\u001a \u001aRain\u001a"],
+            "desc_short": [
+                "Boost HP by 50% and water and light resistance by 80%, and restore MP by 5% every turn (Not stackable)",
+                "提高50%HP、80%水光屬性耐性+每回合恢復5%MP[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost HP by 50% and water and light resistance by 80%, and restore MP by 5% every turn (Not stackable)",
+                "Boost\u001a \u001aHP\u001a \u001aby\u001a \u001a50% and\u001a \u001awater\u001a \u001aand\u001a \u001alight\u001a \u001aresistance\u001a \u001aby\u001a \u001a80%, and\u001a \u001arestore\u001a \u001aMP\u001a \u001aby\u001a \u001a5% every\u001a \u001aturn\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts HP by 50% and water and light resistance by 80%, and restores MP by 5% every turn. Not stackable.",
+                "提高50%HP、80%水光屬性耐性，並且每回合恢復5%MP。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts HP by 50% and water and light resistance by 80%, and restores MP by 5% every turn. Not stackable.",
+                "Boosts\u001a \u001aHP\u001a \u001aby\u001a \u001a50% and\u001a \u001awater\u001a \u001aand\u001a \u001alight\u001a \u001aresistance\u001a \u001aby\u001a \u001a80%, and\u001a \u001arestores\u001a \u001aMP\u001a \u001aby\u001a \u001a5% every\u001a \u001aturn\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000263": {
+        "name": "Escape Artist",
+        "compendium_id": 90264,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918468],
+        "effects": ["Grant 'Escape Artist' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_84.png",
+        "strings": {
+            "names": ["Escape Artist", "逃脫術表演者", null, null, null, null, "Escape Artist", "Escape\u001a \u001aArtist\u001a"],
+            "desc_short": [
+                "50% chance of evading some physical and magic attacks (Not stackable)",
+                "50%機率閃避部分物理、魔法攻擊[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "50% chance of evading some physical and magic attacks (Not stackable)",
+                "50% chance\u001a \u001aof\u001a \u001aevading\u001a \u001asome\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001aattacks\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "50% chance of evading some physical and magic attacks. Not stackable.",
+                "50%機率閃避部分物理、魔法攻擊。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "50% chance of evading some physical and magic attacks. Not stackable.",
+                "50% chance\u001a \u001aof\u001a \u001aevading\u001a \u001asome\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001aattacks\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000264": {
+        "name": "The Twilight Xon",
+        "compendium_id": 90265,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918472],
+        "effects": ["Grant 'The Twilight Xon' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_97.png",
+        "strings": {
+            "names": ["The Twilight Xon", "暮色中的索恩", null, null, null, null, "The Twilight Xon", "The\u001a \u001aTwilight\u001a \u001aXon\u001a"],
+            "desc_short": [
+                "Boost ATK and DEF by 50% and LB damage by 50%, and 20% chance of evading some physical attacks (Not stackable)",
+                "提高50%攻擊防禦+提高50%極限技的傷害+20%機率閃避部分物理攻擊[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK and DEF by 50% and LB damage by 50%, and 20% chance of evading some physical attacks (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aand\u001a \u001aDEF\u001a \u001aby\u001a \u001a50% and\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a50%, and\u001a \u001a20% chance\u001a \u001aof\u001a \u001aevading\u001a \u001asome\u001a \u001aphysical\u001a \u001aattacks\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK and DEF by 50% and LB damage by 50%, and 20% chance of evading some physical attacks. Not stackable.",
+                "提高50%攻擊防禦，並且提高50%極限技的傷害，以及20%機率閃避部分物理攻擊。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK and DEF by 50% and LB damage by 50%, and 20% chance of evading some physical attacks. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aand\u001a \u001aDEF\u001a \u001aby\u001a \u001a50% and\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a50%, and\u001a \u001a20% chance\u001a \u001aof\u001a \u001aevading\u001a \u001asome\u001a \u001aphysical\u001a \u001aattacks\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000265": {
+        "name": "Binary Star",
+        "compendium_id": 90266,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918535],
+        "effects": ["Grant 'Binary Star' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_72.png",
+        "strings": {
+            "names": ["Binary Star", "雙星", null, null, null, null, "Binary Star", "Binary\u001a \u001aStar\u001a"],
+            "desc_short": [
+                "Boost ATK and DEF by 80%, boost physical damage against demons and fairies by 100%, and boost equipment ATK by 100% when armed with two one-handed weapons (Not stackable)",
+                "提高80%攻擊防禦+物理攻擊時提高100%對惡魔精靈系魔物的傷害+裝備2把單手武器時武具攻擊提升100%[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK and DEF by 80%, boost physical damage against demons and fairies by 100%, and boost equipment ATK by 100% when armed with two one-handed weapons (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aand\u001a \u001aDEF\u001a \u001aby\u001a \u001a80%, boost\u001a \u001aphysical\u001a \u001adamage\u001a \u001aagainst\u001a \u001ademons\u001a \u001aand\u001a \u001afairies\u001a \u001aby\u001a \u001a100%, and\u001a \u001aboost\u001a \u001aequipment\u001a \u001aATK\u001a \u001aby\u001a \u001a100% when\u001a \u001aarmed\u001a \u001awith\u001a \u001atwo\u001a \u001aone-handed\u001a \u001aweapons\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK and DEF by 80%, boosts physical damage against demons and fairies by 100%, and boosts equipment ATK by 100% when armed with two one-handed weapons. Not stackable.",
+                "提高80%攻擊防禦，並且物理攻擊時提高100%對惡魔精靈系魔物的傷害，以及裝備2把單手武器時武具攻擊提升100%。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK and DEF by 80%, boosts physical damage against demons and fairies by 100%, and boosts equipment ATK by 100% when armed with two one-handed weapons. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aand\u001a \u001aDEF\u001a \u001aby\u001a \u001a80%, boosts\u001a \u001aphysical\u001a \u001adamage\u001a \u001aagainst\u001a \u001ademons\u001a \u001aand\u001a \u001afairies\u001a \u001aby\u001a \u001a100%, and\u001a \u001aboosts\u001a \u001aequipment\u001a \u001aATK\u001a \u001aby\u001a \u001a100% when\u001a \u001aarmed\u001a \u001awith\u001a \u001atwo\u001a \u001aone-handed\u001a \u001aweapons\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000266": {
+        "name": "Fundamental Will",
+        "compendium_id": 90267,
+        "compendium_shown": true,
+        "requirements": ["RULE", [9503]],
+        "skills": [918536],
+        "effects": ["Grant 'Fundamental Will' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "global_ability_10071.png",
+        "strings": {
+            "names": ["Fundamental Will", "基本力量的意志", null, null, null, null, "Fundamental Will", "Fundamental\u001a \u001aWill\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "1500000267": {
+        "name": "Dearest Memories",
+        "compendium_id": 90268,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918596, 918597],
+        "effects": ["Grant 'Dearest Memories' passive", "Grant 'Short-Lived Days' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "global_ability_10116.png",
+        "strings": {
+            "names": ["Dearest Memories", "珍視之人的回憶", null, null, null, null, "Dearest Memories", "Dearest\u001a \u001aMemories\u001a"],
+            "desc_short": [
+                "Boost ATK by 1000 (for Richt only), boost HP and MP by 50% and ATK and MAG by 100%, and boost equipment ATK and MAG by 100% when a single weapon is equipped in both hands (Not stackable)",
+                "提高1000攻擊(里希特專屬)+提高50%HPMP、100%攻擊魔力+雙手只裝備1把武器時武具攻擊魔力提升100%[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK by 1000 (for Richt only), boost HP and MP by 50% and ATK and MAG by 100%, and boost equipment ATK and MAG by 100% when a single weapon is equipped in both hands (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a1000\u001a \u001a(\u001afor\u001a \u001aRicht\u001a \u001aonly\u001a),\u001a \u001aboost\u001a \u001aHP\u001a \u001aand\u001a \u001aMP\u001a \u001aby\u001a \u001a50% and\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, and\u001a \u001aboost\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100% when\u001a \u001aa\u001a \u001asingle\u001a \u001aweapon\u001a \u001ais\u001a \u001aequipped\u001a \u001ain\u001a \u001aboth\u001a \u001ahands\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK by 1000 (for Richt only), boosts HP and MP by 50% and ATK and MAG by 100%, and boosts equipment ATK and MAG by 100% when a single weapon is equipped in both hands. Not stackable.",
+                "提高1000攻擊(里希特專屬)，並且提高50%HPMP、100%攻擊魔力，以及雙手只裝備1把武器時武具攻擊魔力提升100%。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK by 1000 (for Richt only), boosts HP and MP by 50% and ATK and MAG by 100%, and boosts equipment ATK and MAG by 100% when a single weapon is equipped in both hands. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a1000\u001a \u001a(\u001afor\u001a \u001aRicht\u001a \u001aonly\u001a),\u001a \u001aboosts\u001a \u001aHP\u001a \u001aand\u001a \u001aMP\u001a \u001aby\u001a \u001a50% and\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, and\u001a \u001aboosts\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100% when\u001a \u001aa\u001a \u001asingle\u001a \u001aweapon\u001a \u001ais\u001a \u001aequipped\u001a \u001ain\u001a \u001aboth\u001a \u001ahands\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000268": {
+        "name": "Shadow Magic Affinity",
+        "compendium_id": 90269,
+        "compendium_shown": true,
+        "requirements": ["RULE", [7802]],
+        "skills": [918598],
+        "effects": ["Grant 'Shadow Magic Affinity' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "global_ability_10116.png",
+        "strings": {
+            "names": ["Shadow Magic Affinity", "暗影魔法契合", null, null, null, null, "Shadow Magic Affinity", "Shadow\u001a \u001aMagic\u001a \u001aAffinity\u001a"],
+            "desc_short": ["Boost MAG by 500", "提高500魔力", null, null, null, null, "Boost MAG by 500", "Boost\u001a \u001aMAG\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts MAG by 500.", "提高500魔力。", null, null, null, null, "Boosts MAG by 500.", "Boosts\u001a \u001aMAG\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "1500000269": {
+        "name": "Heaven's Wings",
+        "compendium_id": 90270,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918659, 918660],
+        "effects": ["Grant 'Heaven's Wings' passive", "Grant 'Heaven's Wings' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "global_ability_10065.png",
+        "strings": {
+            "names": ["Heaven's Wings", "天堂之翼", null, null, null, null, "Heaven's Wings", "Heaven\u001a'\u001as\u001a \u001aWings\u001a"],
+            "desc_short": [
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against reapers by 50%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against reapers by 100% for FFVI or Clash of Wills category units (Not stackable)",
+                "提高100%攻擊魔力+提高50%極限技的傷害+物理、魔法攻擊時提高50%對死靈系魔物的傷害，或提高「FFVI」「意志對決」類別的兵員150%攻擊魔力+提高100%極限技的傷害+物理、魔法攻擊時提高100%對死靈系魔物的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against reapers by 50%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against reapers by 100% for FFVI or Clash of Wills category units (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001areapers\u001a \u001aby\u001a \u001a50%, or\u001a \u001aboost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001areapers\u001a \u001aby\u001a \u001a100% for\u001a \u001aFFVI\u001a \u001aor\u001a \u001aClash\u001a \u001aof\u001a \u001aWills\u001a \u001acategory\u001a \u001aunits\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against reapers by 50%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against reapers by 100% for FFVI or Clash of Wills category units. Not stackable.",
+                "提高100%攻擊魔力，並且提高50%極限技的傷害，以及物理、魔法攻擊時提高50%對死靈系魔物的傷害，或提高「FFVI」「意志對決」類別的兵員150%攻擊魔力，並且提高100%極限技的傷害，以及物理、魔法攻擊時提高100%對死靈系魔物的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against reapers by 50%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against reapers by 100% for FFVI or Clash of Wills category units. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001areapers\u001a \u001aby\u001a \u001a50%, or\u001a \u001aboosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001areapers\u001a \u001aby\u001a \u001a100% for\u001a \u001aFFVI\u001a \u001aor\u001a \u001aClash\u001a \u001aof\u001a \u001aWills\u001a \u001acategory\u001a \u001aunits\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000270": {
+        "name": "Infinite Void",
+        "compendium_id": 90271,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918661, 918662],
+        "effects": ["Grant 'Infinite Void' passive", "Grant 'Infinite Void' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "global_ability_10099.png",
+        "strings": {
+            "names": ["Infinite Void", "無窮虛無", null, null, null, null, "Infinite Void", "Infinite\u001a \u001aVoid\u001a"],
+            "desc_short": [
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against beasts, humans, and plants by 25%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against beasts, humans, and plants by 50% for FFV or Clash of Wills category units (Not stackable)",
+                "提高100%攻擊魔力+提高50%極限技的傷害+物理、魔法攻擊時提高25%對獸人植物系魔物的傷害，或提高「FFV」「意志對決」類別的兵員150%攻擊魔力+提高100%極限技的傷害+物理、魔法攻擊時提高50%對獸人植物系魔物的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against beasts, humans, and plants by 25%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against beasts, humans, and plants by 50% for FFV or Clash of Wills category units (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a,\u001a \u001ahumans\u001a,\u001a \u001aand\u001a \u001aplants\u001a \u001aby\u001a \u001a25%, or\u001a \u001aboost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a,\u001a \u001ahumans\u001a,\u001a \u001aand\u001a \u001aplants\u001a \u001aby\u001a \u001a50% for\u001a \u001aFFV\u001a \u001aor\u001a \u001aClash\u001a \u001aof\u001a \u001aWills\u001a \u001acategory\u001a \u001aunits\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against beasts, humans, and plants by 25%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against beasts, humans, and plants by 50% for FFV or Clash of Wills category units. Not stackable.",
+                "提高100%攻擊魔力，並且提高50%極限技的傷害，以及物理、魔法攻擊時提高25%對獸人植物系魔物的傷害，或提高「FFV」「意志對決」類別的兵員150%攻擊魔力，並且提高100%極限技的傷害，以及物理、魔法攻擊時提高50%對獸人植物系魔物的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against beasts, humans, and plants by 25%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against beasts, humans, and plants by 50% for FFV or Clash of Wills category units. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a,\u001a \u001ahumans\u001a,\u001a \u001aand\u001a \u001aplants\u001a \u001aby\u001a \u001a25%, or\u001a \u001aboosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a,\u001a \u001ahumans\u001a,\u001a \u001aand\u001a \u001aplants\u001a \u001aby\u001a \u001a50% for\u001a \u001aFFV\u001a \u001aor\u001a \u001aClash\u001a \u001aof\u001a \u001aWills\u001a \u001acategory\u001a \u001aunits\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000271": {
+        "name": "Fated Solitude",
+        "compendium_id": 90272,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918663, 918664],
+        "effects": ["Grant 'Fated Solitude' passive", "Grant 'Fated Solitude' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "global_ability_10074.png",
+        "strings": {
+            "names": ["Fated Solitude", "天煞孤星", null, null, null, null, "Fated Solitude", "Fated\u001a \u001aSolitude\u001a"],
+            "desc_short": [
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against demons by 50%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against demons by 100% for FFBE category units (Not stackable)",
+                "提高100%攻擊魔力+提高50%極限技的傷害+物理、魔法攻擊時提高50%對惡魔系魔物的傷害，或提高「FFBE」類別的兵員150%攻擊魔力+提高100%極限技的傷害+物理、魔法攻擊時提高100%對惡魔系魔物的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against demons by 50%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against demons by 100% for FFBE category units (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ademons\u001a \u001aby\u001a \u001a50%, or\u001a \u001aboost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ademons\u001a \u001aby\u001a \u001a100% for\u001a \u001aFFBE\u001a \u001acategory\u001a \u001aunits\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against demons by 50%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against demons by 100% for FFBE category units. Not stackable.",
+                "提高100%攻擊魔力，並且提高50%極限技的傷害，以及物理、魔法攻擊時提高50%對惡魔系魔物的傷害，或提高「FFBE」類別的兵員150%攻擊魔力，並且提高100%極限技的傷害，以及物理、魔法攻擊時提高100%對惡魔系魔物的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against demons by 50%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against demons by 100% for FFBE category units. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ademons\u001a \u001aby\u001a \u001a50%, or\u001a \u001aboosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ademons\u001a \u001aby\u001a \u001a100% for\u001a \u001aFFBE\u001a \u001acategory\u001a \u001aunits\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000272": {
+        "name": "Chaotic Malice",
+        "compendium_id": 90273,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918665, 918666],
+        "effects": ["Grant 'Chaotic Malice' passive", "Grant 'Chaotic Malice' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "global_ability_10083.png",
+        "strings": {
+            "names": ["Chaotic Malice", "混沌邪念", null, null, null, null, "Chaotic Malice", "Chaotic\u001a \u001aMalice\u001a"],
+            "desc_short": [
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against humans by 50%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against humans by 100% for FFBE category units (Not stackable)",
+                "提高100%攻擊魔力+提高50%極限技的傷害+物理、魔法攻擊時提高50%對人系魔物的傷害，或提高「FFBE」類別的兵員150%攻擊魔力+提高100%極限技的傷害+物理、魔法攻擊時提高100%對人系魔物的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against humans by 50%, or boost ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against humans by 100% for FFBE category units (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ahumans\u001a \u001aby\u001a \u001a50%, or\u001a \u001aboost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ahumans\u001a \u001aby\u001a \u001a100% for\u001a \u001aFFBE\u001a \u001acategory\u001a \u001aunits\u001a \u001a(\u001aNot\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against humans by 50%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against humans by 100% for FFBE category units. Not stackable.",
+                "提高100%攻擊魔力，並且提高50%極限技的傷害，以及物理、魔法攻擊時提高50%對人系魔物的傷害，或提高「FFBE」類別的兵員150%攻擊魔力，並且提高100%極限技的傷害，以及物理、魔法攻擊時提高100%對人系魔物的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK and MAG by 100%, LB damage by 50%, and physical and magic damage against humans by 50%, or boosts ATK and MAG by 150%, LB damage by 100%, and physical and magic damage against humans by 100% for FFBE category units. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, LB damage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ahumans\u001a \u001aby\u001a \u001a50%, or\u001a \u001aboosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a150%, LB damage\u001a \u001aby\u001a \u001a100%, and\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001ahumans\u001a \u001aby\u001a \u001a100% for\u001a \u001aFFBE\u001a \u001acategory\u001a \u001aunits\u001a.\u001a \u001aNot\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000273": {
+        "name": "Battlefield Spearhead",
+        "compendium_id": 90274,
+        "compendium_shown": true,
+        "requirements": ["RULE", [9503]],
+        "skills": [918679],
+        "effects": ["Grant 'Battlefield Spearhead' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_77.png",
+        "strings": {
+            "names": ["Battlefield Spearhead", "戰場先鋒", null, null, null, null, "Battlefield Spearhead", "Battlefield\u001a \u001aSpearhead\u001a"],
+            "desc_short": ["Boost ATK by 500", "提高500攻擊", null, null, null, null, "Boost ATK by 500", "Boost\u001a \u001aATK\u001a \u001aby\u001a \u001a500\u001a"],
+            "desc_long": ["Boosts ATK by 500.", "提高500攻擊。", null, null, null, null, "Boosts ATK by 500.", "Boosts\u001a \u001aATK\u001a \u001aby\u001a \u001a500.\u001a"]
+        }
+    },
+    "1500000274": {
+        "name": "United As One",
+        "compendium_id": 90275,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918728],
+        "effects": ["Grant 'United As One' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_78.png",
+        "strings": {
+            "names": ["United As One", "團結一致", null, null, null, null, "United As One", "United\u001a \u001aAs\u001a \u001aOne\u001a"],
+            "desc_short": [
+                "Boost ATK and MAG by 100%, boost LB damage by 50%, and boost damage for various chains by 200% (Not stackable)",
+                "提高100%攻擊魔力+提高50%極限技的傷害+提高200%各種CHAIN的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost ATK and MAG by 100%, boost LB damage by 50%, and boost damage for various chains by 200% (Not stackable)",
+                "Boost\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, boost\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aboost\u001a \u001adamage\u001a \u001afor\u001a \u001avarious\u001a \u001achains\u001a \u001aby\u001a \u001a200% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts ATK and MAG by 100%, boosts LB damage by 50%, and boosts damage for various chains by 200%. Not stackable.",
+                "提高100%攻擊魔力，並且提高50%極限技的傷害，以及提高200%各種CHAIN的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts ATK and MAG by 100%, boosts LB damage by 50%, and boosts damage for various chains by 200%. Not stackable.",
+                "Boosts\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100%, boosts\u001a \u001aLB\u001a \u001adamage\u001a \u001aby\u001a \u001a50%, and\u001a \u001aboosts\u001a \u001adamage\u001a \u001afor\u001a \u001avarious\u001a \u001achains\u001a \u001aby\u001a \u001a200%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
+        }
+    },
+    "1500000275": {
+        "name": "Final Stand",
+        "compendium_id": 90276,
+        "compendium_shown": true,
+        "requirements": null,
+        "skills": [918729],
+        "effects": ["Grant 'Final Stand' passive"],
+        "unique": true,
+        "price_buy": 100000,
+        "price_sell": 10000,
+        "icon": "ability_76.png",
+        "strings": {
+            "names": ["Final Stand", "最後一搏", null, null, null, null, "Final Stand", "Final\u001a \u001aStand\u001a"],
+            "desc_short": [
+                "Boost equipment ATK and MAG by 100% when a single weapon is equipped in one or both hands, boost equipment ATK and MAG by 100% when armed with two one-handed weapons, and boost physical and magic damage against beasts, fairies, and avian and machina monsters by 50% (Not stackable)",
+                "只裝備1把武器時武具攻擊魔力提升100%+裝備2把單手武器時武具攻擊魔力提升100%+物理、魔法攻擊時提高50%對獸精靈鳥機械系魔物的傷害[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boost equipment ATK and MAG by 100% when a single weapon is equipped in one or both hands, boost equipment ATK and MAG by 100% when armed with two one-handed weapons, and boost physical and magic damage against beasts, fairies, and avian and machina monsters by 50% (Not stackable)",
+                "Boost\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100% when\u001a \u001aa\u001a \u001asingle\u001a \u001aweapon\u001a \u001ais\u001a \u001aequipped\u001a \u001ain\u001a \u001aone\u001a \u001aor\u001a \u001aboth\u001a \u001ahands\u001a,\u001a \u001aboost\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100% when\u001a \u001aarmed\u001a \u001awith\u001a \u001atwo\u001a \u001aone-handed\u001a \u001aweapons\u001a,\u001a \u001aand\u001a \u001aboost\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a,\u001a \u001afairies\u001a,\u001a \u001aand\u001a \u001aavian\u001a \u001aand\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a50% (Not\u001a \u001astackable\u001a)\u001a"
+            ],
+            "desc_long": [
+                "Boosts equipment ATK and MAG by 100% when a single weapon is equipped in one or both hands, boosts equipment ATK and MAG by 100% when armed with two one-handed weapons, and boosts physical and magic damage against beasts, fairies, and avian and machina monsters by 50%. Not stackable.",
+                "只裝備1把武器時武具攻擊魔力提升100%，以及裝備2把單手武器時武具攻擊魔力提升100%，並且物理、魔法攻擊時提高50%對獸精靈鳥機械系魔物的傷害。[無法重複裝備]",
+                null,
+                null,
+                null,
+                null,
+                "Boosts equipment ATK and MAG by 100% when a single weapon is equipped in one or both hands, boosts equipment ATK and MAG by 100% when armed with two one-handed weapons, and boosts physical and magic damage against beasts, fairies, and avian and machina monsters by 50%. Not stackable.",
+                "Boosts\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100% when\u001a \u001aa\u001a \u001asingle\u001a \u001aweapon\u001a \u001ais\u001a \u001aequipped\u001a \u001ain\u001a \u001aone\u001a \u001aor\u001a \u001aboth\u001a \u001ahands\u001a,\u001a \u001aboosts\u001a \u001aequipment\u001a \u001aATK\u001a \u001aand\u001a \u001aMAG\u001a \u001aby\u001a \u001a100% when\u001a \u001aarmed\u001a \u001awith\u001a \u001atwo\u001a \u001aone-handed\u001a \u001aweapons\u001a,\u001a \u001aand\u001a \u001aboosts\u001a \u001aphysical\u001a \u001aand\u001a \u001amagic\u001a \u001adamage\u001a \u001aagainst\u001a \u001abeasts\u001a,\u001a \u001afairies\u001a,\u001a \u001aand\u001a \u001aavian\u001a \u001aand\u001a \u001amachina\u001a \u001amonsters\u001a \u001aby\u001a \u001a50%. Not\u001a \u001astackable\u001a.\u001a"
+            ]
         }
     }
 }
