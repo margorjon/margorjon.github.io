@@ -1869,7 +1869,7 @@ function onUnitsOrInventoryLoaded() {
             // before version 3, units were : {"unitId": number}
             // After, they are {"unitId": {"number":number,"farmable":number}
             $.get(getLocalizedFileUrl("data"), function(data) {
-                $.get("/" + server + "/units.json", function(unitResult) {
+                $.get("/static/" + server + "/units.json", function(unitResult) {
                     var allUnitsTmp = unitResult;
                     var tmrNumberByUnitId = {};
                     for (var index = data.length; index--; ) {
@@ -2637,7 +2637,7 @@ $(function() {
 
     readUrlParams();
 
-    $.get("/" + server + '/dataVersion.json', function(result) {
+    $.get("/static/" + server + '/dataVersion.json', function(result) {
         var dataVersion = result.version;
         var selectedLanguage = language ? language : "en";
 
