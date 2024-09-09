@@ -4633,7 +4633,7 @@ function startPage() {
 
         waitingCallbackKeyReady("defaultBuilderEspers");
     });
-    $.get("/" + server + "/units.json", async function(result) {
+    $.get("/static/" + server + "/units.json", async function(result) {
         ownedUnits = result;
         await onEquipmentsChange(); // wait for onEquipmentsChange to finish
     }, 'json').fail(function(jqXHR, textStatus, errorThrown ) {
