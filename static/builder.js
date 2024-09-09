@@ -2,7 +2,7 @@ page = "builder";
 var adventurerIds = ["1500000013", "1500000015", "1500000016", "1500000017", "1500000018"];
 
 const formulaByGoal = {
-    "physicalDamage":                   {"type":"skill", "id":"0","name":"1x physical ATK damage", "formulaName":"physicalDamage", "value": {"type":"damage", "value":{"mechanism":"physical", "damageType":"body", "coef":1}}},
+    "physical/staticDamage":                   {"type":"skill", "id":"0","name":"1x physical ATK damage", "formulaName":"physicalDamage", "value": {"type":"damage", "value":{"mechanism":"physical", "damageType":"body", "coef":1}}},
     "magicalDamage":                    {"type":"skill", "id":"0","name":"1x magical MAG damage", "formulaName":"magicalDamage", "value": {"type":"damage", "value":{"mechanism":"magical", "damageType":"mind", "coef":1}}},
     "hybridDamage":                     {"type":"skill", "id":"0","name":"1x hybrid ATK/MAG damage", "formulaName":"hybridDamage", "value": {"type":"damage", "value":{"mechanism":"hybrid", "coef":1}}},
     "jumpDamage":                       {"type":"skill", "id":"0","name":"1x jump damage", "formulaName":"jumpDamage", "value": {"type":"damage", "value":{"mechanism":"physical", "damageType":"body", "coef":1, "jump":true}}},
@@ -4552,7 +4552,7 @@ function ensureInitUnitWithSkills(unitId) {
         if (unitsWithSkills[unitId]) {
             resolve(unitsWithSkills[unitId]);
         } else {
-            $.get(`/${server}/unit/${unitId}`, function(result) {
+            $.get(`/static/${server}/unit/${unitId}`, function(result) {
                 unitsWithSkills[unitId] = result;
                 if (units[unitId].braveShift) {
                     ensureInitUnitWithSkills(units[unitId].braveShift).then(() => {
@@ -4633,7 +4633,7 @@ function startPage() {
 
         waitingCallbackKeyReady("defaultBuilderEspers");
     });
-    $.get("/" + server + "/units.json", async function(result) {
+    $.get("/static/" + server + "/units.json", async function(result) {
         ownedUnits = result;
         await onEquipmentsChange(); // wait for onEquipmentsChange to finish
     }, 'json').fail(function(jqXHR, textStatus, errorThrown ) {
