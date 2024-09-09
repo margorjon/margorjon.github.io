@@ -30,14 +30,16 @@ jobs:
     #- run: npm install esm --save-dev
     - run: npm set audit false
     - run: npm install
+    - run: node -v
+    - run: nvm ls
     #- run: npm audit fix
     #- run: npm install gh-pages --save-dev
     #- run: npm run start:useDist
     #- run: npm run build --if-present
     #- run: npm test
-    - run: npm run build
+    #- run: npm run build
     #- run: npm run build:dev
-    - run: npm run deploy
+    #- run: npm run deploy
     ##- run: npm start
     #- run: npm publish
     #- run: npm run esm
