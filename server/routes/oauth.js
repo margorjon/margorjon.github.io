@@ -10,7 +10,7 @@ export const route = express.Router();
 /**
  * "GET /googleOAuthUrl"
  */
-route.get('/googleOAuthUrl', (req, res) => {
+route.get('/static/googleOAuthUrl', (req, res) => {
   return res.json({ url: OAuth.authUrlSelectAccount });
 });
 
