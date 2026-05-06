@@ -12,7 +12,7 @@ describe('routes.oauth', () => {
 
   it('.oauth url', (done) => {
     request(app)
-      .get('/googleOAuthUrl')
+      .get('/static/googleOAuthUrl')
       .expect(200)
       .expect((res) => {
         const authUrl = new URL(res.body.url);
